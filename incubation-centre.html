@@ -1,0 +1,2417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incubation Centre | ARKVOLT Energy</title>
+  <meta name="description" content="The ARKVOLT Entrepreneurship &amp; Innovation Incubation Centre supports startups and founders with mentorship, structured programmes and academic partnerships.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#10222F">
+  <link rel="canonical" href="https://www.arkvoltenergy.com/incubation-centre">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ARKVOLT Energy">
+  <meta property="og:title" content="Incubation Centre | ARKVOLT Energy">
+  <meta property="og:description" content="The ARKVOLT Entrepreneurship &amp; Innovation Incubation Centre supports startups and founders with mentorship, structured programmes and academic partnerships.">
+  <meta property="og:url" content="https://www.arkvoltenergy.com/incubation-centre">
+  <meta property="og:image" content="https://www.arkvoltenergy.com/assets/incubation-hero.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Incubation Centre | ARKVOLT Energy">
+  <meta name="twitter:description" content="The ARKVOLT Entrepreneurship &amp; Innovation Incubation Centre supports startups and founders with mentorship, structured programmes and academic partnerships.">
+  <meta name="twitter:image" content="https://www.arkvoltenergy.com/assets/incubation-hero.jpg">
+  <style>html,body{margin:0;padding:0;background:#fff;}img{max-width:100%;}</style>
+</head>
+<body>
+
+<!-- ===== header ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — SITE HEADER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget,
+     at the very top of the page. No page wrapper tags — WordPress supplies
+     those. HTML + CSS + JS are all inside this one file, scoped behind the
+     .ahd prefix.
+
+     LOGO: assets/logo-full.jpg is the complete ARKVOLT lockup — wordmark, bolt,
+     "ENERGY PVT. LTD." and the tagline — cropped tight to its content. The bar
+     is sized so the whole lockup reads. Upload it to the WP Media Library and
+     swap the src below for that URL. (assets/logo-full-dark.jpg is the same
+     lockup on black, for dark backgrounds.)
+
+     MARKING THE CURRENT PAGE
+     Add aria-current="page" to the link for the page you are on — the green
+     text and the underline follow that attribute, nothing else:
+
+         <a class="ahd__link" href="projects.html" aria-current="page">Projects</a>
+
+     For a page that sits inside the Resources dropdown, put aria-current="page"
+     on BOTH its .ahd__sub link and the Resources button, so the closed bar
+     still shows where the visitor is. WordPress's own current-menu-item /
+     current_page_item classes are honoured too.
+
+     LAYOUT: logo left, the links spread evenly across the bar (no dead gap in
+     the middle), Get In Touch pinned right. Below 1180px the links collapse
+     into a slide-down drawer behind the menu button.
+
+     If your theme already outputs its own header, use that instead of this
+     file — two headers on one page is worse than either alone.
+
+     Every icon is inline SVG; no icon fonts, no CDNs.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.ahd{
+  --ahd-ink:      #10222F;
+  --ahd-body:     #45525C;
+  --ahd-green:    #22A24C;
+  --ahd-green-dk: #1C8A41;
+  --ahd-green-hv: #1A7C3A;
+  --ahd-green-lt: #EDF7F0;
+  --ahd-line:     #E7ECEF;
+  --ahd-bar:      86px;
+  --ahd-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: #fff;
+  font-family: var(--ahd-font);
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 1px solid var(--ahd-line);
+  /* a faint lift even at rest, so the white bar never melts into a white hero */
+  box-shadow: 0 2px 12px rgba(16,34,47,.05);
+  transition: box-shadow .3s ease;
+}
+.ahd *, .ahd *::before, .ahd *::after{ box-sizing: border-box; }
+
+/* the shadow deepens once the page has scrolled under the bar */
+.ahd.is-stuck{ box-shadow: 0 8px 24px rgba(16,34,47,.1); }
+
+.ahd__inner{
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 3vw, 34px);
+  height: var(--ahd-bar);
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 34px);
+}
+
+/* ---------------- logo ---------------- */
+.ahd__brand{
+  flex: none;
+  display: block;
+  line-height: 0;
+  transition: opacity .25s ease;
+}
+.ahd__brand:hover{ opacity: .85; }
+.ahd__brand:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+.ahd__logo{
+  width: auto;
+  height: clamp(40px, 3.6vw, 52px);   /* tall enough that the full lockup reads */
+  display: block;
+}
+
+/* ---------------- nav ---------------- */
+.ahd__nav{
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* spread the links evenly, no middle gap */
+  gap: clamp(6px, 0.7vw, 12px);
+}
+.ahd__item{ position: relative; display: flex; }
+
+.ahd__link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 3px;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--ahd-body);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  letter-spacing: .002em;
+  cursor: pointer;
+  transition: color .22s ease;
+}
+/* the underline grows out from the centre */
+.ahd__link::after{
+  content: "";
+  position: absolute;
+  left: 3px; right: 3px; bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-green);
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__link:hover,
+.ahd__link:focus-visible{ color: var(--ahd-green-dk); }
+.ahd__link:hover::after,
+.ahd__link:focus-visible::after{ transform: scaleX(1); }
+.ahd__link:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+
+/* current page — driven by aria-current, or by WordPress's own menu classes */
+.ahd__link[aria-current="page"],
+.current-menu-item > .ahd__link,
+.current_page_item > .ahd__link{
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+.ahd__link[aria-current="page"]::after,
+.current-menu-item > .ahd__link::after,
+.current_page_item > .ahd__link::after{ transform: scaleX(1); }
+
+/* chevron on the item that opens a menu */
+.ahd__chev{
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: 1px;
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__item.is-open > .ahd__link .ahd__chev{ transform: rotate(180deg); }
+
+/* ---------------- dropdown ---------------- */
+.ahd__menu{
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  width: 216px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(16,34,47,.13);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -8px);
+  transition: opacity .24s ease, transform .24s cubic-bezier(.22,.61,.36,1),
+              visibility .24s;
+}
+.ahd__item.is-open > .ahd__menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+/* a small bridge so the pointer can cross the gap without the menu closing */
+.ahd__item.is-open > .ahd__menu::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: -16px;
+  height: 16px;
+}
+.ahd__menuIn{ margin: 0; padding: 0; list-style: none; }
+.ahd__sub{
+  display: block;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 12.6px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ahd-body);
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, padding-left .2s ease;
+}
+.ahd__sub:hover,
+.ahd__sub:focus-visible{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  padding-left: 16px;
+}
+.ahd__sub:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: -2px; }
+/* the current page, when it lives inside the dropdown */
+.ahd__sub[aria-current="page"]{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+
+/* ---------------- call to action ---------------- */
+.ahd__cta{
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border: 1px solid var(--ahd-green);
+  border-radius: 999px;
+  background: var(--ahd-green);
+  color: #fff;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(34,162,76,.24);
+  transition: background-color .25s ease, border-color .25s ease,
+              transform .25s ease, box-shadow .25s ease;
+}
+.ahd__cta svg{ width: 11px; height: 11px; transition: transform .25s ease; }
+.ahd__cta:hover{
+  background: var(--ahd-green-hv);
+  border-color: var(--ahd-green-hv);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(34,162,76,.3);
+}
+.ahd__cta:hover svg{ transform: translateX(3px); }
+.ahd__cta:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* ---------------- burger ---------------- */
+.ahd__burger{
+  display: none;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .25s ease, background-color .25s ease;
+}
+.ahd__burger:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); }
+.ahd__burger:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+.ahd__bars{
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin: 0 auto;
+  position: relative;
+}
+.ahd__bars i{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-ink);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1), opacity .2s ease;
+}
+.ahd__bars i:nth-child(1){ top: 0; }
+.ahd__bars i:nth-child(2){ top: 6px; }
+.ahd__bars i:nth-child(3){ top: 12px; }
+.ahd.is-nav-open .ahd__bars i:nth-child(1){ transform: translateY(6px) rotate(45deg); }
+.ahd.is-nav-open .ahd__bars i:nth-child(2){ opacity: 0; }
+.ahd.is-nav-open .ahd__bars i:nth-child(3){ transform: translateY(-6px) rotate(-45deg); }
+
+/* drawer head — the logo strip + close button at the top of the mobile panel
+   (the whole thing is hidden on desktop, so the close button never shows there) */
+.ahd__drawerHead{ display: none; }
+.ahd__close{
+  flex: none;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ahd-ink);
+  cursor: pointer;
+  transition: border-color .22s ease, background-color .22s ease, color .22s ease;
+}
+.ahd__close svg{ width: 17px; height: 17px; }
+.ahd__close:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); color: var(--ahd-green-dk); }
+.ahd__close:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* dim the whole page behind the open side drawer */
+.ahd__scrim{
+  position: fixed;
+  inset: 0;
+  background: rgba(16,34,47,.42);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .34s ease, visibility .34s;
+  z-index: 1;
+}
+
+/* ---------------- mobile / tablet (drawer) ---------------- */
+@media (max-width: 1179px){
+  .ahd{ --ahd-bar: 74px; }
+  .ahd__burger{ display: block; }
+  /* the drawer carries its own close button, so the bar's button goes away
+     while the drawer is open — no stray control floating outside the panel */
+  .ahd.is-nav-open .ahd__burger{ display: none; }
+
+  .ahd.is-nav-open .ahd__scrim{ opacity: 1; visibility: visible; }
+
+  /* off-canvas side drawer that slides in from the left */
+  .ahd__nav{
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: min(86vw, 344px);
+    z-index: 2;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0 0 26px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    background: #fff;
+    box-shadow: 0 0 60px rgba(16,34,47,.24);
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform .36s cubic-bezier(.22,.61,.36,1), visibility .36s;
+  }
+  .ahd.is-nav-open .ahd__nav{
+    visibility: visible;
+    transform: none;
+  }
+
+  /* brand strip at the top of the drawer */
+  .ahd__drawerHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: var(--ahd-bar);
+    flex: none;
+    padding: 0 clamp(16px, 4.5vw, 22px);
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--ahd-line);
+    background: linear-gradient(180deg, #F7FBF9 0%, #fff 100%);
+  }
+  .ahd__drawerLogo{ height: 36px; width: auto; display: block; }
+
+  .ahd__inner .ahd__item,
+  .ahd__nav .ahd__item{
+    display: block;
+    margin: 0 clamp(14px, 4vw, 22px);
+    border-bottom: 1px solid var(--ahd-line);
+  }
+  .ahd__link{
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ahd-ink);
+  }
+  .ahd__link::after{ display: none; }
+  .ahd__link[aria-current="page"]{ color: var(--ahd-green-dk); }
+  .ahd__chev{ width: 12px; height: 12px; color: var(--ahd-green-dk); }
+
+  /* the dropdown becomes an accordion: 0fr -> 1fr animates to natural height */
+  .ahd__menu{
+    position: static;
+    width: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .32s cubic-bezier(.22,.61,.36,1);
+  }
+  .ahd__item.is-open > .ahd__menu{ grid-template-rows: 1fr; transform: none; }
+  .ahd__item.is-open > .ahd__menu::before{ content: none; }
+  .ahd__menuIn{ overflow: hidden; padding: 2px 0 8px; }
+  .ahd__sub{
+    padding: 11px 14px;
+    margin-bottom: 2px;
+    font-size: 13.5px;
+    border-radius: 8px;
+    background: #F6F9F7;
+  }
+  .ahd__sub:hover, .ahd__sub:focus-visible{ padding-left: 18px; }
+
+  .ahd__cta{
+    justify-content: center;
+    margin: 22px clamp(14px, 4vw, 22px) 0;
+    padding: 14px 22px;
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 420px){
+  .ahd__logo{ height: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ahd, .ahd__link, .ahd__link::after, .ahd__chev, .ahd__menu, .ahd__nav,
+  .ahd__sub, .ahd__cta, .ahd__cta svg, .ahd__bars i, .ahd__scrim{ transition: none; }
+  .ahd__cta:hover{ transform: none; }
+}
+</style>
+
+<header class="ahd">
+  <div class="ahd__inner">
+
+    <a class="ahd__brand" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+      <img class="ahd__logo" src="assets/logo-full.jpg"
+           alt="ARKVOLT Energy Pvt. Ltd. — Advanced Energy Storage Solutions"
+           width="1279" height="279"
+           fetchpriority="high" decoding="async">
+    </a>
+
+    <button class="ahd__burger" type="button"
+            aria-label="Menu" aria-expanded="false" aria-controls="ahd-nav">
+      <span class="ahd__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <nav class="ahd__nav" id="ahd-nav" aria-label="Main">
+
+      <div class="ahd__drawerHead">
+        <img class="ahd__drawerLogo" src="assets/logo-full.jpg" alt="" aria-hidden="true"
+             width="1279" height="279" decoding="async">
+        <button class="ahd__close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="index.html">Home</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="about.html">About Us</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="solutions.html">Solutions</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="industries.html">Industries</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="projects.html">Projects</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="innovation.html">Innovation</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="incubation-centre.html" aria-current="page">Incubation Centre</a></div>
+
+      <div class="ahd__item">
+        <button class="ahd__link" type="button" aria-expanded="false" aria-controls="ahd-resources">
+          Resources
+          <svg class="ahd__chev" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="ahd__menu" id="ahd-resources">
+          <ul class="ahd__menuIn">
+            <li><a class="ahd__sub" href="resources.html">Resource Centre</a></li>
+            <li><a class="ahd__sub" href="our-partners.html">Partners</a></li>
+            <li><a class="ahd__sub" href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="contact.html">Contact Us</a></div>
+
+      <a class="ahd__cta" href="contact.html">
+        Get In Touch
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </nav>
+  </div>
+  <span class="ahd__scrim" aria-hidden="true"></span>
+</header>
+
+<script>
+(function(){
+  var header = document.currentScript && document.currentScript.previousElementSibling;
+  if (!header || !header.classList.contains('ahd')) {
+    var all = document.querySelectorAll('.ahd');
+    header = all[all.length - 1];
+  }
+  if (!header || header.dataset.ahdReady) return;
+  header.dataset.ahdReady = '1';
+
+  var DESKTOP = '(min-width: 1180px)';
+  var burger  = header.querySelector('.ahd__burger');
+  var nav     = header.querySelector('.ahd__nav');
+  var scrim   = header.querySelector('.ahd__scrim');
+  var closeBtn = header.querySelector('.ahd__close');
+  var toggles = header.querySelectorAll('.ahd__item > button.ahd__link');
+
+  function isDesktop(){
+    return window.matchMedia && window.matchMedia(DESKTOP).matches;
+  }
+
+  /* ---------------- shadow once the page scrolls ---------------- */
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    header.classList.toggle('is-stuck', y > 4);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------------- dropdowns ---------------- */
+  function closeMenus(except){
+    toggles.forEach(function(btn){
+      var item = btn.parentNode;
+      if (item === except) return;
+      item.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+  function openMenu(item, btn, open){
+    item.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  toggles.forEach(function(btn){
+    var item = btn.parentNode;
+
+    // click works on every width, and is the only way in on touch
+    btn.addEventListener('click', function(){
+      var open = !item.classList.contains('is-open');
+      closeMenus(item);
+      openMenu(item, btn, open);
+    });
+
+    // hover is a desktop convenience on top of the click
+    item.addEventListener('mouseenter', function(){
+      if (isDesktop()) openMenu(item, btn, true);
+    });
+    item.addEventListener('mouseleave', function(){
+      if (isDesktop()) openMenu(item, btn, false);
+    });
+
+    // let the keyboard walk out of the menu and have it close behind
+    item.addEventListener('focusout', function(e){
+      if (!isDesktop()) return;
+      if (!item.contains(e.relatedTarget)) openMenu(item, btn, false);
+    });
+  });
+
+  /* ---------------- burger ---------------- */
+  function setNav(open){
+    header.classList.toggle('is-nav-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    // lock the page behind the open drawer so only the menu scrolls
+    document.documentElement.style.overflow = (open && !isDesktop()) ? 'hidden' : '';
+    if (!open) closeMenus(null);
+  }
+  burger.addEventListener('click', function(){
+    setNav(!header.classList.contains('is-nav-open'));
+  });
+  scrim.addEventListener('click', function(){ setNav(false); });
+  if (closeBtn) closeBtn.addEventListener('click', function(){ setNav(false); burger.focus(); });
+
+  // a tap on a real link closes the drawer; the Resources button must not
+  nav.addEventListener('click', function(e){
+    if (isDesktop()) return;
+    if (e.target.closest('a')) setNav(false);
+  });
+
+  /* ---------------- escape + outside click + resize ---------------- */
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape' && e.key !== 'Esc') return;
+    if (header.classList.contains('is-nav-open')){
+      setNav(false);
+      burger.focus();
+      return;
+    }
+    var open = header.querySelector('.ahd__item.is-open');
+    if (open){
+      var btn = open.querySelector('button.ahd__link');
+      openMenu(open, btn, false);
+      btn.focus();
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    if (header.contains(e.target)) return;
+    closeMenus(null);
+    if (header.classList.contains('is-nav-open')) setNav(false);
+  });
+
+  // crossing the desktop breakpoint must not leave a half-open state behind
+  var last = isDesktop();
+  var t = null;
+  window.addEventListener('resize', function(){
+    // setTimeout, not requestAnimationFrame — rAF is throttled in background tabs
+    clearTimeout(t);
+    t = setTimeout(function(){
+      var now = isDesktop();
+      if (now === last) return;
+      last = now;
+      closeMenus(null);
+      setNav(false);
+    }, 120);
+  });
+})();
+</script>
+
+
+<!-- ===== incubation-hero ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — INCUBATION CENTRE PAGE HERO
+     arkvoltenergy.com/incubation-centre
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .ich prefix.
+
+     Same geometry and fade as the other page heroes: white background, copy
+     left, photo right.
+
+     IMAGE: drop the supplied photo in as assets/incubation-hero.jpg, then
+     upload it to the WP Media Library and swap the src below for that URL.
+     Until the file exists the panel shows a neutral tint, not a broken image.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.ich{
+  --ich-ink:      #10222F;
+  --ich-body:     #5A6570;
+  --ich-green:    #22A24C;
+  --ich-green-dk: #1C8A41;
+  --ich-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* which part of the photo stays in frame when it is cropped */
+  --ich-focus:    58% 50%;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #fff;
+  font-family: var(--ich-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(30px, 3vw, 46px) 0 clamp(26px, 2.6vw, 40px);
+}
+.ich *, .ich *::before, .ich *::after{ box-sizing: border-box; }
+
+/* ---------------- media ---------------- */
+.ich__media{
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 60%;
+  z-index: 0;
+  pointer-events: none;
+  /* neutral fill so a missing file reads as a panel, not a broken image */
+  background: linear-gradient(150deg, #EDF3F0 0%, #E2EAE6 100%);
+}
+.ich__photo{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: var(--ich-focus);
+}
+.ich__fade{
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(100deg,
+      #fff 0%,
+      #fff 9%,
+      rgba(255,255,255,.90) 21%,
+      rgba(255,255,255,.48) 33%,
+      rgba(255,255,255,0)   47%),
+    linear-gradient(190deg,
+      rgba(255,255,255,.45) 0%,
+      rgba(255,255,255,0)   24%);
+}
+
+/* ---------------- layout ---------------- */
+.ich__inner{
+  position: relative;
+  z-index: 1;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.ich__content{ max-width: 470px; }
+
+/* ---------------- copy ---------------- */
+.ich__eyebrow{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ich-green-dk);
+}
+.ich__eyebrow::after{
+  content: "";
+  flex: none;
+  width: 40px;
+  height: 2px;
+  background: var(--ich-green);
+  border-radius: 2px;
+}
+.ich__title{
+  margin: 0 0 20px;
+  font-size: clamp(27px, 3.15vw, 43px);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -.026em;
+  color: var(--ich-ink);
+}
+.ich__title em{
+  font-style: normal;
+  color: var(--ich-green-dk);
+}
+.ich__text{
+  margin: 0 0 14px;
+  font-size: clamp(13.5px, 1.05vw, 14.5px);
+  line-height: 1.82;
+  color: var(--ich-body);
+}
+.ich__text:last-child{ margin-bottom: 0; }
+
+/* ---------------- entrance ---------------- */
+.ich--anim .ich__reveal{ opacity: 0; transform: translateY(20px); }
+.ich.is-in .ich__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1);
+}
+.ich--anim .ich__media{ opacity: 0; transform: scale(1.04); }
+.ich.is-in .ich__media{
+  opacity: 1; transform: none;
+  transition: opacity 1.1s ease .1s, transform 1.1s ease .1s;
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1199px){
+  .ich__media{ width: 55%; --ich-focus: 62% 50%; }
+  .ich__content{ max-width: 430px; }
+}
+@media (max-width: 991px){
+  .ich{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: clamp(34px, 5vw, 54px);
+    --ich-focus: 55% 50%;
+  }
+  .ich__inner{ order: 1; }
+  .ich__content{ max-width: 100%; }
+  .ich__media{
+    order: 2;
+    position: relative;
+    inset: auto;
+    width: calc(100% - 40px);
+    margin: 28px 20px 0;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .ich__fade{
+    background: linear-gradient(180deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,0) 22%);
+  }
+}
+@media (max-width: 575px){
+  .ich__media{ aspect-ratio: 4 / 3; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ich--anim .ich__reveal,
+  .ich--anim .ich__media{ opacity: 1; transform: none; }
+  .ich.is-in .ich__reveal,
+  .ich.is-in .ich__media{ transition: none; }
+}
+</style>
+
+<section class="ich" aria-labelledby="ich-title">
+
+  <div class="ich__media" aria-hidden="true">
+    <img class="ich__photo"
+         src="assets/incubation-hero.jpg"
+         alt="The ARKVOLT Incubation Centre building"
+         width="1692" height="930"
+         fetchpriority="high" decoding="async">
+    <span class="ich__fade"></span>
+  </div>
+
+  <div class="ich__inner">
+    <div class="ich__content ich__reveal">
+
+      <p class="ich__eyebrow">ARKVOLT Incubation Centre</p>
+
+      <h1 class="ich__title" id="ich-title">Innovation <em>Beyond Energy</em></h1>
+
+      <p class="ich__text">
+        The ARKVOLT Entrepreneurship &amp; Innovation Incubation Centre is an
+        initiative established to support entrepreneurs, innovators, startups, and
+        young professionals in developing ideas into sustainable enterprises.
+      </p>
+
+      <p class="ich__text">
+        The centre provides a collaborative ecosystem offering structured guidance,
+        industry mentorship, business development support, and access to academic
+        and institutional partnerships. Working alongside T-0, the centre also
+        supports founders building in energy, software, AI, hardware, and deep tech
+        sectors.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('ich')) {
+    var all = document.querySelectorAll('.ich');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.ichReady) return;
+  section.dataset.ichReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('ich--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.15 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== incubation-panels ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — WHAT WE OFFER / PROGRAMME / ELIGIBILITY / JOURNEY
+     arkvoltenergy.com/incubation-centre
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .icp prefix.
+
+     Four panels, each with a different body: a bulleted offer list, prose, an
+     eligibility block, and a vertical journey timeline. Deliberately not the
+     centred icon-card grid used elsewhere on the site.
+     Every icon is inline SVG.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.icp{
+  --icp-ink:      #10222F;
+  --icp-body:     #5A6570;
+  --icp-green:    #22A24C;
+  --icp-green-dk: #1C8A41;
+  --icp-green-lt: #EDF7F0;
+  --icp-line:     #E7ECEF;
+  --icp-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--icp-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(26px, 2.6vw, 40px) 0 clamp(24px, 2.4vw, 36px);
+}
+.icp *, .icp *::before, .icp *::after{ box-sizing: border-box; }
+
+.icp__inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* ---------------- panel ---------------- */
+.icp__panel{
+  display: flex;
+  flex-direction: column;
+  padding: clamp(20px, 1.9vw, 26px);
+  background: #fff;
+  border: 1px solid var(--icp-line);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(16,34,47,.045);
+  transition: border-color .3s ease, box-shadow .3s ease, transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.icp--anim .icp__panel{ opacity: 0; transform: translateY(22px); }
+.icp.is-in .icp__panel{
+  opacity: 1;
+  transform: none;
+  transition: opacity .6s ease var(--d, 0s),
+              transform .6s cubic-bezier(.22,.61,.36,1) var(--d, 0s),
+              border-color .3s ease, box-shadow .3s ease;
+}
+.icp.is-in .icp__panel:hover{
+  border-color: rgba(34,162,76,.4);
+  box-shadow: 0 16px 34px rgba(16,34,47,.09);
+}
+
+/* header row: icon chip + title, rule underneath */
+.icp__head{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.icp__ico{
+  flex: none;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--icp-green-lt);
+  color: var(--icp-green-dk);
+  transition: transform .35s cubic-bezier(.22,.61,.36,1), background-color .3s ease;
+}
+.icp__ico svg{ width: 50%; height: 50%; }
+.icp__panel:hover .icp__ico{ transform: scale(1.07); background: #E1F2E7; }
+
+.icp__title{
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  color: var(--icp-green-dk);
+}
+.icp__rule{
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 0 0 16px 54px;
+  background: var(--icp-green);
+  border-radius: 2px;
+  opacity: .6;
+}
+
+/* ---- body A: bulleted offer list ---- */
+.icp__list{ margin: 0; padding: 0; list-style: none; }
+.icp__list li{
+  position: relative;
+  padding-left: 18px;
+  font-size: 12.6px;
+  line-height: 1.55;
+  color: var(--icp-body);
+}
+.icp__list li + li{ margin-top: 10px; }
+.icp__list li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .5em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--icp-green);
+}
+
+/* ---- body B: prose ---- */
+.icp__text{
+  margin: 0 0 12px;
+  font-size: 12.8px;
+  line-height: 1.72;
+  color: var(--icp-body);
+}
+.icp__text:last-child{ margin-bottom: 0; }
+
+/* ---- body C: eligibility ---- */
+.icp__label{
+  margin: 0 0 4px;
+  font-size: 12.8px;
+  font-weight: 700;
+  color: var(--icp-ink);
+}
+.icp__value{
+  margin: 0 0 16px;
+  font-size: 13.4px;
+  font-weight: 600;
+  color: var(--icp-green-dk);
+}
+
+/* ---- body D: vertical journey ---- */
+.icp__journey{ margin: 0; padding: 0; list-style: none; }
+.icp__step{
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 12.4px;
+  line-height: 1.45;
+  color: var(--icp-body);
+}
+.icp__step--key{ font-weight: 700; color: var(--icp-ink); }
+.icp__dot{
+  flex: none;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--icp-green-lt);
+  color: var(--icp-green-dk);
+}
+.icp__dot svg{ width: 11px; height: 11px; }
+/* connector between steps */
+.icp__link{
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin: 2px 0;
+  color: #C4D8CB;
+}
+.icp__link svg{ width: 100%; height: 100%; display: block; }
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1100px){
+  .icp__inner{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px){
+  .icp__inner{ grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .icp--anim .icp__panel{ opacity: 1; transform: none; }
+  .icp.is-in .icp__panel{ transition: none; }
+  .icp__ico, .icp__panel:hover .icp__ico{ transition: none; transform: none; }
+}
+</style>
+
+<section class="icp" aria-label="What the Incubation Centre offers">
+  <div class="icp__inner">
+
+    <!-- ============ 1. What We Offer ============ -->
+    <article class="icp__panel" style="--d:.00s">
+      <div class="icp__head">
+        <span class="icp__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.6 20.4c0-3.4 2.6-5.6 6-5.6 1.4 0 2.7.4 3.7 1"/>
+            <path d="M12 15.4c1-.6 2.3-1 3.7-1 3.4 0 6 2.2 6 5.6"/>
+            <circle cx="8.6" cy="8.4" r="3.4"/>
+            <circle cx="15.4" cy="8.4" r="3.4"/>
+          </svg>
+        </span>
+        <h2 class="icp__title">What We Offer</h2>
+      </div>
+      <span class="icp__rule"></span>
+
+      <ul class="icp__list">
+        <li>Entrepreneurship Development Programmes</li>
+        <li>Business Idea Validation</li>
+        <li>Startup Incubation</li>
+        <li>Business Planning &amp; Strategy</li>
+        <li>Industry Mentorship</li>
+        <li>Startup Registration Guidance</li>
+        <li>Government &amp; Institutional Support Guidance</li>
+        <li>Networking Opportunities</li>
+        <li>Enterprise Development Support</li>
+        <li>Technology and Product Incubation</li>
+      </ul>
+    </article>
+
+    <!-- ============ 2. Dream Come True Programme ============ -->
+    <article class="icp__panel" style="--d:.07s">
+      <div class="icp__head">
+        <span class="icp__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.8a6.6 6.6 0 0 1 4 11.9v2.7H8v-2.7A6.6 6.6 0 0 1 12 2.8Z"/>
+            <path d="M9.4 20.2h5.2M10.6 22.6h2.8"/>
+          </svg>
+        </span>
+        <h2 class="icp__title">Dream Come True Programme</h2>
+      </div>
+      <span class="icp__rule"></span>
+
+      <p class="icp__text">
+        The Dream Come True Programme is a structured <strong>60-Day Entrepreneurship
+        &amp; Startup Development Programme</strong> designed to provide aspiring
+        entrepreneurs with practical business knowledge, mentorship, and incubation
+        support.
+      </p>
+      <p class="icp__text">
+        Participants receive guidance throughout their entrepreneurial journey, from
+        developing an idea to launching and growing an enterprise.
+      </p>
+    </article>
+
+    <!-- ============ 3. Programme Eligibility ============ -->
+    <article class="icp__panel" style="--d:.14s">
+      <div class="icp__head">
+        <span class="icp__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4.4" width="18" height="15.2" rx="2.2"/>
+            <circle cx="9" cy="10.6" r="2.4"/>
+            <path d="M5.4 16.4c0-1.9 1.6-3.2 3.6-3.2s3.6 1.3 3.6 3.2"/>
+            <path d="M15 9.6h3.6M15 13.2h3.6"/>
+          </svg>
+        </span>
+        <h2 class="icp__title">Programme Eligibility</h2>
+      </div>
+      <span class="icp__rule"></span>
+
+      <p class="icp__label">Age</p>
+      <p class="icp__value">18&ndash;40 Years</p>
+
+      <p class="icp__label">Educational Qualification</p>
+      <ul class="icp__list">
+        <li>12th Pass or Equivalent</li>
+        <li>Graduate (Any Discipline)</li>
+        <li>Diploma Holders</li>
+        <li>Working Professionals</li>
+        <li>Aspiring Entrepreneurs</li>
+      </ul>
+    </article>
+
+    <!-- ============ 4. Entrepreneurship Journey ============ -->
+    <article class="icp__panel" style="--d:.21s">
+      <div class="icp__head">
+        <span class="icp__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.6c3.2 2.2 5 5.6 5 9.1L14.6 15H9.4L7 11.7c0-3.5 1.8-6.9 5-9.1Z"/>
+            <circle cx="12" cy="9.4" r="1.9"/>
+            <path d="M9.4 15 7.2 19.6l3.2-1.2M14.6 15l2.2 4.6-3.2-1.2"/>
+          </svg>
+        </span>
+        <h2 class="icp__title">Entrepreneurship Journey</h2>
+      </div>
+      <span class="icp__rule"></span>
+
+      <ol class="icp__journey">
+        <li class="icp__step icp__step--key">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Idea Validation
+        </li>
+        <span class="icp__link" aria-hidden="true"><svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1.6v9M7 8l3 3 3-3"/></svg></span>
+
+        <li class="icp__step">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Business Planning
+        </li>
+        <span class="icp__link" aria-hidden="true"><svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1.6v9M7 8l3 3 3-3"/></svg></span>
+
+        <li class="icp__step">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Training &amp; Mentorship
+        </li>
+        <span class="icp__link" aria-hidden="true"><svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1.6v9M7 8l3 3 3-3"/></svg></span>
+
+        <li class="icp__step">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Incubation Support
+        </li>
+        <span class="icp__link" aria-hidden="true"><svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1.6v9M7 8l3 3 3-3"/></svg></span>
+
+        <li class="icp__step">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Government &amp; Institutional Support Guidance
+        </li>
+        <span class="icp__link" aria-hidden="true"><svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1.6v9M7 8l3 3 3-3"/></svg></span>
+
+        <li class="icp__step">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Startup Registration Guidance
+        </li>
+        <span class="icp__link" aria-hidden="true"><svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1.6v9M7 8l3 3 3-3"/></svg></span>
+
+        <li class="icp__step icp__step--key">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Business Launch
+        </li>
+        <span class="icp__link" aria-hidden="true"><svg viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1.6v9M7 8l3 3 3-3"/></svg></span>
+
+        <li class="icp__step icp__step--key">
+          <span class="icp__dot" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.4 6.2 2.2 2.2 5-5.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Growth &amp; Expansion
+        </li>
+      </ol>
+    </article>
+
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('icp')) {
+    var all = document.querySelectorAll('.icp');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.icpReady) return;
+  section.dataset.icpReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('icp--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.88 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.1 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== incubation-sectors ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — STARTUP OPPORTUNITIES  (Incubation Centre page)
+     arkvoltenergy.com/incubation-centre
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .ics prefix.
+
+     Twelve sectors on a dark green panel as icon-left / label-right rows — not the
+     centred icon cards used on the Industries and Solutions pages.
+     Every icon is inline SVG.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.ics{
+  --ics-ink:      #FFFFFF;
+  --ics-body:     rgba(255,255,255,.90);
+  --ics-mint:     #D8F9E4;
+  --ics-line:     rgba(255,255,255,.16);
+  --ics-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--ics-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(22px, 2.2vw, 32px) 0;
+}
+.ics *, .ics *::before, .ics *::after{ box-sizing: border-box; }
+
+.ics__inner{ max-width: 1290px; margin: 0 auto; padding: 0 20px; }
+
+.ics__panel{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(26px, 2.8vw, 40px) clamp(22px, 2.6vw, 40px);
+  background: linear-gradient(118deg, #0D3A21 0%, #145430 52%, #17773A 100%);
+  border: 1px solid var(--ics-line);
+  border-radius: 14px;
+}
+/* soft corner glow so the green block is not dead flat */
+.ics__panel::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -40%;
+  right: -6%;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(70,197,111,.26) 0%, rgba(70,197,111,0) 68%);
+  pointer-events: none;
+}
+
+/* centred heading with a rule under it */
+.ics__head{ text-align: center; margin-bottom: clamp(22px, 2.4vw, 32px); }
+.ics__head h2{
+  margin: 0;
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ics-mint);
+}
+.ics__head span{
+  display: block;
+  width: 46px;
+  height: 2px;
+  margin: 11px auto 13px;
+  background: var(--ics-mint);
+  border-radius: 2px;
+}
+.ics__head p{
+  margin: 0;
+  font-size: clamp(12.8px, 1vw, 13.8px);
+  line-height: 1.7;
+  color: var(--ics-body);
+}
+
+/* ---------------- sector rows ---------------- */
+.ics__grid{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(20px, 2.4vw, 30px) clamp(14px, 1.6vw, 22px);
+}
+.ics__item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ics__ico{
+  flex: none;
+  width: clamp(34px, 2.8vw, 40px);
+  height: clamp(34px, 2.8vw, 40px);
+  color: var(--ics-mint);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ics__ico svg{ width: 100%; height: 100%; display: block; }
+.ics__item:hover .ics__ico{ transform: translateY(-3px); }
+.ics__name{
+  margin: 0;
+  font-size: 12.4px;
+  font-weight: 600;
+  line-height: 1.42;
+  color: var(--ics-ink);
+}
+
+/* ---------------- reveal ---------------- */
+.ics--anim .ics__item{ opacity: 0; transform: translateY(16px); }
+.ics.is-in .ics__item{
+  opacity: 1; transform: none;
+  transition: opacity .5s ease var(--d, 0s),
+              transform .5s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1150px){
+  .ics__grid{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 780px){
+  .ics__grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px){
+  .ics__grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 380px){
+  .ics__grid{ grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ics--anim .ics__item{ opacity: 1; transform: none; }
+  .ics.is-in .ics__item{ transition: none; }
+  .ics__ico, .ics__item:hover .ics__ico{ transition: none; transform: none; }
+}
+</style>
+
+<section class="ics" aria-labelledby="ics-title">
+  <div class="ics__inner">
+    <div class="ics__panel">
+
+      <div class="ics__head">
+        <h2 id="ics-title">Startup Opportunities</h2>
+        <span></span>
+        <p>Participants can explore entrepreneurship opportunities across high-growth sectors, including:</p>
+      </div>
+
+      <div class="ics__grid">
+
+        <div class="ics__item" style="--d:.00s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.6" y="4.4" width="18.8" height="12.4" rx="2"/>
+              <path d="M8.6 20.4h6.8M12 16.8v3.6"/>
+              <path d="m6.6 13.4 3-3.4 2.4 2.4 3.4-4"/>
+            </svg>
+          </span>
+          <p class="ics__name">Deep Tech &amp;<br>Digital Technologies</p>
+        </div>
+
+        <div class="ics__item" style="--d:.04s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.4V12"/>
+              <circle cx="12" cy="10.4" r="1.7"/>
+              <path d="M12 8.7V2.4M13.5 11.4 19.2 14.6M10.5 11.4 4.8 14.6"/>
+              <path d="M8.6 21.4h6.8"/>
+            </svg>
+          </span>
+          <p class="ics__name">Renewable<br>Energy</p>
+        </div>
+
+        <div class="ics__item" style="--d:.08s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20.6C6.9 17.4 3 14.1 3 10.2A4.7 4.7 0 0 1 12 8a4.7 4.7 0 0 1 9 2.2c0 3.9-3.9 7.2-9 10.4Z"/>
+              <path d="M4.6 12.4h3.2l1.6-2.8 2 5 1.6-3 1.2 1.6h4.8"/>
+            </svg>
+          </span>
+          <p class="ics__name">Healthcare &amp;<br>Life Sciences</p>
+        </div>
+
+        <div class="ics__item" style="--d:.12s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.4V9.8"/>
+              <path d="M12 11.4c0-4 3-7 7.2-7 0 4.2-3 7-7.2 7Z"/>
+              <path d="M12 14.6c0-3.4-2.6-6-6.4-6 0 3.6 2.6 6 6.4 6Z"/>
+              <path d="M7.4 21.4h9.2"/>
+            </svg>
+          </span>
+          <p class="ics__name">Agriculture &amp;<br>Food</p>
+        </div>
+
+        <div class="ics__item" style="--d:.16s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 20.5V10l5.5 3.3V10l5.5 3.3V4.5l7.9 4v12H2.5Z"/>
+              <path d="M6 17.4h1.6M11 17.4h1.6M16.2 17.4h1.6"/>
+            </svg>
+          </span>
+          <p class="ics__name">Industrial &amp;<br>Manufacturing</p>
+        </div>
+
+        <div class="ics__item" style="--d:.20s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.6 6.4h10.2v10.2H2.6z"/>
+              <path d="M12.8 9.8h3.9l3.7 3.4v3.4h-7.6z"/>
+              <circle cx="7" cy="18.4" r="1.8"/>
+              <circle cx="17" cy="18.4" r="1.8"/>
+            </svg>
+          </span>
+          <p class="ics__name">Logistics &amp;<br>Supply Chain</p>
+        </div>
+
+        <div class="ics__item" style="--d:.24s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20.6V5.4a1.8 1.8 0 0 1 1.8-1.8h5.4A1.8 1.8 0 0 1 13 5.4v15.2"/>
+              <path d="M13 20.6V10h5.2a1.8 1.8 0 0 1 1.8 1.8v8.8"/>
+              <path d="M2.6 20.6h18.8"/>
+              <path d="M6.8 7.4h1.2M6.8 11h1.2M6.8 14.6h1.2M16 13.6h1.2M16 17h1.2"/>
+            </svg>
+          </span>
+          <p class="ics__name">Tourism &amp;<br>Hospitality</p>
+        </div>
+
+        <div class="ics__item" style="--d:.28s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.4 4.2c0 8.2-4.8 13.2-9.6 13.2a5.6 5.6 0 0 1-5.6-5.6c0-4.9 5-7.6 15.2-7.6Z"/>
+              <path d="M4.2 20.4c2.6-4.3 5.7-7.2 9.7-9.3"/>
+            </svg>
+          </span>
+          <p class="ics__name">Beauty &amp;<br>Wellness</p>
+        </div>
+
+        <div class="ics__item" style="--d:.32s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3.6 22 8.4 12 13.2 2 8.4l10-4.8Z"/>
+              <path d="M6.2 10.8v5c0 1.6 2.6 3 5.8 3s5.8-1.4 5.8-3v-5"/>
+              <path d="M20.4 9.4v5.4"/>
+            </svg>
+          </span>
+          <p class="ics__name">Education &amp;<br>Skill Development</p>
+        </div>
+
+        <div class="ics__item" style="--d:.36s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.6 20.8h18.8"/>
+              <path d="M4.4 20.8V11l4.6-2v11.8"/>
+              <path d="M9 20.8V6.2l5.6-2.4v17"/>
+              <path d="M14.6 20.8V12l4.8 1.9v6.9"/>
+              <path d="M6.2 13.6h1M11 8.6h1.4M11 12h1.4M16.6 16.2h1"/>
+            </svg>
+          </span>
+          <p class="ics__name">Smart Cities &amp;<br>Infrastructure</p>
+        </div>
+
+        <div class="ics__item" style="--d:.40s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.6" y="7" width="18.8" height="13" rx="2"/>
+              <path d="M8.8 7V5.2a1.6 1.6 0 0 1 1.6-1.6h3.2a1.6 1.6 0 0 1 1.6 1.6V7"/>
+              <path d="M2.6 12.4h18.8"/>
+              <path d="M10.8 12.4h2.4v2h-2.4z"/>
+            </svg>
+          </span>
+          <p class="ics__name">Business &amp;<br>Professional Services</p>
+        </div>
+
+        <div class="ics__item" style="--d:.44s">
+          <span class="ics__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="7.4" y="7.4" width="9.2" height="9.2" rx="2"/>
+              <path d="M10.4 10.6h3.2v3.2h-3.2z"/>
+              <path d="M10 7.4V4.6M14 7.4V4.6M10 19.4v-2.8M14 19.4v-2.8"/>
+              <path d="M7.4 10h-2.8M7.4 14h-2.8M19.4 10h-2.8M19.4 14h-2.8"/>
+            </svg>
+          </span>
+          <p class="ics__name">Emerging<br>Technologies</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('ics')) {
+    var all = document.querySelectorAll('.ics');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.icsReady) return;
+  section.dataset.icsReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('ics--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.88 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.1 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== incubation-cta ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — EXPLORE SECTORS / APPLY FOR THE PROGRAMME
+     arkvoltenergy.com/incubation-centre
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .icc prefix.
+
+     Two closing panels with the same subtle dot field used on the other closing
+     bands. No illustrations and no image files.
+
+     The Apply panel also links to assets/docs/arkvolt-incubation-programme.pdf.
+     Upload it to the Media Library and swap the href.
+
+     LINKS TO CHECK: "Explore Sectors" points at /industries and "Apply Now" at
+     /contact. Point them elsewhere if a dedicated sectors or application page
+     is created.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.icc{
+  --icc-ink:      #10222F;
+  --icc-body:     #5A6570;
+  --icc-green:    #22A24C;
+  --icc-green-dk: #1C8A41;
+  --icc-green-hv: #17773A;
+  --icc-line:     #E2E9E5;
+  --icc-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--icc-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(22px, 2.2vw, 32px) 0 clamp(32px, 3.2vw, 50px);
+}
+.icc *, .icc *::before, .icc *::after{ box-sizing: border-box; }
+
+.icc__inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.icc__panel{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(26px, 2.8vw, 38px) clamp(24px, 2.8vw, 40px);
+  background: #F5F8F6;
+  border: 1px solid var(--icc-line);
+  border-radius: 14px;
+}
+.icc--anim .icc__panel{ opacity: 0; transform: translateY(22px); }
+.icc.is-in .icc__panel{
+  opacity: 1; transform: none;
+  transition: opacity .7s ease var(--d, 0s),
+              transform .7s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* same dot field as the Solutions, Industries and Projects closing bands */
+.icc__panel::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -30px;
+  bottom: -60px;
+  width: 300px;
+  height: 230px;
+  background-image: radial-gradient(circle, var(--icc-green) 1.4px, transparent 1.4px);
+  background-size: 14px 14px;
+  opacity: .16;
+  -webkit-mask-image: radial-gradient(ellipse at 70% 70%, #000 30%, transparent 72%);
+          mask-image: radial-gradient(ellipse at 70% 70%, #000 30%, transparent 72%);
+  pointer-events: none;
+}
+
+.icc__title{
+  margin: 0 0 12px;
+  font-size: clamp(15px, 1.4vw, 18px);
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  color: var(--icc-green-dk);
+}
+.icc__text{
+  margin: 0 0 clamp(20px, 2.2vw, 28px);
+  font-size: clamp(13px, 1.02vw, 14px);
+  line-height: 1.78;
+  color: var(--icc-body);
+  max-width: 42ch;
+}
+
+.icc__btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding: 13px 24px;
+  border: 1px solid var(--icc-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--icc-ink);
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: border-color .25s ease, color .25s ease,
+              transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+}
+.icc__btn svg{ width: 12px; height: 12px; transition: transform .25s ease; }
+.icc__btn:hover{
+  border-color: var(--icc-green);
+  color: var(--icc-green-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(16,34,47,.08);
+}
+.icc__btn:hover svg{ transform: translateX(4px); }
+.icc__btn:focus-visible{ outline: 2px solid var(--icc-green-dk); outline-offset: 3px; }
+
+.icc__actions{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+  margin-top: auto;
+}
+.icc__actions .icc__btn{ margin-top: 0; }
+
+/* the apply button is the primary action */
+.icc__btn--solid{
+  background: var(--icc-green);
+  border-color: var(--icc-green);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(34,162,76,.26);
+}
+.icc__btn--solid:hover{
+  background: var(--icc-green-hv);
+  border-color: var(--icc-green-hv);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(34,162,76,.32);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 860px){
+  .icc__inner{ grid-template-columns: 1fr; }
+}
+@media (max-width: 520px){
+  .icc__panel::after{ opacity: .10; }
+  .icc__text{ max-width: none; }
+  .icc__btn{ width: 100%; justify-content: center; }
+  .icc__actions{ width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .icc--anim .icc__panel{ opacity: 1; transform: none; }
+  .icc.is-in .icc__panel{ transition: none; }
+  .icc__btn, .icc__btn svg{ transition: none; }
+}
+</style>
+
+<section class="icc" aria-label="Explore sectors and apply for the programme">
+  <div class="icc__inner">
+
+    <!-- ============ explore sectors ============ -->
+    <article class="icc__panel" style="--d:0s">
+
+      <h2 class="icc__title">Explore All Startup Sectors</h2>
+      <p class="icc__text">
+        Discover opportunities, resources, and insights across multiple industries
+        to build your future-ready enterprise.
+      </p>
+      <a class="icc__btn" href="industries.html">
+        Explore Sectors
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <!-- ============ apply ============ -->
+    <article class="icc__panel" style="--d:.12s">
+
+      <h2 class="icc__title">Apply for the Programme</h2>
+      <p class="icc__text">
+        Whether you are a student, graduate, professional, innovator, or aspiring
+        entrepreneur, ARKVOLT provides the guidance, ecosystem, and mentorship to
+        help transform your ideas into a sustainable business.
+      </p>
+      <div class="icc__actions">
+        <a class="icc__btn icc__btn--solid" href="contact.html">
+          Apply Now
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="icc__btn" href="assets/docs/arkvolt-incubation-programme.pdf"
+           target="_blank" rel="noopener">
+          Programme Details
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('icc')) {
+    var all = document.querySelectorAll('.icc');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.iccReady) return;
+  section.dataset.iccReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('icc--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.12 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== footer ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — FOOTER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .aft prefix.
+
+     LOGO: the footer is dark green, so it uses assets/logo-white.png (the
+     reverse/knockout version). assets/logo.png is the original navy lockup for
+     light backgrounds. Upload the white one and swap the src below.
+
+     The last quick link points at assets/docs/arkvolt-brochure.pdf — upload it to
+     the Media Library and swap the href.
+
+     TWO THINGS TO FILL IN BEFORE GOING LIVE
+     1. Social links are href="#" — ARKVOLT's real profile URLs are not on file.
+     2. There is no phone number in the company content, so none is shown.
+        Add one to the contact list if you want it here.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.aft{
+  --aft-ink:      #FFFFFF;
+  --aft-body:     rgba(255,255,255,.90);
+  --aft-green:    #22A24C;
+  --aft-green-dk: #1C8A41;
+  --aft-mint:     #D8F9E4;
+  --aft-green-lt: rgba(255,255,255,.10);
+  --aft-line:     rgba(255,255,255,.16);
+  --aft-bar-bg:   #FFFFFF;
+  --aft-bar-ink:  #10222F;
+  --aft-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: linear-gradient(160deg, #0D3A21 0%, #145430 55%, #17773A 100%);
+  font-family: var(--aft-font);
+  -webkit-font-smoothing: antialiased;
+}
+.aft *, .aft *::before, .aft *::after{ box-sizing: border-box; }
+
+.aft__inner{
+  position: relative;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: clamp(32px, 3.2vw, 50px) 20px clamp(26px, 2.6vw, 38px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: clamp(24px, 2.6vw, 44px);
+}
+
+/* ---------------- brand ---------------- */
+.aft__logo{
+  display: inline-block;
+  max-width: 232px;
+  margin-bottom: 16px;
+}
+.aft__logo img{ width: 100%; height: auto; display: block; }
+
+.aft__tagline{
+  margin: 0 0 18px;
+  font-size: 13.4px;
+  line-height: 1.72;
+  color: var(--aft-body);
+  max-width: 34ch;
+}
+
+.aft__social{
+  display: flex;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.aft__social a{
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--aft-line);
+  border-radius: 50%;
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  transition: background-color .25s ease, border-color .25s ease,
+              color .25s ease, transform .25s ease;
+}
+.aft__social svg{ width: 16px; height: 16px; }
+.aft__social a:hover,
+.aft__social a:focus-visible{
+  background: #fff;
+  border-color: #fff;
+  color: #0D3A21;
+  transform: translateY(-3px);
+}
+.aft__social a:focus-visible{ outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ---------------- columns ---------------- */
+.aft__heading{
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--aft-mint);
+}
+/* the second link column continues the first, so its heading is for screen
+   readers only — visually the two columns read as one list */
+.aft__heading--sr{
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.aft__col--cont{ padding-top: 28px; }
+
+.aft__links{ margin: 0; padding: 0; list-style: none; }
+.aft__links li + li{ margin-top: 11px; }
+.aft__links a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font-size: 13.4px;
+  line-height: 1.5;
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease, gap .25s ease;
+}
+.aft__links a::before{
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background: var(--aft-mint);
+  border-radius: 2px;
+  transition: width .25s ease;
+}
+.aft__links a:hover,
+.aft__links a:focus-visible{ color: #fff; gap: 8px; }
+.aft__links a:hover::before,
+.aft__links a:focus-visible::before{ width: 12px; }
+
+/* ---------------- contact ---------------- */
+.aft__contact{ margin: 0; padding: 0; list-style: none; }
+.aft__contact li{
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 13.2px;
+  line-height: 1.65;
+  color: var(--aft-body);
+}
+.aft__contact li + li{ margin-top: 14px; }
+.aft__ico{
+  flex: none;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--aft-green-lt);
+  color: var(--aft-mint);
+}
+.aft__ico svg{ width: 15px; height: 15px; }
+.aft__contact a{
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__contact a:hover,
+.aft__contact a:focus-visible{ color: #fff; }
+
+/* ---------------- bottom bar ---------------- */
+/* thin copyright strip — white panel with dark text, under the green footer */
+.aft__bar{
+  position: relative;
+  background: var(--aft-bar-bg);
+  color: var(--aft-bar-ink);
+}
+.aft__bar-inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.aft__copy{ margin: 0; font-size: 12.5px; font-weight: 500; line-height: 1.5; color: var(--aft-bar-ink); }
+.aft__legal{
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12.5px;
+}
+.aft__legal a{
+  color: var(--aft-bar-ink);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__legal a:hover,
+.aft__legal a:focus-visible{ color: var(--aft-green-dk); text-decoration: underline; }
+.aft__legal span{ color: #C6CFD4; }
+
+/* back to top */
+.aft__top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--aft-green);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(34,162,76,.34);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s, background-color .25s ease;
+}
+.aft__top svg{ width: 15px; height: 15px; }
+.aft__top.is-on{ opacity: 1; visibility: visible; transform: none; }
+.aft__top:hover{ background: var(--aft-green-dk); }
+.aft__top:focus-visible{ outline: 2px solid #fff; outline-offset: 3px; }
+
+/* ---------------- reveal ---------------- */
+.aft--anim .aft__reveal{ opacity: 0; transform: translateY(20px); }
+.aft.is-in .aft__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .65s ease var(--d, 0s),
+              transform .65s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1000px){
+  .aft__inner{ grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .aft__col--brand{ grid-column: 1 / -1; }
+  .aft__col--cont{ padding-top: 28px; }
+}
+@media (max-width: 620px){
+  .aft__inner{ grid-template-columns: 1fr; gap: 26px; }
+  .aft__col--cont{ padding-top: 0; }
+  .aft__heading--sr{
+    position: static;
+    width: auto; height: auto;
+    margin: 0 0 16px;
+    overflow: visible;
+    clip: auto;
+    color: var(--aft-mint);
+  }
+  .aft__bar-inner{ flex-direction: column; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .aft--anim .aft__reveal{ opacity: 1; transform: none; }
+  .aft.is-in .aft__reveal{ transition: none; }
+  .aft__social a, .aft__links a, .aft__top{ transition: none; }
+  .aft__social a:hover{ transform: none; }
+}
+</style>
+
+<footer class="aft">
+
+
+  <div class="aft__inner">
+
+    <!-- ============ brand ============ -->
+    <div class="aft__col--brand aft__reveal">
+      <a class="aft__logo" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+        <img src="assets/logo-white.png"
+             alt="ARKVOLT Energy Private Limited — Advanced Energy Storage Solutions"
+             width="1296" height="292" loading="lazy" decoding="async">
+      </a>
+
+      <p class="aft__tagline">
+        Engineering reliable energy. Building intelligent infrastructure for a
+        sustainable tomorrow.
+      </p>
+
+      <ul class="aft__social">
+        <li>
+          <a href="#" aria-label="ARKVOLT on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4v11H3v-11Zm6.5 0h3.8v1.5h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75v5.7h-4v-5.05c0-1.2-.02-2.75-1.75-2.75-1.75 0-2.02 1.3-2.02 2.66v5.14h-4v-11Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.2l-4.9-6.4L5.1 21H2l7.2-8.3L2.4 3h6.4l4.4 5.8L17.5 3Zm-1.1 16.1h1.7L7.7 4.8H5.9l10.5 14.3Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15.2V8.8L15.5 12 10 15.2Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ quick links ============ -->
+    <div class="aft__reveal" style="--d:.08s">
+      <h3 class="aft__heading">Quick Links</h3>
+      <ul class="aft__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About ARKVOLT</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="our-partners.html">Our Partners</a></li>
+      </ul>
+    </div>
+
+    <div class="aft__col--cont aft__reveal" style="--d:.14s">
+      <h3 class="aft__heading aft__heading--sr">More Links</h3>
+      <ul class="aft__links">
+        <li><a href="innovation.html">Innovation</a></li>
+        <li><a href="incubation-centre.html">Incubation Centre</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="assets/docs/arkvolt-brochure.pdf" target="_blank" rel="noopener">Company Brochure</a></li>
+      </ul>
+    </div>
+
+    <!-- ============ contact ============ -->
+    <div class="aft__reveal" style="--d:.20s">
+      <h3 class="aft__heading">Contact Us</h3>
+      <ul class="aft__contact">
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.5s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+              <circle cx="12" cy="10.2" r="2.6"/>
+            </svg>
+          </span>
+          <span>
+            <strong style="display:block;font-weight:600;color:#fff">ARKVOLT ENERGY PRIVATE LIMITED</strong>
+            Room No. 13, 2nd Floor, Marwadi Building,<br>
+            25 Marve Road, Malad West, Mumbai,<br>
+            Maharashtra, India &ndash; 400064
+          </span>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.8" y="5" width="18.4" height="14" rx="2.4"/>
+              <path d="m3.4 6.6 8.6 6 8.6-6"/>
+            </svg>
+          </span>
+          <a href="mailto:info@arkvoltenergy.com">info@arkvoltenergy.com</a>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9.2"/>
+              <path d="M2.8 12h18.4M12 2.8c2.4 2.6 3.6 5.8 3.6 9.2s-1.2 6.6-3.6 9.2c-2.4-2.6-3.6-5.8-3.6-9.2S9.6 5.4 12 2.8Z"/>
+            </svg>
+          </span>
+          <a href="https://www.arkvoltenergy.com">www.arkvoltenergy.com</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ============ bottom bar ============ -->
+  <div class="aft__bar">
+    <div class="aft__bar-inner">
+      <p class="aft__copy">&copy; 2026 ARKVOLT ENERGY PRIVATE LIMITED. All Rights Reserved.</p>
+      <ul class="aft__legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><span aria-hidden="true">|</span></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <button class="aft__top" type="button" data-aft-top aria-label="Back to top">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</footer>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('aft')) {
+    var all = document.querySelectorAll('.aft');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.aftReady) return;
+  section.dataset.aftReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this footer blank
+  section.classList.add('aft--anim');
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- back to top ---------- */
+  var topBtn = section.querySelector('[data-aft-top]');
+  function toggleTop(){
+    topBtn.classList.toggle('is-on', window.pageYOffset > 500);
+  }
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+  });
+  window.addEventListener('scroll', toggleTop, { passive: true });
+  toggleTop();
+
+  /* ---------- reveal ---------- */
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.1 });
+    io.observe(section);
+  }
+
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+</body>
+</html>

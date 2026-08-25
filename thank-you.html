@@ -1,0 +1,1417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | ARKVOLT Energy</title>
+  <meta name="description" content="Thank you — your submission has been received. Our team will get back to you shortly.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#10222F">
+  <link rel="canonical" href="https://www.arkvoltenergy.com/thank-you">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ARKVOLT Energy">
+  <meta property="og:title" content="Thank You | ARKVOLT Energy">
+  <meta property="og:description" content="Thank you — your submission has been received. Our team will get back to you shortly.">
+  <meta property="og:url" content="https://www.arkvoltenergy.com/thank-you">
+  <meta property="og:image" content="https://www.arkvoltenergy.com/assets/hero.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thank You | ARKVOLT Energy">
+  <meta name="twitter:description" content="Thank you — your submission has been received. Our team will get back to you shortly.">
+  <meta name="twitter:image" content="https://www.arkvoltenergy.com/assets/hero.jpg">
+  <style>html,body{margin:0;padding:0;background:#fff;}img{max-width:100%;}</style>
+</head>
+<body>
+
+<!-- ===== header ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — SITE HEADER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget,
+     at the very top of the page. No page wrapper tags — WordPress supplies
+     those. HTML + CSS + JS are all inside this one file, scoped behind the
+     .ahd prefix.
+
+     LOGO: assets/logo-full.jpg is the complete ARKVOLT lockup — wordmark, bolt,
+     "ENERGY PVT. LTD." and the tagline — cropped tight to its content. The bar
+     is sized so the whole lockup reads. Upload it to the WP Media Library and
+     swap the src below for that URL. (assets/logo-full-dark.jpg is the same
+     lockup on black, for dark backgrounds.)
+
+     MARKING THE CURRENT PAGE
+     Add aria-current="page" to the link for the page you are on — the green
+     text and the underline follow that attribute, nothing else:
+
+         <a class="ahd__link" href="projects.html" aria-current="page">Projects</a>
+
+     For a page that sits inside the Resources dropdown, put aria-current="page"
+     on BOTH its .ahd__sub link and the Resources button, so the closed bar
+     still shows where the visitor is. WordPress's own current-menu-item /
+     current_page_item classes are honoured too.
+
+     LAYOUT: logo left, the links spread evenly across the bar (no dead gap in
+     the middle), Get In Touch pinned right. Below 1180px the links collapse
+     into a slide-down drawer behind the menu button.
+
+     If your theme already outputs its own header, use that instead of this
+     file — two headers on one page is worse than either alone.
+
+     Every icon is inline SVG; no icon fonts, no CDNs.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.ahd{
+  --ahd-ink:      #10222F;
+  --ahd-body:     #45525C;
+  --ahd-green:    #22A24C;
+  --ahd-green-dk: #1C8A41;
+  --ahd-green-hv: #1A7C3A;
+  --ahd-green-lt: #EDF7F0;
+  --ahd-line:     #E7ECEF;
+  --ahd-bar:      86px;
+  --ahd-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: #fff;
+  font-family: var(--ahd-font);
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 1px solid var(--ahd-line);
+  /* a faint lift even at rest, so the white bar never melts into a white hero */
+  box-shadow: 0 2px 12px rgba(16,34,47,.05);
+  transition: box-shadow .3s ease;
+}
+.ahd *, .ahd *::before, .ahd *::after{ box-sizing: border-box; }
+
+/* the shadow deepens once the page has scrolled under the bar */
+.ahd.is-stuck{ box-shadow: 0 8px 24px rgba(16,34,47,.1); }
+
+.ahd__inner{
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 3vw, 34px);
+  height: var(--ahd-bar);
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 34px);
+}
+
+/* ---------------- logo ---------------- */
+.ahd__brand{
+  flex: none;
+  display: block;
+  line-height: 0;
+  transition: opacity .25s ease;
+}
+.ahd__brand:hover{ opacity: .85; }
+.ahd__brand:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+.ahd__logo{
+  width: auto;
+  height: clamp(40px, 3.6vw, 52px);   /* tall enough that the full lockup reads */
+  display: block;
+}
+
+/* ---------------- nav ---------------- */
+.ahd__nav{
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* spread the links evenly, no middle gap */
+  gap: clamp(6px, 0.7vw, 12px);
+}
+.ahd__item{ position: relative; display: flex; }
+
+.ahd__link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 3px;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--ahd-body);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  letter-spacing: .002em;
+  cursor: pointer;
+  transition: color .22s ease;
+}
+/* the underline grows out from the centre */
+.ahd__link::after{
+  content: "";
+  position: absolute;
+  left: 3px; right: 3px; bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-green);
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__link:hover,
+.ahd__link:focus-visible{ color: var(--ahd-green-dk); }
+.ahd__link:hover::after,
+.ahd__link:focus-visible::after{ transform: scaleX(1); }
+.ahd__link:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+
+/* current page — driven by aria-current, or by WordPress's own menu classes */
+.ahd__link[aria-current="page"],
+.current-menu-item > .ahd__link,
+.current_page_item > .ahd__link{
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+.ahd__link[aria-current="page"]::after,
+.current-menu-item > .ahd__link::after,
+.current_page_item > .ahd__link::after{ transform: scaleX(1); }
+
+/* chevron on the item that opens a menu */
+.ahd__chev{
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: 1px;
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__item.is-open > .ahd__link .ahd__chev{ transform: rotate(180deg); }
+
+/* ---------------- dropdown ---------------- */
+.ahd__menu{
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  width: 216px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(16,34,47,.13);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -8px);
+  transition: opacity .24s ease, transform .24s cubic-bezier(.22,.61,.36,1),
+              visibility .24s;
+}
+.ahd__item.is-open > .ahd__menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+/* a small bridge so the pointer can cross the gap without the menu closing */
+.ahd__item.is-open > .ahd__menu::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: -16px;
+  height: 16px;
+}
+.ahd__menuIn{ margin: 0; padding: 0; list-style: none; }
+.ahd__sub{
+  display: block;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 12.6px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ahd-body);
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, padding-left .2s ease;
+}
+.ahd__sub:hover,
+.ahd__sub:focus-visible{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  padding-left: 16px;
+}
+.ahd__sub:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: -2px; }
+/* the current page, when it lives inside the dropdown */
+.ahd__sub[aria-current="page"]{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+
+/* ---------------- call to action ---------------- */
+.ahd__cta{
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border: 1px solid var(--ahd-green);
+  border-radius: 999px;
+  background: var(--ahd-green);
+  color: #fff;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(34,162,76,.24);
+  transition: background-color .25s ease, border-color .25s ease,
+              transform .25s ease, box-shadow .25s ease;
+}
+.ahd__cta svg{ width: 11px; height: 11px; transition: transform .25s ease; }
+.ahd__cta:hover{
+  background: var(--ahd-green-hv);
+  border-color: var(--ahd-green-hv);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(34,162,76,.3);
+}
+.ahd__cta:hover svg{ transform: translateX(3px); }
+.ahd__cta:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* ---------------- burger ---------------- */
+.ahd__burger{
+  display: none;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .25s ease, background-color .25s ease;
+}
+.ahd__burger:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); }
+.ahd__burger:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+.ahd__bars{
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin: 0 auto;
+  position: relative;
+}
+.ahd__bars i{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-ink);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1), opacity .2s ease;
+}
+.ahd__bars i:nth-child(1){ top: 0; }
+.ahd__bars i:nth-child(2){ top: 6px; }
+.ahd__bars i:nth-child(3){ top: 12px; }
+.ahd.is-nav-open .ahd__bars i:nth-child(1){ transform: translateY(6px) rotate(45deg); }
+.ahd.is-nav-open .ahd__bars i:nth-child(2){ opacity: 0; }
+.ahd.is-nav-open .ahd__bars i:nth-child(3){ transform: translateY(-6px) rotate(-45deg); }
+
+/* drawer head — the logo strip + close button at the top of the mobile panel
+   (the whole thing is hidden on desktop, so the close button never shows there) */
+.ahd__drawerHead{ display: none; }
+.ahd__close{
+  flex: none;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ahd-ink);
+  cursor: pointer;
+  transition: border-color .22s ease, background-color .22s ease, color .22s ease;
+}
+.ahd__close svg{ width: 17px; height: 17px; }
+.ahd__close:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); color: var(--ahd-green-dk); }
+.ahd__close:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* dim the whole page behind the open side drawer */
+.ahd__scrim{
+  position: fixed;
+  inset: 0;
+  background: rgba(16,34,47,.42);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .34s ease, visibility .34s;
+  z-index: 1;
+}
+
+/* ---------------- mobile / tablet (drawer) ---------------- */
+@media (max-width: 1179px){
+  .ahd{ --ahd-bar: 74px; }
+  .ahd__burger{ display: block; }
+  /* the drawer carries its own close button, so the bar's button goes away
+     while the drawer is open — no stray control floating outside the panel */
+  .ahd.is-nav-open .ahd__burger{ display: none; }
+
+  .ahd.is-nav-open .ahd__scrim{ opacity: 1; visibility: visible; }
+
+  /* off-canvas side drawer that slides in from the left */
+  .ahd__nav{
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: min(86vw, 344px);
+    z-index: 2;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0 0 26px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    background: #fff;
+    box-shadow: 0 0 60px rgba(16,34,47,.24);
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform .36s cubic-bezier(.22,.61,.36,1), visibility .36s;
+  }
+  .ahd.is-nav-open .ahd__nav{
+    visibility: visible;
+    transform: none;
+  }
+
+  /* brand strip at the top of the drawer */
+  .ahd__drawerHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: var(--ahd-bar);
+    flex: none;
+    padding: 0 clamp(16px, 4.5vw, 22px);
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--ahd-line);
+    background: linear-gradient(180deg, #F7FBF9 0%, #fff 100%);
+  }
+  .ahd__drawerLogo{ height: 36px; width: auto; display: block; }
+
+  .ahd__inner .ahd__item,
+  .ahd__nav .ahd__item{
+    display: block;
+    margin: 0 clamp(14px, 4vw, 22px);
+    border-bottom: 1px solid var(--ahd-line);
+  }
+  .ahd__link{
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ahd-ink);
+  }
+  .ahd__link::after{ display: none; }
+  .ahd__link[aria-current="page"]{ color: var(--ahd-green-dk); }
+  .ahd__chev{ width: 12px; height: 12px; color: var(--ahd-green-dk); }
+
+  /* the dropdown becomes an accordion: 0fr -> 1fr animates to natural height */
+  .ahd__menu{
+    position: static;
+    width: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .32s cubic-bezier(.22,.61,.36,1);
+  }
+  .ahd__item.is-open > .ahd__menu{ grid-template-rows: 1fr; transform: none; }
+  .ahd__item.is-open > .ahd__menu::before{ content: none; }
+  .ahd__menuIn{ overflow: hidden; padding: 2px 0 8px; }
+  .ahd__sub{
+    padding: 11px 14px;
+    margin-bottom: 2px;
+    font-size: 13.5px;
+    border-radius: 8px;
+    background: #F6F9F7;
+  }
+  .ahd__sub:hover, .ahd__sub:focus-visible{ padding-left: 18px; }
+
+  .ahd__cta{
+    justify-content: center;
+    margin: 22px clamp(14px, 4vw, 22px) 0;
+    padding: 14px 22px;
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 420px){
+  .ahd__logo{ height: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ahd, .ahd__link, .ahd__link::after, .ahd__chev, .ahd__menu, .ahd__nav,
+  .ahd__sub, .ahd__cta, .ahd__cta svg, .ahd__bars i, .ahd__scrim{ transition: none; }
+  .ahd__cta:hover{ transform: none; }
+}
+</style>
+
+<header class="ahd">
+  <div class="ahd__inner">
+
+    <a class="ahd__brand" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+      <img class="ahd__logo" src="assets/logo-full.jpg"
+           alt="ARKVOLT Energy Pvt. Ltd. — Advanced Energy Storage Solutions"
+           width="1279" height="279"
+           fetchpriority="high" decoding="async">
+    </a>
+
+    <button class="ahd__burger" type="button"
+            aria-label="Menu" aria-expanded="false" aria-controls="ahd-nav">
+      <span class="ahd__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <nav class="ahd__nav" id="ahd-nav" aria-label="Main">
+
+      <div class="ahd__drawerHead">
+        <img class="ahd__drawerLogo" src="assets/logo-full.jpg" alt="" aria-hidden="true"
+             width="1279" height="279" decoding="async">
+        <button class="ahd__close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="index.html">Home</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="about.html">About Us</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="solutions.html">Solutions</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="industries.html">Industries</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="projects.html">Projects</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="innovation.html">Innovation</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="incubation-centre.html">Incubation Centre</a></div>
+
+      <div class="ahd__item">
+        <button class="ahd__link" type="button" aria-expanded="false" aria-controls="ahd-resources">
+          Resources
+          <svg class="ahd__chev" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="ahd__menu" id="ahd-resources">
+          <ul class="ahd__menuIn">
+            <li><a class="ahd__sub" href="resources.html">Resource Centre</a></li>
+            <li><a class="ahd__sub" href="our-partners.html">Partners</a></li>
+            <li><a class="ahd__sub" href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="contact.html">Contact Us</a></div>
+
+      <a class="ahd__cta" href="contact.html">
+        Get In Touch
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </nav>
+  </div>
+  <span class="ahd__scrim" aria-hidden="true"></span>
+</header>
+
+<script>
+(function(){
+  var header = document.currentScript && document.currentScript.previousElementSibling;
+  if (!header || !header.classList.contains('ahd')) {
+    var all = document.querySelectorAll('.ahd');
+    header = all[all.length - 1];
+  }
+  if (!header || header.dataset.ahdReady) return;
+  header.dataset.ahdReady = '1';
+
+  var DESKTOP = '(min-width: 1180px)';
+  var burger  = header.querySelector('.ahd__burger');
+  var nav     = header.querySelector('.ahd__nav');
+  var scrim   = header.querySelector('.ahd__scrim');
+  var closeBtn = header.querySelector('.ahd__close');
+  var toggles = header.querySelectorAll('.ahd__item > button.ahd__link');
+
+  function isDesktop(){
+    return window.matchMedia && window.matchMedia(DESKTOP).matches;
+  }
+
+  /* ---------------- shadow once the page scrolls ---------------- */
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    header.classList.toggle('is-stuck', y > 4);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------------- dropdowns ---------------- */
+  function closeMenus(except){
+    toggles.forEach(function(btn){
+      var item = btn.parentNode;
+      if (item === except) return;
+      item.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+  function openMenu(item, btn, open){
+    item.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  toggles.forEach(function(btn){
+    var item = btn.parentNode;
+
+    // click works on every width, and is the only way in on touch
+    btn.addEventListener('click', function(){
+      var open = !item.classList.contains('is-open');
+      closeMenus(item);
+      openMenu(item, btn, open);
+    });
+
+    // hover is a desktop convenience on top of the click
+    item.addEventListener('mouseenter', function(){
+      if (isDesktop()) openMenu(item, btn, true);
+    });
+    item.addEventListener('mouseleave', function(){
+      if (isDesktop()) openMenu(item, btn, false);
+    });
+
+    // let the keyboard walk out of the menu and have it close behind
+    item.addEventListener('focusout', function(e){
+      if (!isDesktop()) return;
+      if (!item.contains(e.relatedTarget)) openMenu(item, btn, false);
+    });
+  });
+
+  /* ---------------- burger ---------------- */
+  function setNav(open){
+    header.classList.toggle('is-nav-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    // lock the page behind the open drawer so only the menu scrolls
+    document.documentElement.style.overflow = (open && !isDesktop()) ? 'hidden' : '';
+    if (!open) closeMenus(null);
+  }
+  burger.addEventListener('click', function(){
+    setNav(!header.classList.contains('is-nav-open'));
+  });
+  scrim.addEventListener('click', function(){ setNav(false); });
+  if (closeBtn) closeBtn.addEventListener('click', function(){ setNav(false); burger.focus(); });
+
+  // a tap on a real link closes the drawer; the Resources button must not
+  nav.addEventListener('click', function(e){
+    if (isDesktop()) return;
+    if (e.target.closest('a')) setNav(false);
+  });
+
+  /* ---------------- escape + outside click + resize ---------------- */
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape' && e.key !== 'Esc') return;
+    if (header.classList.contains('is-nav-open')){
+      setNav(false);
+      burger.focus();
+      return;
+    }
+    var open = header.querySelector('.ahd__item.is-open');
+    if (open){
+      var btn = open.querySelector('button.ahd__link');
+      openMenu(open, btn, false);
+      btn.focus();
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    if (header.contains(e.target)) return;
+    closeMenus(null);
+    if (header.classList.contains('is-nav-open')) setNav(false);
+  });
+
+  // crossing the desktop breakpoint must not leave a half-open state behind
+  var last = isDesktop();
+  var t = null;
+  window.addEventListener('resize', function(){
+    // setTimeout, not requestAnimationFrame — rAF is throttled in background tabs
+    clearTimeout(t);
+    t = setTimeout(function(){
+      var now = isDesktop();
+      if (now === last) return;
+      last = now;
+      closeMenus(null);
+      setNav(false);
+    }, 120);
+  });
+})();
+</script>
+
+
+<!-- ===== thankyou ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — THANK YOU  (post-submit / conversion page)
+     arkvoltenergy.com/thank-you
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .tyu prefix.
+
+     Full-bleed green conversion page. Visitors land here after submitting the
+     Careers or Contact form — a clean, dedicated URL, exactly what a Google Ads
+     / Analytics conversion tag wants to fire on. On the standalone site the
+     panel's "Thank-you page code" box injects that tag into this page's <head>.
+
+     The heading word ("application" / "message") adapts to the ?type= in the
+     URL; with no parameter it reads "submission". Every icon is inline SVG.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.tyu{
+  --tyu-green:    #22A24C;
+  --tyu-green-dk: #1C8A41;
+  --tyu-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* full green premium background */
+  background:
+    radial-gradient(1100px 620px at 50% -12%, #35B15F 0%, rgba(53,177,95,0) 58%),
+    linear-gradient(165deg, #0C3E24 0%, #14683B 48%, #0E5230 100%);
+  color: #fff;
+  font-family: var(--tyu-font);
+  -webkit-font-smoothing: antialiased;
+  min-height: clamp(600px, 86vh, 840px);
+  display: grid;
+  place-items: center;
+  padding: clamp(48px, 7vw, 90px) 20px;
+  text-align: center;
+}
+.tyu *, .tyu *::before, .tyu *::after{ box-sizing: border-box; }
+
+/* faint dot field, bottom */
+.tyu::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%; bottom: -100px;
+  width: 520px; height: 340px;
+  transform: translateX(-50%);
+  background-image: radial-gradient(circle, #fff 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  opacity: .10;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 60%, #000 20%, transparent 70%);
+          mask-image: radial-gradient(ellipse at 50% 60%, #000 20%, transparent 70%);
+  pointer-events: none;
+}
+
+.tyu__inner{ max-width: 760px; }
+
+/* ---------------- animated check badge ---------------- */
+.tyu__badge{
+  position: relative;
+  width: clamp(100px, 14vw, 132px);
+  height: clamp(100px, 14vw, 132px);
+  margin: 0 auto clamp(24px, 3vw, 34px);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.18);
+  backdrop-filter: blur(2px);
+}
+/* expanding rings */
+.tyu__badge::before,
+.tyu__badge::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.55);
+  opacity: 0;
+}
+.tyu__disc{
+  width: 66%;
+  height: 66%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  box-shadow: 0 16px 34px rgba(0,0,0,.28);
+  transform: scale(0);
+}
+.tyu__check{ width: 52%; height: 52%; }
+.tyu__check path{
+  stroke: var(--tyu-green-dk);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+}
+
+/* ---------------- copy ---------------- */
+.tyu__eyebrow{
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 15px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+  color: #BEEBCF;
+}
+.tyu__eyebrow::before,
+.tyu__eyebrow::after{
+  content: "";
+  width: 22px; height: 2px;
+  background: #7AC943;
+  border-radius: 2px;
+}
+.tyu__title{
+  margin: 0 0 16px;
+  font-size: clamp(25px, 3.6vw, 41px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: #fff;
+  white-space: nowrap;   /* keep "Thank You for Submitting!" on one line */
+}
+.tyu__title em{ font-style: normal; color: #9CE9B7; }
+.tyu__text{
+  margin: 0 auto clamp(28px, 3.6vw, 38px);
+  max-width: 500px;   /* keeps the shorter copy to about three lines */
+  font-size: clamp(14px, 1.15vw, 15.5px);
+  line-height: 1.9;
+  color: rgba(255,255,255,.85);
+}
+
+/* ---------------- actions ---------------- */
+.tyu__actions{ display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.tyu__btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease, color .25s ease, border-color .25s ease;
+}
+.tyu__btn svg{ width: 15px; height: 15px; }
+/* solid white on green */
+.tyu__btn--solid{ background: #fff; color: var(--tyu-green-dk); box-shadow: 0 12px 28px rgba(0,0,0,.24); }
+.tyu__btn--solid:hover{ transform: translateY(-2px); box-shadow: 0 16px 34px rgba(0,0,0,.3); color: #0E5230; }
+/* ghost / outline in white */
+.tyu__btn--ghost{ background: rgba(255,255,255,.06); color: #fff; border-color: rgba(255,255,255,.45); }
+.tyu__btn--ghost:hover{ background: rgba(255,255,255,.14); border-color: #fff; transform: translateY(-2px); }
+
+/* ---------------- confetti ---------------- */
+.tyu__confetti{ position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.tyu__confetti i{
+  position: absolute;
+  top: -12px;
+  width: 8px; height: 8px;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+/* ---------------- play the sequence ---------------- */
+.tyu.is-in .tyu__disc{ animation: tyu-pop .55s cubic-bezier(.2,.9,.3,1.3) .15s forwards; }
+.tyu.is-in .tyu__check path{ animation: tyu-draw .4s ease .55s forwards; }
+.tyu.is-in .tyu__badge::before{ animation: tyu-ring 1.1s ease .5s forwards; }
+.tyu.is-in .tyu__badge::after{ animation: tyu-ring 1.1s ease .72s forwards; }
+.tyu.is-in .tyu__reveal{ animation: tyu-up .6s cubic-bezier(.22,.61,.36,1) both; }
+.tyu.is-in .tyu__reveal.d1{ animation-delay: .62s; }
+.tyu.is-in .tyu__reveal.d2{ animation-delay: .72s; }
+.tyu.is-in .tyu__reveal.d3{ animation-delay: .84s; }
+.tyu.is-in .tyu__reveal.d4{ animation-delay: .96s; }
+.tyu.is-in .tyu__confetti i{ animation: tyu-fall 2.2s ease-in forwards; }
+
+@keyframes tyu-pop{ to{ transform: scale(1); } }
+@keyframes tyu-draw{ to{ stroke-dashoffset: 0; } }
+@keyframes tyu-ring{ 0%{ opacity:.6; transform:scale(1);} 100%{ opacity:0; transform:scale(1.5);} }
+@keyframes tyu-up{ from{ opacity:0; transform:translateY(18px);} to{ opacity:1; transform:none;} }
+@keyframes tyu-fall{
+  0%{ opacity:0; transform: translateY(0) rotate(0);}
+  10%{ opacity:1; }
+  100%{ opacity:0; transform: translateY(130px) rotate(300deg);}
+}
+
+/* let the heading wrap on very small screens rather than overflow */
+@media (max-width: 400px){ .tyu__title{ white-space: normal; } }
+
+/* pre-animation state (opt-in via JS so a failure never blanks the page) */
+.tyu--anim .tyu__reveal{ opacity: 0; }
+
+@media (prefers-reduced-motion: reduce){
+  .tyu--anim .tyu__reveal{ opacity: 1; }
+  .tyu.is-in .tyu__disc{ transform: scale(1); animation: none; }
+  .tyu.is-in .tyu__check path{ stroke-dashoffset: 0; animation: none; }
+  .tyu.is-in .tyu__reveal{ animation: none; }
+  .tyu__confetti{ display: none; }
+}
+</style>
+
+<section class="tyu" aria-labelledby="tyu-title">
+  <span class="tyu__confetti" aria-hidden="true"></span>
+  <div class="tyu__inner">
+
+    <div class="tyu__badge" aria-hidden="true">
+      <span class="tyu__disc">
+        <svg class="tyu__check" viewBox="0 0 24 24"><path d="M5 12.5 10 17.5 19 7"/></svg>
+      </span>
+    </div>
+
+    <p class="tyu__eyebrow tyu__reveal d1">Successfully Received</p>
+    <h1 class="tyu__title tyu__reveal d2" id="tyu-title">Thank You for <em>Submitting!</em></h1>
+    <p class="tyu__text tyu__reveal d3">
+      Your <span data-tyu-word>submission</span> has been received successfully, and we truly
+      appreciate your interest in ARKVOLT Energy. Our team will review your details and
+      get back to you within 24 hours.
+    </p>
+
+    <div class="tyu__actions tyu__reveal d4">
+      <a class="tyu__btn tyu__btn--solid" href="index.html">
+        Back to Home
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="tyu__btn tyu__btn--ghost" href="solutions.html">Explore Solutions</a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('tyu')) {
+    var all = document.querySelectorAll('.tyu');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.tyuReady) return;
+  section.dataset.tyuReady = '1';
+  section.classList.add('tyu--anim');
+
+  // adapt the wording to ?type=career|contact
+  try {
+    var t = new URLSearchParams(window.location.search).get('type');
+    var word = t === 'career' ? 'application' : (t === 'contact' ? 'message' : 'submission');
+    var slot = section.querySelector('[data-tyu-word]');
+    if (slot) slot.textContent = word;
+  } catch (e) {}
+
+  // build a little confetti burst
+  var wrap = section.querySelector('.tyu__confetti');
+  if (wrap){
+    var colors = ['#FFFFFF', '#9CE9B7', '#7AC943', '#BEEBCF', '#46C56F'];
+    for (var i = 0; i < 22; i++){
+      var p = document.createElement('i');
+      p.style.left = (6 + Math.random() * 88) + '%';
+      p.style.background = colors[i % colors.length];
+      p.style.animationDelay = (0.4 + Math.random() * 0.9) + 's';
+      p.style.transform = 'rotate(' + (Math.random() * 180) + 'deg)';
+      if (i % 3 === 0) p.style.borderRadius = '50%';
+      wrap.appendChild(p);
+    }
+  }
+
+  function play(){ section.classList.add('is-in'); }
+  if ('requestAnimationFrame' in window) requestAnimationFrame(function(){ requestAnimationFrame(play); });
+  else play();
+  setTimeout(play, 200);
+})();
+</script>
+
+
+<!-- ===== footer ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — FOOTER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .aft prefix.
+
+     LOGO: the footer is dark green, so it uses assets/logo-white.png (the
+     reverse/knockout version). assets/logo.png is the original navy lockup for
+     light backgrounds. Upload the white one and swap the src below.
+
+     The last quick link points at assets/docs/arkvolt-brochure.pdf — upload it to
+     the Media Library and swap the href.
+
+     TWO THINGS TO FILL IN BEFORE GOING LIVE
+     1. Social links are href="#" — ARKVOLT's real profile URLs are not on file.
+     2. There is no phone number in the company content, so none is shown.
+        Add one to the contact list if you want it here.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.aft{
+  --aft-ink:      #FFFFFF;
+  --aft-body:     rgba(255,255,255,.90);
+  --aft-green:    #22A24C;
+  --aft-green-dk: #1C8A41;
+  --aft-mint:     #D8F9E4;
+  --aft-green-lt: rgba(255,255,255,.10);
+  --aft-line:     rgba(255,255,255,.16);
+  --aft-bar-bg:   #FFFFFF;
+  --aft-bar-ink:  #10222F;
+  --aft-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: linear-gradient(160deg, #0D3A21 0%, #145430 55%, #17773A 100%);
+  font-family: var(--aft-font);
+  -webkit-font-smoothing: antialiased;
+}
+.aft *, .aft *::before, .aft *::after{ box-sizing: border-box; }
+
+.aft__inner{
+  position: relative;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: clamp(32px, 3.2vw, 50px) 20px clamp(26px, 2.6vw, 38px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: clamp(24px, 2.6vw, 44px);
+}
+
+/* ---------------- brand ---------------- */
+.aft__logo{
+  display: inline-block;
+  max-width: 232px;
+  margin-bottom: 16px;
+}
+.aft__logo img{ width: 100%; height: auto; display: block; }
+
+.aft__tagline{
+  margin: 0 0 18px;
+  font-size: 13.4px;
+  line-height: 1.72;
+  color: var(--aft-body);
+  max-width: 34ch;
+}
+
+.aft__social{
+  display: flex;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.aft__social a{
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--aft-line);
+  border-radius: 50%;
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  transition: background-color .25s ease, border-color .25s ease,
+              color .25s ease, transform .25s ease;
+}
+.aft__social svg{ width: 16px; height: 16px; }
+.aft__social a:hover,
+.aft__social a:focus-visible{
+  background: #fff;
+  border-color: #fff;
+  color: #0D3A21;
+  transform: translateY(-3px);
+}
+.aft__social a:focus-visible{ outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ---------------- columns ---------------- */
+.aft__heading{
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--aft-mint);
+}
+/* the second link column continues the first, so its heading is for screen
+   readers only — visually the two columns read as one list */
+.aft__heading--sr{
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.aft__col--cont{ padding-top: 28px; }
+
+.aft__links{ margin: 0; padding: 0; list-style: none; }
+.aft__links li + li{ margin-top: 11px; }
+.aft__links a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font-size: 13.4px;
+  line-height: 1.5;
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease, gap .25s ease;
+}
+.aft__links a::before{
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background: var(--aft-mint);
+  border-radius: 2px;
+  transition: width .25s ease;
+}
+.aft__links a:hover,
+.aft__links a:focus-visible{ color: #fff; gap: 8px; }
+.aft__links a:hover::before,
+.aft__links a:focus-visible::before{ width: 12px; }
+
+/* ---------------- contact ---------------- */
+.aft__contact{ margin: 0; padding: 0; list-style: none; }
+.aft__contact li{
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 13.2px;
+  line-height: 1.65;
+  color: var(--aft-body);
+}
+.aft__contact li + li{ margin-top: 14px; }
+.aft__ico{
+  flex: none;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--aft-green-lt);
+  color: var(--aft-mint);
+}
+.aft__ico svg{ width: 15px; height: 15px; }
+.aft__contact a{
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__contact a:hover,
+.aft__contact a:focus-visible{ color: #fff; }
+
+/* ---------------- bottom bar ---------------- */
+/* thin copyright strip — white panel with dark text, under the green footer */
+.aft__bar{
+  position: relative;
+  background: var(--aft-bar-bg);
+  color: var(--aft-bar-ink);
+}
+.aft__bar-inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.aft__copy{ margin: 0; font-size: 12.5px; font-weight: 500; line-height: 1.5; color: var(--aft-bar-ink); }
+.aft__legal{
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12.5px;
+}
+.aft__legal a{
+  color: var(--aft-bar-ink);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__legal a:hover,
+.aft__legal a:focus-visible{ color: var(--aft-green-dk); text-decoration: underline; }
+.aft__legal span{ color: #C6CFD4; }
+
+/* back to top */
+.aft__top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--aft-green);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(34,162,76,.34);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s, background-color .25s ease;
+}
+.aft__top svg{ width: 15px; height: 15px; }
+.aft__top.is-on{ opacity: 1; visibility: visible; transform: none; }
+.aft__top:hover{ background: var(--aft-green-dk); }
+.aft__top:focus-visible{ outline: 2px solid #fff; outline-offset: 3px; }
+
+/* ---------------- reveal ---------------- */
+.aft--anim .aft__reveal{ opacity: 0; transform: translateY(20px); }
+.aft.is-in .aft__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .65s ease var(--d, 0s),
+              transform .65s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1000px){
+  .aft__inner{ grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .aft__col--brand{ grid-column: 1 / -1; }
+  .aft__col--cont{ padding-top: 28px; }
+}
+@media (max-width: 620px){
+  .aft__inner{ grid-template-columns: 1fr; gap: 26px; }
+  .aft__col--cont{ padding-top: 0; }
+  .aft__heading--sr{
+    position: static;
+    width: auto; height: auto;
+    margin: 0 0 16px;
+    overflow: visible;
+    clip: auto;
+    color: var(--aft-mint);
+  }
+  .aft__bar-inner{ flex-direction: column; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .aft--anim .aft__reveal{ opacity: 1; transform: none; }
+  .aft.is-in .aft__reveal{ transition: none; }
+  .aft__social a, .aft__links a, .aft__top{ transition: none; }
+  .aft__social a:hover{ transform: none; }
+}
+</style>
+
+<footer class="aft">
+
+
+  <div class="aft__inner">
+
+    <!-- ============ brand ============ -->
+    <div class="aft__col--brand aft__reveal">
+      <a class="aft__logo" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+        <img src="assets/logo-white.png"
+             alt="ARKVOLT Energy Private Limited — Advanced Energy Storage Solutions"
+             width="1296" height="292" loading="lazy" decoding="async">
+      </a>
+
+      <p class="aft__tagline">
+        Engineering reliable energy. Building intelligent infrastructure for a
+        sustainable tomorrow.
+      </p>
+
+      <ul class="aft__social">
+        <li>
+          <a href="#" aria-label="ARKVOLT on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4v11H3v-11Zm6.5 0h3.8v1.5h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75v5.7h-4v-5.05c0-1.2-.02-2.75-1.75-2.75-1.75 0-2.02 1.3-2.02 2.66v5.14h-4v-11Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.2l-4.9-6.4L5.1 21H2l7.2-8.3L2.4 3h6.4l4.4 5.8L17.5 3Zm-1.1 16.1h1.7L7.7 4.8H5.9l10.5 14.3Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15.2V8.8L15.5 12 10 15.2Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ quick links ============ -->
+    <div class="aft__reveal" style="--d:.08s">
+      <h3 class="aft__heading">Quick Links</h3>
+      <ul class="aft__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About ARKVOLT</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="our-partners.html">Our Partners</a></li>
+      </ul>
+    </div>
+
+    <div class="aft__col--cont aft__reveal" style="--d:.14s">
+      <h3 class="aft__heading aft__heading--sr">More Links</h3>
+      <ul class="aft__links">
+        <li><a href="innovation.html">Innovation</a></li>
+        <li><a href="incubation-centre.html">Incubation Centre</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="assets/docs/arkvolt-brochure.pdf" target="_blank" rel="noopener">Company Brochure</a></li>
+      </ul>
+    </div>
+
+    <!-- ============ contact ============ -->
+    <div class="aft__reveal" style="--d:.20s">
+      <h3 class="aft__heading">Contact Us</h3>
+      <ul class="aft__contact">
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.5s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+              <circle cx="12" cy="10.2" r="2.6"/>
+            </svg>
+          </span>
+          <span>
+            <strong style="display:block;font-weight:600;color:#fff">ARKVOLT ENERGY PRIVATE LIMITED</strong>
+            Room No. 13, 2nd Floor, Marwadi Building,<br>
+            25 Marve Road, Malad West, Mumbai,<br>
+            Maharashtra, India &ndash; 400064
+          </span>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.8" y="5" width="18.4" height="14" rx="2.4"/>
+              <path d="m3.4 6.6 8.6 6 8.6-6"/>
+            </svg>
+          </span>
+          <a href="mailto:info@arkvoltenergy.com">info@arkvoltenergy.com</a>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9.2"/>
+              <path d="M2.8 12h18.4M12 2.8c2.4 2.6 3.6 5.8 3.6 9.2s-1.2 6.6-3.6 9.2c-2.4-2.6-3.6-5.8-3.6-9.2S9.6 5.4 12 2.8Z"/>
+            </svg>
+          </span>
+          <a href="https://www.arkvoltenergy.com">www.arkvoltenergy.com</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ============ bottom bar ============ -->
+  <div class="aft__bar">
+    <div class="aft__bar-inner">
+      <p class="aft__copy">&copy; 2026 ARKVOLT ENERGY PRIVATE LIMITED. All Rights Reserved.</p>
+      <ul class="aft__legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><span aria-hidden="true">|</span></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <button class="aft__top" type="button" data-aft-top aria-label="Back to top">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</footer>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('aft')) {
+    var all = document.querySelectorAll('.aft');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.aftReady) return;
+  section.dataset.aftReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this footer blank
+  section.classList.add('aft--anim');
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- back to top ---------- */
+  var topBtn = section.querySelector('[data-aft-top]');
+  function toggleTop(){
+    topBtn.classList.toggle('is-on', window.pageYOffset > 500);
+  }
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+  });
+  window.addEventListener('scroll', toggleTop, { passive: true });
+  toggleTop();
+
+  /* ---------- reveal ---------- */
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.1 });
+    io.observe(section);
+  }
+
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+</body>
+</html>

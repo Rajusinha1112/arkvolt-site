@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <svg viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice"
+         xmlns="http://www.w3.org/2000/svg" role="img"
+         aria-label="Renewable energy park with wind turbines, solar panels and battery energy storage containers">
+
+      <defs>
+        <linearGradient id="avhSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0"   stop-color="#8FBEDD"/>
+          <stop offset=".45" stop-color="#BFDCEE"/>
+          <stop offset="1"   stop-color="#EAF4FA"/>
+        </linearGradient>
+        <radialGradient id="avhSun" cx=".62" cy=".14" r=".55">
+          <stop offset="0"  stop-color="#FFFDF2" stop-opacity=".95"/>
+          <stop offset=".5" stop-color="#FFF8E2" stop-opacity=".35"/>
+          <stop offset="1"  stop-color="#FFF8E2" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="avhGrass" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0"   stop-color="#9DC176"/>
+          <stop offset=".35" stop-color="#7BAA55"/>
+          <stop offset="1"   stop-color="#4E8438"/>
+        </linearGradient>
+        <linearGradient id="avhBox" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0"   stop-color="#FFFFFF"/>
+          <stop offset=".55" stop-color="#F6F8F9"/>
+          <stop offset="1"   stop-color="#E3E8EC"/>
+        </linearGradient>
+        <linearGradient id="avhPanel" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0"   stop-color="#2C4A78"/>
+          <stop offset=".45" stop-color="#1B3358"/>
+          <stop offset="1"   stop-color="#0F2440"/>
+        </linearGradient>
+        <linearGradient id="avhTower" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0"   stop-color="#FFFFFF"/>
+          <stop offset=".6"  stop-color="#EDF1F4"/>
+          <stop offset="1"   stop-color="#D2DAE0"/>
+        </linearGradient>
+        <linearGradient id="avhHaze" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#EAF4FA" stop-opacity="0"/>
+          <stop offset="1" stop-color="#EAF4FA" stop-opacity=".75"/>
+        </linearGradient>
+      </defs>
+
+      <!-- sky -->
+      <rect x="0" y="0" width="1200" height="530" fill="url(#avhSky)"/>
+      <rect x="0" y="0" width="1200" height="530" fill="url(#avhSun)"/>
+
+      <!-- soft clouds -->
+      <g fill="#FFFFFF" opacity=".55">
+        <ellipse cx="205" cy="118" rx="132" ry="27"/>
+        <ellipse cx="268" cy="102" rx="86"  ry="22"/>
+        <ellipse cx="905" cy="176" rx="158" ry="26"/>
+        <ellipse cx="975" cy="160" rx="94"  ry="21"/>
+        <ellipse cx="560" cy="66"  rx="112" ry="19"/>
+      </g>
+
+      <!-- distant mountains -->
+      <path d="M0 486 L118 402 L206 452 L318 372 L452 470 L560 424 L682 488 L790 440 L920 496 L1040 452 L1200 500 L1200 540 L0 540 Z"
+            fill="#A9C4D6" opacity=".85"/>
+      <path d="M0 508 L140 448 L262 496 L392 434 L520 500 L648 462 L788 512 L918 470 L1060 516 L1200 482 L1200 556 L0 556 Z"
+            fill="#BCD2E0" opacity=".9"/>
+      <rect x="0" y="400" width="1200" height="140" fill="url(#avhHaze)"/>
+
+      <!-- ground -->
+      <rect x="0" y="506" width="1200" height="394" fill="url(#avhGrass)"/>
+      <g stroke="#5E9243" stroke-width="1.2" opacity=".35">
+        <path d="M0 596 C 240 578, 520 604, 780 588 S 1080 606, 1200 592"/>
+        <path d="M0 668 C 260 646, 540 676, 820 656 S 1090 678, 1200 662"/>
+        <path d="M0 754 C 280 728, 580 764, 860 740 S 1110 766, 1200 748"/>
+      </g>
+
+      <!-- ===================== wind turbines ===================== -->
+      <!-- far small -->
+      <g opacity=".55">
+        <path d="M258.5 528 L265.5 528 L263.6 380 L260.4 380 Z" fill="url(#avhTower)"/>
+        <circle cx="262" cy="380" r="4.5" fill="#F3F6F8"/>
+        <g class="avh-rotor avh-rotor--4" style="transform-origin:262px 380px">
+          <g fill="#F7FAFC" stroke="#DDE5EA" stroke-width=".8">
+            <path d="M-4 0 C-6.5 -19, -3.5 -38, 0 -44 C3.5 -38, 6.5 -19, 4 0 Z" transform="translate(262,380)"/>
+            <path d="M-4 0 C-6.5 -19, -3.5 -38, 0 -44 C3.5 -38, 6.5 -19, 4 0 Z" transform="translate(262,380) rotate(120)"/>
+            <path d="M-4 0 C-6.5 -19, -3.5 -38, 0 -44 C3.5 -38, 6.5 -19, 4 0 Z" transform="translate(262,380) rotate(240)"/>
+          </g>
+        </g>
+      </g>
+
+      <g opacity=".72">
+        <path d="M325.5 535 L334.5 535 L331.8 330 L328.2 330 Z" fill="url(#avhTower)"/>
+        <circle cx="330" cy="330" r="6" fill="#F3F6F8"/>
+        <g class="avh-rotor avh-rotor--3" style="transform-origin:330px 330px">
+          <g fill="#F9FBFC" stroke="#DDE5EA" stroke-width="1">
+            <path d="M-5 0 C-8 -28, -4.5 -56, 0 -64 C4.5 -56, 8 -28, 5 0 Z" transform="translate(330,330)"/>
+            <path d="M-5 0 C-8 -28, -4.5 -56, 0 -64 C4.5 -56, 8 -28, 5 0 Z" transform="translate(330,330) rotate(120)"/>
+            <path d="M-5 0 C-8 -28, -4.5 -56, 0 -64 C4.5 -56, 8 -28, 5 0 Z" transform="translate(330,330) rotate(240)"/>
+          </g>
+        </g>
+      </g>
+
+      <g opacity=".88">
+        <path d="M423.5 545 L436.5 545 L432.4 265 L427.6 265 Z" fill="url(#avhTower)"/>
+        <circle cx="430" cy="265" r="8" fill="#F3F6F8"/>
+        <g class="avh-rotor avh-rotor--2" style="transform-origin:430px 265px">
+          <g fill="#FBFCFD" stroke="#D8E1E7" stroke-width="1.2">
+            <path d="M-7 0 C-11 -42, -6 -84, 0 -96 C6 -84, 11 -42, 7 0 Z" transform="translate(430,265)"/>
+            <path d="M-7 0 C-11 -42, -6 -84, 0 -96 C6 -84, 11 -42, 7 0 Z" transform="translate(430,265) rotate(120)"/>
+            <path d="M-7 0 C-11 -42, -6 -84, 0 -96 C6 -84, 11 -42, 7 0 Z" transform="translate(430,265) rotate(240)"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- hero turbine -->
+      <g>
+        <ellipse cx="600" cy="562" rx="26" ry="7" fill="#3E6E2E" opacity=".45"/>
+        <path d="M590 562 L610 562 L604 150 L596 150 Z" fill="url(#avhTower)"/>
+        <path d="M596 150 L604 150 L604 562 L601 562 Z" fill="#C8D3DA" opacity=".55"/>
+        <rect x="588" y="140" width="24" height="22" rx="7" fill="#F4F7F9"/>
+        <circle cx="600" cy="150" r="11" fill="#E9EEF2" stroke="#D2DBE1" stroke-width="1"/>
+        <g class="avh-rotor" style="transform-origin:600px 150px">
+          <g fill="#FCFDFE" stroke="#D3DCE2" stroke-width="1.4">
+            <path d="M-9 4 C-14 -68, -8 -136, 0 -156 C8 -136, 14 -68, 9 4 Z" transform="translate(600,150)"/>
+            <path d="M-9 4 C-14 -68, -8 -136, 0 -156 C8 -136, 14 -68, 9 4 Z" transform="translate(600,150) rotate(120)"/>
+            <path d="M-9 4 C-14 -68, -8 -136, 0 -156 C8 -136, 14 -68, 9 4 Z" transform="translate(600,150) rotate(240)"/>
+          </g>
+          <circle cx="600" cy="150" r="7" fill="#DFE6EB"/>
+        </g>
+      </g>
+
+      <!-- ============ BESS container row (perspective) ============ -->
+      <g>
+        <!-- concrete plinths -->
+        <g fill="#C6CBCF">
+          <polygon points="1250,770 970,678 970,704 1250,802"/>
+          <polygon points="970,678 768,611 768,629 970,704"/>
+          <polygon points="768,611 623,563 623,576 768,629"/>
+          <polygon points="623,563 519,529 519,539 623,576"/>
+          <polygon points="519,529 443,504 443,512 519,539"/>
+          <polygon points="443,504 389,486 389,492 443,512"/>
+          <polygon points="389,486 350,473 350,478 389,492"/>
+        </g>
+        <g fill="#AEB4B9" opacity=".7">
+          <polygon points="1250,802 970,704 970,712 1250,812"/>
+          <polygon points="970,704 768,629 768,635 970,712"/>
+          <polygon points="768,629 623,576 623,580 768,635"/>
+        </g>
+
+        <!-- container side faces -->
+        <g fill="url(#avhBox)" stroke="#D5DBDF" stroke-width="1">
+          <polygon points="1250,210 970,274 970,678 1250,770"/>
+          <polygon points="970,274 768,321 768,611 970,678"/>
+          <polygon points="768,321 623,354 623,563 768,611"/>
+          <polygon points="623,354 519,378 519,529 623,563"/>
+          <polygon points="519,378 443,396 443,504 519,529"/>
+          <polygon points="443,396 389,408 389,486 443,504"/>
+          <polygon points="389,408 350,417 350,473 389,486"/>
+        </g>
+
+        <!-- roof caps -->
+        <g fill="#E2E7EA">
+          <polygon points="1250,210 970,274 970,289 1250,225"/>
+          <polygon points="970,274 768,321 768,332 970,289"/>
+          <polygon points="768,321 623,354 623,362 768,332"/>
+          <polygon points="623,354 519,378 519,384 623,362"/>
+          <polygon points="519,378 443,396 443,400 519,384"/>
+          <polygon points="443,396 389,408 389,412 443,400"/>
+          <polygon points="389,408 350,417 350,420 389,412"/>
+        </g>
+
+        <!-- seams between units -->
+        <g stroke="#BFC7CD" stroke-width="2.2" stroke-linecap="round">
+          <line x1="970" y1="274" x2="970" y2="678"/>
+          <line x1="768" y1="321" x2="768" y2="611"/>
+          <line x1="623" y1="354" x2="623" y2="563"/>
+          <line x1="519" y1="378" x2="519" y2="529"/>
+          <line x1="443" y1="396" x2="443" y2="504"/>
+          <line x1="389" y1="408" x2="389" y2="486"/>
+        </g>
+
+        <!-- corrugation on the two nearest units -->
+        <g stroke="#E6EBEE" stroke-width="1.6">
+          <line x1="1030" y1="260" x2="1030" y2="698"/>
+          <line x1="1090" y1="247" x2="1090" y2="717"/>
+          <line x1="1150" y1="233" x2="1150" y2="737"/>
+          <line x1="1210" y1="219" x2="1210" y2="757"/>
+          <line x1="820"  y1="310" x2="820"  y2="628"/>
+          <line x1="870"  y1="299" x2="870"  y2="645"/>
+          <line x1="920"  y1="287" x2="920"  y2="662"/>
+        </g>
+
+        <!-- shaded lower band -->
+        <g fill="#0F2440" opacity=".05">
+          <polygon points="970,610 1250,690 1250,770 970,678"/>
+          <polygon points="768,566 970,610 970,678 768,611"/>
+        </g>
+
+        <!-- green lightning bolt -->
+        <g transform="translate(869,472) skewY(-13.1)">
+          <path d="M10 -50 L-25 8 L-2 8 L-12 50 L25 -8 L2 -8 Z"
+                transform="scale(2.05)" fill="#2BB24F"/>
+        </g>
+
+        <!-- ENERGY STORAGE SYSTEM -->
+        <g transform="translate(998,404) skewY(-12.9)"
+           font-family="Poppins, Segoe UI, Helvetica, Arial, sans-serif"
+           font-size="42" font-weight="600" fill="#2BB24F" letter-spacing="1">
+          <text x="0" y="0">ENERGY</text>
+          <text x="0" y="60">STORAGE</text>
+          <text x="0" y="120">SYSTEM</text>
+        </g>
+
+        <!-- contact shadows -->
+        <g fill="#3E6E2E" opacity=".28">
+          <polygon points="1250,802 970,704 940,716 1250,826"/>
+          <polygon points="970,704 768,629 748,637 940,716"/>
+          <polygon points="768,629 623,576 610,582 748,637"/>
+        </g>
+      </g>
+
+      <!-- ===================== solar array ===================== -->
+      <g>
+        <polygon points="250,620 560,700 330,900 -80,780" fill="url(#avhPanel)"/>
+        <g stroke="#5D82B4" stroke-width="1.6" opacity=".65">
+          <line x1="301.7" y1="633.3" x2="-11.7" y2="800"/>
+          <line x1="353.3" y1="646.7" x2="56.7"  y2="820"/>
+          <line x1="405"   y1="660"   x2="125"   y2="840"/>
+          <line x1="456.7" y1="673.3" x2="193.3" y2="860"/>
+          <line x1="508.3" y1="686.7" x2="261.7" y2="880"/>
+          <line x1="167.5" y1="660"   x2="502.5" y2="750"/>
+          <line x1="85"    y1="700"   x2="445"   y2="800"/>
+          <line x1="2.5"   y1="740"   x2="387.5" y2="850"/>
+        </g>
+        <polygon points="250,620 560,700 330,900 -80,780" fill="none" stroke="#8FA9CC" stroke-width="3"/>
+        <!-- sun sheen -->
+        <polygon points="250,620 560,700 400,838 100,742" fill="#9FC4E8" opacity=".16"/>
+        <!-- frame legs -->
+        <g stroke="#7E8A95" stroke-width="7" stroke-linecap="round">
+          <line x1="470" y1="742" x2="470" y2="812"/>
+          <line x1="210" y1="820" x2="210" y2="884"/>
+        </g>
+      </g>
+
+      <!-- ===================== foliage frame ===================== -->
+      <g opacity=".96">
+        <path d="M1200 24 C1130 34, 1058 62, 1002 104 C1048 66, 1104 40, 1160 22 Z" fill="#2E6B33"/>
+        <g fill="#357A38">
+          <ellipse cx="1178" cy="34"  rx="62" ry="34" transform="rotate(-16 1178 34)"/>
+          <ellipse cx="1108" cy="58"  rx="54" ry="29" transform="rotate(-22 1108 58)"/>
+          <ellipse cx="1042" cy="92"  rx="46" ry="25" transform="rotate(-28 1042 92)"/>
+          <ellipse cx="1152" cy="102" rx="50" ry="27" transform="rotate(-8 1152 102)"/>
+          <ellipse cx="1086" cy="130" rx="40" ry="22" transform="rotate(-18 1086 130)"/>
+          <ellipse cx="1196" cy="146" rx="44" ry="24" transform="rotate(4 1196 146)"/>
+          <ellipse cx="988"  cy="52"  rx="38" ry="21" transform="rotate(-34 988 52)"/>
+          <ellipse cx="916"  cy="26"  rx="42" ry="22" transform="rotate(-26 916 26)"/>
+        </g>
+        <g fill="#4A9A46" opacity=".9">
+          <ellipse cx="1140" cy="20"  rx="40" ry="21" transform="rotate(-14 1140 20)"/>
+          <ellipse cx="1064" cy="46"  rx="34" ry="18" transform="rotate(-24 1064 46)"/>
+          <ellipse cx="1170" cy="76"  rx="32" ry="18" transform="rotate(-6 1170 76)"/>
+          <ellipse cx="1020" cy="112" rx="28" ry="15" transform="rotate(-30 1020 112)"/>
+          <ellipse cx="1120" cy="160" rx="30" ry="16" transform="rotate(10 1120 160)"/>
+          <ellipse cx="946"  cy="14"  rx="30" ry="16" transform="rotate(-28 946 14)"/>
+        </g>
+        <g stroke="#2A5C2B" stroke-width="3.4" fill="none" stroke-linecap="round" opacity=".8">
+          <path d="M1200 8 C1140 26, 1082 56, 1030 100"/>
+          <path d="M1160 40 C1128 66, 1104 96, 1088 132"/>
+          <path d="M1200 118 C1168 128, 1140 146, 1118 168"/>
+        </g>
+      </g>
+
+      <!-- bottom-right grass tufts for depth -->
+      <g fill="#446F31" opacity=".55">
+        <path d="M980 838 C990 806, 1002 792, 1010 780 C1006 800, 1004 820, 1006 842 Z"/>
+        <path d="M1026 852 C1034 822, 1046 806, 1056 794 C1050 816, 1046 836, 1048 856 Z"/>
+        <path d="M700 802 C708 776, 718 764, 726 754 C722 772, 720 788, 722 806 Z"/>
+      </g>
+
+    </svg>

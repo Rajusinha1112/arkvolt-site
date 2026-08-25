@@ -1,0 +1,2755 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energy Solutions | ARKVOLT Energy</title>
+  <meta name="description" content="Explore ARKVOLT's energy solutions: Battery Energy Storage (BESS), Solar EPC, Renewable Integration, Energy Management Systems, Power Conversion and turnkey EPC.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#10222F">
+  <link rel="canonical" href="https://www.arkvoltenergy.com/solutions">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ARKVOLT Energy">
+  <meta property="og:title" content="Energy Solutions | ARKVOLT Energy">
+  <meta property="og:description" content="Explore ARKVOLT's energy solutions: Battery Energy Storage (BESS), Solar EPC, Renewable Integration, Energy Management Systems, Power Conversion and turnkey EPC.">
+  <meta property="og:url" content="https://www.arkvoltenergy.com/solutions">
+  <meta property="og:image" content="https://www.arkvoltenergy.com/assets/solutions-hero.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Energy Solutions | ARKVOLT Energy">
+  <meta name="twitter:description" content="Explore ARKVOLT's energy solutions: Battery Energy Storage (BESS), Solar EPC, Renewable Integration, Energy Management Systems, Power Conversion and turnkey EPC.">
+  <meta name="twitter:image" content="https://www.arkvoltenergy.com/assets/solutions-hero.jpg">
+  <style>html,body{margin:0;padding:0;background:#fff;}img{max-width:100%;}</style>
+</head>
+<body>
+
+<!-- ===== header ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — SITE HEADER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget,
+     at the very top of the page. No page wrapper tags — WordPress supplies
+     those. HTML + CSS + JS are all inside this one file, scoped behind the
+     .ahd prefix.
+
+     LOGO: assets/logo-full.jpg is the complete ARKVOLT lockup — wordmark, bolt,
+     "ENERGY PVT. LTD." and the tagline — cropped tight to its content. The bar
+     is sized so the whole lockup reads. Upload it to the WP Media Library and
+     swap the src below for that URL. (assets/logo-full-dark.jpg is the same
+     lockup on black, for dark backgrounds.)
+
+     MARKING THE CURRENT PAGE
+     Add aria-current="page" to the link for the page you are on — the green
+     text and the underline follow that attribute, nothing else:
+
+         <a class="ahd__link" href="projects.html" aria-current="page">Projects</a>
+
+     For a page that sits inside the Resources dropdown, put aria-current="page"
+     on BOTH its .ahd__sub link and the Resources button, so the closed bar
+     still shows where the visitor is. WordPress's own current-menu-item /
+     current_page_item classes are honoured too.
+
+     LAYOUT: logo left, the links spread evenly across the bar (no dead gap in
+     the middle), Get In Touch pinned right. Below 1180px the links collapse
+     into a slide-down drawer behind the menu button.
+
+     If your theme already outputs its own header, use that instead of this
+     file — two headers on one page is worse than either alone.
+
+     Every icon is inline SVG; no icon fonts, no CDNs.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.ahd{
+  --ahd-ink:      #10222F;
+  --ahd-body:     #45525C;
+  --ahd-green:    #22A24C;
+  --ahd-green-dk: #1C8A41;
+  --ahd-green-hv: #1A7C3A;
+  --ahd-green-lt: #EDF7F0;
+  --ahd-line:     #E7ECEF;
+  --ahd-bar:      86px;
+  --ahd-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: #fff;
+  font-family: var(--ahd-font);
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 1px solid var(--ahd-line);
+  /* a faint lift even at rest, so the white bar never melts into a white hero */
+  box-shadow: 0 2px 12px rgba(16,34,47,.05);
+  transition: box-shadow .3s ease;
+}
+.ahd *, .ahd *::before, .ahd *::after{ box-sizing: border-box; }
+
+/* the shadow deepens once the page has scrolled under the bar */
+.ahd.is-stuck{ box-shadow: 0 8px 24px rgba(16,34,47,.1); }
+
+.ahd__inner{
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 3vw, 34px);
+  height: var(--ahd-bar);
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 34px);
+}
+
+/* ---------------- logo ---------------- */
+.ahd__brand{
+  flex: none;
+  display: block;
+  line-height: 0;
+  transition: opacity .25s ease;
+}
+.ahd__brand:hover{ opacity: .85; }
+.ahd__brand:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+.ahd__logo{
+  width: auto;
+  height: clamp(40px, 3.6vw, 52px);   /* tall enough that the full lockup reads */
+  display: block;
+}
+
+/* ---------------- nav ---------------- */
+.ahd__nav{
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* spread the links evenly, no middle gap */
+  gap: clamp(6px, 0.7vw, 12px);
+}
+.ahd__item{ position: relative; display: flex; }
+
+.ahd__link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 3px;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--ahd-body);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  letter-spacing: .002em;
+  cursor: pointer;
+  transition: color .22s ease;
+}
+/* the underline grows out from the centre */
+.ahd__link::after{
+  content: "";
+  position: absolute;
+  left: 3px; right: 3px; bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-green);
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__link:hover,
+.ahd__link:focus-visible{ color: var(--ahd-green-dk); }
+.ahd__link:hover::after,
+.ahd__link:focus-visible::after{ transform: scaleX(1); }
+.ahd__link:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+
+/* current page — driven by aria-current, or by WordPress's own menu classes */
+.ahd__link[aria-current="page"],
+.current-menu-item > .ahd__link,
+.current_page_item > .ahd__link{
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+.ahd__link[aria-current="page"]::after,
+.current-menu-item > .ahd__link::after,
+.current_page_item > .ahd__link::after{ transform: scaleX(1); }
+
+/* chevron on the item that opens a menu */
+.ahd__chev{
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: 1px;
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__item.is-open > .ahd__link .ahd__chev{ transform: rotate(180deg); }
+
+/* ---------------- dropdown ---------------- */
+.ahd__menu{
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  width: 216px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(16,34,47,.13);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -8px);
+  transition: opacity .24s ease, transform .24s cubic-bezier(.22,.61,.36,1),
+              visibility .24s;
+}
+.ahd__item.is-open > .ahd__menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+/* a small bridge so the pointer can cross the gap without the menu closing */
+.ahd__item.is-open > .ahd__menu::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: -16px;
+  height: 16px;
+}
+.ahd__menuIn{ margin: 0; padding: 0; list-style: none; }
+.ahd__sub{
+  display: block;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 12.6px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ahd-body);
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, padding-left .2s ease;
+}
+.ahd__sub:hover,
+.ahd__sub:focus-visible{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  padding-left: 16px;
+}
+.ahd__sub:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: -2px; }
+/* the current page, when it lives inside the dropdown */
+.ahd__sub[aria-current="page"]{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+
+/* ---------------- call to action ---------------- */
+.ahd__cta{
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border: 1px solid var(--ahd-green);
+  border-radius: 999px;
+  background: var(--ahd-green);
+  color: #fff;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(34,162,76,.24);
+  transition: background-color .25s ease, border-color .25s ease,
+              transform .25s ease, box-shadow .25s ease;
+}
+.ahd__cta svg{ width: 11px; height: 11px; transition: transform .25s ease; }
+.ahd__cta:hover{
+  background: var(--ahd-green-hv);
+  border-color: var(--ahd-green-hv);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(34,162,76,.3);
+}
+.ahd__cta:hover svg{ transform: translateX(3px); }
+.ahd__cta:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* ---------------- burger ---------------- */
+.ahd__burger{
+  display: none;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .25s ease, background-color .25s ease;
+}
+.ahd__burger:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); }
+.ahd__burger:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+.ahd__bars{
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin: 0 auto;
+  position: relative;
+}
+.ahd__bars i{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-ink);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1), opacity .2s ease;
+}
+.ahd__bars i:nth-child(1){ top: 0; }
+.ahd__bars i:nth-child(2){ top: 6px; }
+.ahd__bars i:nth-child(3){ top: 12px; }
+.ahd.is-nav-open .ahd__bars i:nth-child(1){ transform: translateY(6px) rotate(45deg); }
+.ahd.is-nav-open .ahd__bars i:nth-child(2){ opacity: 0; }
+.ahd.is-nav-open .ahd__bars i:nth-child(3){ transform: translateY(-6px) rotate(-45deg); }
+
+/* drawer head — the logo strip + close button at the top of the mobile panel
+   (the whole thing is hidden on desktop, so the close button never shows there) */
+.ahd__drawerHead{ display: none; }
+.ahd__close{
+  flex: none;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ahd-ink);
+  cursor: pointer;
+  transition: border-color .22s ease, background-color .22s ease, color .22s ease;
+}
+.ahd__close svg{ width: 17px; height: 17px; }
+.ahd__close:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); color: var(--ahd-green-dk); }
+.ahd__close:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* dim the whole page behind the open side drawer */
+.ahd__scrim{
+  position: fixed;
+  inset: 0;
+  background: rgba(16,34,47,.42);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .34s ease, visibility .34s;
+  z-index: 1;
+}
+
+/* ---------------- mobile / tablet (drawer) ---------------- */
+@media (max-width: 1179px){
+  .ahd{ --ahd-bar: 74px; }
+  .ahd__burger{ display: block; }
+  /* the drawer carries its own close button, so the bar's button goes away
+     while the drawer is open — no stray control floating outside the panel */
+  .ahd.is-nav-open .ahd__burger{ display: none; }
+
+  .ahd.is-nav-open .ahd__scrim{ opacity: 1; visibility: visible; }
+
+  /* off-canvas side drawer that slides in from the left */
+  .ahd__nav{
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: min(86vw, 344px);
+    z-index: 2;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0 0 26px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    background: #fff;
+    box-shadow: 0 0 60px rgba(16,34,47,.24);
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform .36s cubic-bezier(.22,.61,.36,1), visibility .36s;
+  }
+  .ahd.is-nav-open .ahd__nav{
+    visibility: visible;
+    transform: none;
+  }
+
+  /* brand strip at the top of the drawer */
+  .ahd__drawerHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: var(--ahd-bar);
+    flex: none;
+    padding: 0 clamp(16px, 4.5vw, 22px);
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--ahd-line);
+    background: linear-gradient(180deg, #F7FBF9 0%, #fff 100%);
+  }
+  .ahd__drawerLogo{ height: 36px; width: auto; display: block; }
+
+  .ahd__inner .ahd__item,
+  .ahd__nav .ahd__item{
+    display: block;
+    margin: 0 clamp(14px, 4vw, 22px);
+    border-bottom: 1px solid var(--ahd-line);
+  }
+  .ahd__link{
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ahd-ink);
+  }
+  .ahd__link::after{ display: none; }
+  .ahd__link[aria-current="page"]{ color: var(--ahd-green-dk); }
+  .ahd__chev{ width: 12px; height: 12px; color: var(--ahd-green-dk); }
+
+  /* the dropdown becomes an accordion: 0fr -> 1fr animates to natural height */
+  .ahd__menu{
+    position: static;
+    width: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .32s cubic-bezier(.22,.61,.36,1);
+  }
+  .ahd__item.is-open > .ahd__menu{ grid-template-rows: 1fr; transform: none; }
+  .ahd__item.is-open > .ahd__menu::before{ content: none; }
+  .ahd__menuIn{ overflow: hidden; padding: 2px 0 8px; }
+  .ahd__sub{
+    padding: 11px 14px;
+    margin-bottom: 2px;
+    font-size: 13.5px;
+    border-radius: 8px;
+    background: #F6F9F7;
+  }
+  .ahd__sub:hover, .ahd__sub:focus-visible{ padding-left: 18px; }
+
+  .ahd__cta{
+    justify-content: center;
+    margin: 22px clamp(14px, 4vw, 22px) 0;
+    padding: 14px 22px;
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 420px){
+  .ahd__logo{ height: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ahd, .ahd__link, .ahd__link::after, .ahd__chev, .ahd__menu, .ahd__nav,
+  .ahd__sub, .ahd__cta, .ahd__cta svg, .ahd__bars i, .ahd__scrim{ transition: none; }
+  .ahd__cta:hover{ transform: none; }
+}
+</style>
+
+<header class="ahd">
+  <div class="ahd__inner">
+
+    <a class="ahd__brand" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+      <img class="ahd__logo" src="assets/logo-full.jpg"
+           alt="ARKVOLT Energy Pvt. Ltd. — Advanced Energy Storage Solutions"
+           width="1279" height="279"
+           fetchpriority="high" decoding="async">
+    </a>
+
+    <button class="ahd__burger" type="button"
+            aria-label="Menu" aria-expanded="false" aria-controls="ahd-nav">
+      <span class="ahd__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <nav class="ahd__nav" id="ahd-nav" aria-label="Main">
+
+      <div class="ahd__drawerHead">
+        <img class="ahd__drawerLogo" src="assets/logo-full.jpg" alt="" aria-hidden="true"
+             width="1279" height="279" decoding="async">
+        <button class="ahd__close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="index.html">Home</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="about.html">About Us</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="solutions.html" aria-current="page">Solutions</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="industries.html">Industries</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="projects.html">Projects</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="innovation.html">Innovation</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="incubation-centre.html">Incubation Centre</a></div>
+
+      <div class="ahd__item">
+        <button class="ahd__link" type="button" aria-expanded="false" aria-controls="ahd-resources">
+          Resources
+          <svg class="ahd__chev" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="ahd__menu" id="ahd-resources">
+          <ul class="ahd__menuIn">
+            <li><a class="ahd__sub" href="resources.html">Resource Centre</a></li>
+            <li><a class="ahd__sub" href="our-partners.html">Partners</a></li>
+            <li><a class="ahd__sub" href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="contact.html">Contact Us</a></div>
+
+      <a class="ahd__cta" href="contact.html">
+        Get In Touch
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </nav>
+  </div>
+  <span class="ahd__scrim" aria-hidden="true"></span>
+</header>
+
+<script>
+(function(){
+  var header = document.currentScript && document.currentScript.previousElementSibling;
+  if (!header || !header.classList.contains('ahd')) {
+    var all = document.querySelectorAll('.ahd');
+    header = all[all.length - 1];
+  }
+  if (!header || header.dataset.ahdReady) return;
+  header.dataset.ahdReady = '1';
+
+  var DESKTOP = '(min-width: 1180px)';
+  var burger  = header.querySelector('.ahd__burger');
+  var nav     = header.querySelector('.ahd__nav');
+  var scrim   = header.querySelector('.ahd__scrim');
+  var closeBtn = header.querySelector('.ahd__close');
+  var toggles = header.querySelectorAll('.ahd__item > button.ahd__link');
+
+  function isDesktop(){
+    return window.matchMedia && window.matchMedia(DESKTOP).matches;
+  }
+
+  /* ---------------- shadow once the page scrolls ---------------- */
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    header.classList.toggle('is-stuck', y > 4);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------------- dropdowns ---------------- */
+  function closeMenus(except){
+    toggles.forEach(function(btn){
+      var item = btn.parentNode;
+      if (item === except) return;
+      item.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+  function openMenu(item, btn, open){
+    item.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  toggles.forEach(function(btn){
+    var item = btn.parentNode;
+
+    // click works on every width, and is the only way in on touch
+    btn.addEventListener('click', function(){
+      var open = !item.classList.contains('is-open');
+      closeMenus(item);
+      openMenu(item, btn, open);
+    });
+
+    // hover is a desktop convenience on top of the click
+    item.addEventListener('mouseenter', function(){
+      if (isDesktop()) openMenu(item, btn, true);
+    });
+    item.addEventListener('mouseleave', function(){
+      if (isDesktop()) openMenu(item, btn, false);
+    });
+
+    // let the keyboard walk out of the menu and have it close behind
+    item.addEventListener('focusout', function(e){
+      if (!isDesktop()) return;
+      if (!item.contains(e.relatedTarget)) openMenu(item, btn, false);
+    });
+  });
+
+  /* ---------------- burger ---------------- */
+  function setNav(open){
+    header.classList.toggle('is-nav-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    // lock the page behind the open drawer so only the menu scrolls
+    document.documentElement.style.overflow = (open && !isDesktop()) ? 'hidden' : '';
+    if (!open) closeMenus(null);
+  }
+  burger.addEventListener('click', function(){
+    setNav(!header.classList.contains('is-nav-open'));
+  });
+  scrim.addEventListener('click', function(){ setNav(false); });
+  if (closeBtn) closeBtn.addEventListener('click', function(){ setNav(false); burger.focus(); });
+
+  // a tap on a real link closes the drawer; the Resources button must not
+  nav.addEventListener('click', function(e){
+    if (isDesktop()) return;
+    if (e.target.closest('a')) setNav(false);
+  });
+
+  /* ---------------- escape + outside click + resize ---------------- */
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape' && e.key !== 'Esc') return;
+    if (header.classList.contains('is-nav-open')){
+      setNav(false);
+      burger.focus();
+      return;
+    }
+    var open = header.querySelector('.ahd__item.is-open');
+    if (open){
+      var btn = open.querySelector('button.ahd__link');
+      openMenu(open, btn, false);
+      btn.focus();
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    if (header.contains(e.target)) return;
+    closeMenus(null);
+    if (header.classList.contains('is-nav-open')) setNav(false);
+  });
+
+  // crossing the desktop breakpoint must not leave a half-open state behind
+  var last = isDesktop();
+  var t = null;
+  window.addEventListener('resize', function(){
+    // setTimeout, not requestAnimationFrame — rAF is throttled in background tabs
+    clearTimeout(t);
+    t = setTimeout(function(){
+      var now = isDesktop();
+      if (now === last) return;
+      last = now;
+      closeMenus(null);
+      setNav(false);
+    }, 120);
+  });
+})();
+</script>
+
+
+<!-- ===== solutions-hero ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — SOLUTIONS PAGE HERO
+     arkvoltenergy.com/solutions
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .asl prefix.
+
+     IMAGE: drop the supplied photo in as assets/solutions-hero.jpg, then upload
+     it to the WP Media Library and swap the src below for the uploaded URL.
+     Keep the subject in the RIGHT 60% of the frame — the left third sits under
+     the white fade that keeps the copy readable.
+     Until the file exists the panel shows a neutral tint, not a broken image.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.asl{
+  --asl-ink:      #10222F;
+  --asl-body:     #5A6570;
+  --asl-strong:   #16232E;
+  --asl-green:    #22A24C;
+  --asl-green-dk: #1C8A41;
+  --asl-line:     #E7ECEF;
+  --asl-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* which part of the photo stays in frame when it is cropped */
+  --asl-focus:    58% 50%;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #fff;
+  font-family: var(--asl-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(30px, 3vw, 46px) 0 clamp(26px, 2.6vw, 40px);
+}
+.asl *, .asl *::before, .asl *::after{ box-sizing: border-box; }
+
+/* ---------------- media ---------------- */
+.asl__media{
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 63%;
+  z-index: 0;
+  pointer-events: none;
+  /* neutral fill so a missing file reads as a panel, not a broken image */
+  background: linear-gradient(150deg, #EDF3F0 0%, #E2EAE6 100%);
+}
+.asl__photo{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: var(--asl-focus);
+}
+.asl__fade{
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(100deg,
+      #fff 0%,
+      #fff 8%,
+      rgba(255,255,255,.92) 19%,
+      rgba(255,255,255,.50) 30%,
+      rgba(255,255,255,0)   44%),
+    linear-gradient(190deg,
+      rgba(255,255,255,.42) 0%,
+      rgba(255,255,255,0)   24%);
+}
+
+/* ---------------- layout ---------------- */
+.asl__inner{
+  position: relative;
+  z-index: 1;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.asl__content{ max-width: 470px; }
+
+/* ---------------- copy ---------------- */
+.asl__eyebrow{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--asl-green-dk);
+}
+.asl__eyebrow::after{
+  content: "";
+  flex: none;
+  width: 40px;
+  height: 2px;
+  background: var(--asl-green);
+  border-radius: 2px;
+}
+.asl__title{
+  margin: 0 0 18px;
+  font-size: clamp(27px, 3.15vw, 43px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.022em;
+  color: var(--asl-ink);
+}
+.asl__title em{
+  font-style: normal;
+  color: var(--asl-green-dk);
+}
+.asl__text{
+  margin: 0;
+  font-size: clamp(13.5px, 1.05vw, 14.5px);
+  line-height: 1.78;
+  color: var(--asl-body);
+}
+
+/* ---------------- feature chips ---------------- */
+.asl__points{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 1.8vw, 24px) clamp(18px, 2vw, 30px);
+  margin: clamp(24px, 2.6vw, 34px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.asl__point{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13.4px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--asl-ink);
+}
+.asl__ico{
+  flex: none;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--asl-line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--asl-green-dk);
+  transition: border-color .25s ease, transform .3s cubic-bezier(.22,.61,.36,1),
+              box-shadow .25s ease;
+}
+.asl__ico svg{ width: 18px; height: 18px; }
+.asl__point:hover .asl__ico{
+  border-color: rgba(34,162,76,.5);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(16,34,47,.08);
+}
+
+/* ---------------- entrance ---------------- */
+.asl--anim .asl__reveal{ opacity: 0; transform: translateY(20px); }
+.asl.is-in .asl__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .7s ease var(--d, 0s),
+              transform .7s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+.asl--anim .asl__media{ opacity: 0; transform: scale(1.04); }
+.asl.is-in .asl__media{
+  opacity: 1; transform: none;
+  transition: opacity 1.1s ease .1s, transform 1.1s ease .1s;
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1199px){
+  .asl__media{ width: 56%; --asl-focus: 62% 50%; }
+  .asl__content{ max-width: 420px; }
+}
+@media (max-width: 991px){
+  .asl{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: clamp(34px, 5vw, 54px);
+    --asl-focus: 55% 50%;
+  }
+  .asl__inner{ order: 1; }
+  .asl__content{ max-width: 100%; }
+  .asl__media{
+    order: 2;
+    position: relative;
+    inset: auto;
+    width: calc(100% - 40px);
+    margin: 28px 20px 0;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .asl__fade{
+    background: linear-gradient(180deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,0) 22%);
+  }
+}
+@media (max-width: 520px){
+  .asl__points{ grid-template-columns: 1fr; }
+  .asl__media{ aspect-ratio: 4 / 3; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .asl--anim .asl__reveal,
+  .asl--anim .asl__media{ opacity: 1; transform: none; }
+  .asl.is-in .asl__reveal,
+  .asl.is-in .asl__media{ transition: none; }
+  .asl__ico, .asl__point:hover .asl__ico{ transition: none; transform: none; }
+}
+</style>
+
+<section class="asl" aria-labelledby="asl-title">
+
+  <div class="asl__media" aria-hidden="true">
+    <img class="asl__photo"
+         src="assets/solutions-hero.jpg"
+         alt="ARKVOLT solar array, wind turbines and a battery energy storage container"
+         width="1299" height="793"
+         fetchpriority="high" decoding="async">
+    <span class="asl__fade"></span>
+  </div>
+
+  <div class="asl__inner">
+    <div class="asl__content asl__reveal">
+
+      <p class="asl__eyebrow">Our Solutions</p>
+
+      <h1 class="asl__title" id="asl-title">
+        Integrated Solutions for a <em>Sustainable Tomorrow</em>
+      </h1>
+
+      <p class="asl__text">
+        ARKVOLT delivers end-to-end engineering, energy, and technology solutions
+        designed to power progress and build a smarter, cleaner, and more efficient
+        future.
+      </p>
+
+      <ul class="asl__points">
+
+        <li class="asl__point">
+          <span class="asl__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13.4 2.4 5.6 13.2h5.2l-1 8.4 7.6-10.8h-5l1-8.4Z"/>
+            </svg>
+          </span>
+          <span>Sustainable<br>&amp; Reliable</span>
+        </li>
+
+        <li class="asl__point">
+          <span class="asl__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3.2"/>
+              <path d="M12 2.6v2.6M12 18.8v2.6M21.4 12h-2.6M5.2 12H2.6m14.7-6.7-1.8 1.8M8.5 15.5l-1.8 1.8m0-11.9 1.8 1.8m7 7 1.8 1.8"/>
+            </svg>
+          </span>
+          <span>Innovative<br>Technology</span>
+        </li>
+
+        <li class="asl__point">
+          <span class="asl__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.6 4.2 5.4v6.2c0 4.7 3.2 8.6 7.8 9.8 4.6-1.2 7.8-5.1 7.8-9.8V5.4L12 2.6Z"/>
+              <path d="m8.8 12 2.4 2.4 4.2-4.6"/>
+            </svg>
+          </span>
+          <span>End-to-End<br>Expertise</span>
+        </li>
+
+        <li class="asl__point">
+          <span class="asl__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.4 4.2c0 8.2-4.8 13.2-9.6 13.2a5.6 5.6 0 0 1-5.6-5.6c0-4.9 5-7.6 15.2-7.6Z"/>
+              <path d="M4.2 20.4c2.6-4.3 5.7-7.2 9.7-9.3"/>
+            </svg>
+          </span>
+          <span>Future-Ready<br>Solutions</span>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('asl')) {
+    var all = document.querySelectorAll('.asl');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.aslReady) return;
+  section.dataset.aslReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('asl--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.15 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== solutions-list ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — OUR SOLUTIONS  (Solutions page)
+     arkvoltenergy.com/solutions
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .asx prefix.
+
+     Six solution cards under a centred rule-flanked heading.
+     Every icon is inline SVG; no image files.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.asx{
+  --asx-ink:      #10222F;
+  --asx-body:     #5A6570;
+  --asx-green:    #22A24C;
+  --asx-green-dk: #1C8A41;
+  --asx-green-lt: #EDF7F0;
+  --asx-line:     #E7ECEF;
+  --asx-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--asx-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(30px, 3vw, 46px) 0 clamp(26px, 2.6vw, 40px);
+}
+.asx *, .asx *::before, .asx *::after{ box-sizing: border-box; }
+
+.asx__inner{ max-width: 1290px; margin: 0 auto; padding: 0 20px; }
+
+/* centred heading with a rule either side */
+.asx__head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 0 clamp(22px, 2.4vw, 34px);
+}
+.asx__head::before,
+.asx__head::after{
+  content: "";
+  width: clamp(40px, 6vw, 92px);
+  height: 2px;
+  background: var(--asx-green);
+  border-radius: 2px;
+}
+.asx__head h2{
+  margin: 0;
+  font-size: clamp(15px, 1.4vw, 19px);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--asx-ink);
+  text-align: center;
+}
+
+/* ---------------- cards ---------------- */
+.asx__grid{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+.asx__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(20px, 1.8vw, 26px) clamp(12px, 1.1vw, 16px);
+  background: #fff;
+  border: 1px solid var(--asx-line);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(16,34,47,.045);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1),
+              border-color .3s ease, box-shadow .3s ease;
+}
+.asx--anim .asx__card{ opacity: 0; transform: translateY(22px); }
+.asx.is-in .asx__card{
+  opacity: 1;
+  transform: none;
+  transition: opacity .6s ease var(--d, 0s),
+              transform .6s cubic-bezier(.22,.61,.36,1) var(--d, 0s),
+              border-color .3s ease, box-shadow .3s ease;
+}
+.asx.is-in .asx__card:hover{
+  transform: translateY(-6px);
+  border-color: rgba(34,162,76,.42);
+  box-shadow: 0 18px 36px rgba(16,34,47,.10);
+}
+
+.asx__ico{
+  width: clamp(52px, 4.4vw, 62px);
+  height: clamp(52px, 4.4vw, 62px);
+  margin-bottom: 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--asx-green-lt);
+  color: var(--asx-green-dk);
+  transition: transform .35s cubic-bezier(.22,.61,.36,1), background-color .3s ease;
+}
+.asx__ico svg{ width: 50%; height: 50%; }
+.asx__card:hover .asx__ico{ transform: scale(1.08); background: #E1F2E7; }
+
+.asx__name{
+  margin: 0;
+  font-size: 13.6px;
+  font-weight: 700;
+  line-height: 1.42;
+  color: var(--asx-ink);
+}
+.asx__rule{
+  display: block;
+  width: 34px;
+  height: 2px;
+  margin: 13px 0;
+  background: var(--asx-green);
+  border-radius: 2px;
+  opacity: .55;
+}
+.asx__desc{
+  margin: 0;
+  font-size: 12.4px;
+  line-height: 1.7;
+  color: var(--asx-body);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1200px){
+  .asx__grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+}
+@media (max-width: 760px){
+  .asx__grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+}
+@media (max-width: 460px){
+  .asx__grid{ grid-template-columns: 1fr; }
+  .asx__card{
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 16px;
+    padding: 20px 18px;
+  }
+  .asx__ico{ flex: none; margin-bottom: 0; width: 50px; height: 50px; }
+  .asx__rule{ margin: 10px 0; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .asx--anim .asx__card{ opacity: 1; transform: none; }
+  .asx.is-in .asx__card{ transition: none; }
+  .asx.is-in .asx__card:hover{ transform: none; }
+  .asx__ico, .asx__card:hover .asx__ico{ transition: none; transform: none; }
+}
+</style>
+
+<section class="asx" aria-labelledby="asx-title">
+  <div class="asx__inner">
+
+    <div class="asx__head">
+      <h2 id="asx-title">Our Solutions</h2>
+    </div>
+
+    <div class="asx__grid">
+
+      <!-- 1 -->
+      <article class="asx__card" style="--d:.00s">
+        <span class="asx__ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <rect x="6" y="9" width="12" height="24" rx="2.2" stroke="currentColor" stroke-width="2"/>
+            <rect x="22" y="9" width="12" height="24" rx="2.2" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 7V5.5h4V7M26 7V5.5h4V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <rect x="9" y="20" width="6" height="9" rx="1" fill="currentColor"/>
+            <rect x="25" y="16" width="6" height="13" rx="1" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="asx__name">Battery Energy Storage Systems (BESS)</h3>
+        <span class="asx__rule"></span>
+        <p class="asx__desc">
+          Advanced storage solutions for commercial, industrial, and utility-scale
+          applications with monitoring and analytics.
+        </p>
+      </article>
+
+      <!-- 2 -->
+      <article class="asx__card" style="--d:.06s">
+        <span class="asx__ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="29.5" cy="10.5" r="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M29.5 3.4v1.8M29.5 15.8v1.8M36.6 10.5h-1.8M24.2 10.5h-1.8m9.8-5.1-1.3 1.3m-5.1 5.1-1.3 1.3m0-7.7 1.3 1.3m5.1 5.1 1.3 1.3"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M11 17h14l4 16H7l4-16Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M9.6 25h17M17.4 17l-1.4 16M21.2 17l2 16" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+        </span>
+        <h3 class="asx__name">Solar EPC Solutions</h3>
+        <span class="asx__rule"></span>
+        <p class="asx__desc">
+          End-to-end solar project development, engineering, procurement, and
+          construction with quality execution.
+        </p>
+      </article>
+
+      <!-- 3 -->
+      <article class="asx__card" style="--d:.12s">
+        <span class="asx__ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M8.5 26.5A13 13 0 0 1 20 7a13 13 0 0 1 9.6 4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M29.9 5.6v6h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31.5 13.5A13 13 0 0 1 20 33a13 13 0 0 1-9.6-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10.1 34.4v-6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27 15c0 5.5-3.2 9-6.6 9A3.9 3.9 0 0 1 16.6 20c0-3.3 3.5-5 10.4-5Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="asx__name">Renewable Energy Integration</h3>
+        <span class="asx__rule"></span>
+        <p class="asx__desc">
+          Seamlessly integrate solar, wind, and storage systems for a cleaner and
+          sustainable future.
+        </p>
+      </article>
+
+      <!-- 4 -->
+      <article class="asx__card" style="--d:.18s">
+        <span class="asx__ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <rect x="4" y="7" width="32" height="21" rx="2.6" stroke="currentColor" stroke-width="2"/>
+            <path d="M14 33h12M20 28v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M9.5 22.5 15 16l4.5 4.5L26 12l4.8 5.4" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="26" cy="12" r="1.9" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="asx__name">Energy Management Systems (EMS)</h3>
+        <span class="asx__rule"></span>
+        <p class="asx__desc">
+          Intelligent monitoring and control systems that improve efficiency and
+          reduce operational costs.
+        </p>
+      </article>
+
+      <!-- 5 -->
+      <article class="asx__card" style="--d:.24s">
+        <span class="asx__ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <rect x="9" y="6" width="22" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M15.5 6V3.6h9V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M21.6 12 15 22h4.4l-1 6 6.6-10h-4.4l1-6Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="asx__name">Power Conversion Systems (PCS)</h3>
+        <span class="asx__rule"></span>
+        <p class="asx__desc">
+          High-performance power conversion systems for stable and efficient energy
+          conversion.
+        </p>
+      </article>
+
+      <!-- 6 -->
+      <article class="asx__card" style="--d:.30s">
+        <span class="asx__ico" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M5 29h30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8.5 29v-3.5a11.5 11.5 0 0 1 23 0V29" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M16.5 15.2V8.6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v6.6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M8.5 25.5h23" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="20" cy="33.4" r="1.8" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="asx__name">Engineering, Procurement &amp; Construction (EPC)</h3>
+        <span class="asx__rule"></span>
+        <p class="asx__desc">
+          Complete EPC services delivered with on-time, within scope, and excellence.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('asx')) {
+    var all = document.querySelectorAll('.asx');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.asxReady) return;
+  section.dataset.asxReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('asx--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.88 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.12 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== solutions-t0 ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — TECHNOLOGY & DIGITAL SOLUTIONS, WITH T-0  (Solutions page)
+     arkvoltenergy.com/solutions
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .atz prefix.
+
+     The T-0 wordmark is set in live text, not an image, so it stays crisp at
+     any size. Every capability icon is inline SVG.
+
+     This is the Solutions-page twin of sections/about-partner-t0.html — same
+     markup and styles, only the eyebrow differs. Keep the two in sync if the
+     capability copy changes.
+
+     LINK TO CHECK: the button points at /solutions. If T-0 gets its own page or
+     an external site, update the href on both files.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.atz{
+  --atz-ink:      #10222F;
+  --atz-body:     #5A6570;
+  --atz-green:    #22A24C;
+  --atz-green-dk: #1C8A41;
+  --atz-green-lt: #EDF7F0;
+  --atz-line:     #E7ECEF;
+  --atz-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--atz-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(28px, 2.8vw, 44px) 0;
+}
+.atz *, .atz *::before, .atz *::after{ box-sizing: border-box; }
+
+.atz__inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(26px, 3.4vw, 58px);
+  align-items: start;
+}
+
+/* ---------------- left ---------------- */
+.atz__eyebrow{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 clamp(16px, 1.8vw, 24px);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--atz-green-dk);
+}
+.atz__eyebrow::after{
+  content: "";
+  flex: none;
+  width: 40px;
+  height: 2px;
+  background: var(--atz-green);
+  border-radius: 2px;
+}
+
+/* T-0 wordmark, set in type rather than shipped as an image */
+.atz__mark{ margin: 0 0 clamp(16px, 1.8vw, 24px); }
+.atz__mark b{
+  display: block;
+  font-size: clamp(38px, 3.8vw, 52px);
+  font-weight: 800;
+  line-height: .95;
+  letter-spacing: -.04em;
+  color: var(--atz-ink);
+}
+.atz__mark span{
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(8.5px, .75vw, 10px);
+  font-weight: 600;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  color: var(--atz-body);
+}
+
+.atz__text{
+  margin: 0;
+  font-size: clamp(13.2px, 1vw, 14px);
+  line-height: 1.82;
+  color: var(--atz-body);
+}
+
+.atz__btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: clamp(20px, 2.2vw, 28px);
+  padding: 13px 22px;
+  border: 1px solid var(--atz-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--atz-ink);
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: border-color .25s ease, color .25s ease,
+              transform .25s ease, box-shadow .25s ease;
+}
+.atz__btn svg{ width: 12px; height: 12px; transition: transform .25s ease; }
+.atz__btn:hover,
+.atz__btn:focus-visible{
+  border-color: var(--atz-green);
+  color: var(--atz-green-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(16,34,47,.08);
+}
+.atz__btn:hover svg{ transform: translateX(4px); }
+.atz__btn:focus-visible{ outline: 2px solid var(--atz-green-dk); outline-offset: 3px; }
+
+/* ---------------- right ---------------- */
+.atz__caps{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(22px, 2.4vw, 34px) clamp(24px, 3vw, 48px);
+  padding-left: clamp(26px, 3.4vw, 58px);
+  border-left: 1px solid var(--atz-line);
+}
+.atz__cap{
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.atz__ico{
+  flex: none;
+  width: clamp(44px, 3.6vw, 52px);
+  height: clamp(44px, 3.6vw, 52px);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--atz-green-lt);
+  color: var(--atz-green-dk);
+  transition: transform .35s cubic-bezier(.22,.61,.36,1), background-color .3s ease;
+}
+.atz__ico svg{ width: 46%; height: 46%; }
+.atz__cap:hover .atz__ico{ transform: translateY(-3px) scale(1.06); background: #E1F2E7; }
+
+.atz__name{
+  margin: 0 0 6px;
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--atz-ink);
+}
+.atz__desc{
+  margin: 0;
+  font-size: 12.8px;
+  line-height: 1.65;
+  color: var(--atz-body);
+}
+
+/* ---------------- reveal ---------------- */
+.atz--anim .atz__reveal{ opacity: 0; transform: translateY(20px); }
+.atz.is-in .atz__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .65s ease var(--d, 0s),
+              transform .65s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1000px){
+  .atz__inner{ grid-template-columns: 1fr; gap: 26px; }
+  .atz__caps{
+    padding-left: 0;
+    padding-top: 26px;
+    border-left: 0;
+    border-top: 1px solid var(--atz-line);
+  }
+}
+@media (max-width: 620px){
+  .atz__caps{ grid-template-columns: 1fr; }
+  .atz__btn{ width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .atz--anim .atz__reveal{ opacity: 1; transform: none; }
+  .atz.is-in .atz__reveal{ transition: none; }
+  .atz__ico, .atz__cap:hover .atz__ico{ transition: none; transform: none; }
+  .atz__btn, .atz__btn svg{ transition: none; }
+}
+</style>
+
+<section class="atz" aria-labelledby="atz-eyebrow">
+  <div class="atz__inner">
+
+    <!-- ============ left ============ -->
+    <div class="atz__reveal">
+      <p class="atz__eyebrow" id="atz-eyebrow">Technology &amp; Digital Solutions (with T-0)</p>
+
+      <p class="atz__mark">
+        <b>T-0</b>
+        <span>Technology&middot;Zero</span>
+      </p>
+
+      <p class="atz__text">
+        T-0 is our technology, software engineering, and applied research partner.
+        Their capabilities in enterprise software, AI integration, IoT systems,
+        cloud infrastructure, and data analytics strengthen ARKVOLT's engineering
+        and energy solutions, enabling smarter operations, intelligent monitoring,
+        and data-driven decision making.
+      </p>
+
+      <a class="atz__btn" href="solutions.html">
+        Learn More About T-0
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- ============ right ============ -->
+    <div class="atz__caps">
+
+      <article class="atz__cap atz__reveal" style="--d:.06s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.6" y="4" width="18.8" height="13" rx="2.2"/>
+            <path d="M2.6 8h18.8"/>
+            <path d="M5.4 6h.01M7.8 6h.01"/>
+            <path d="M8.6 20.4h6.8M12 17v3.4"/>
+            <path d="m9.6 11.4-1.8 2 1.8 2M14.4 11.4l1.8 2-1.8 2"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Enterprise Software</h3>
+          <p class="atz__desc">Custom software solutions for business and operations.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.10s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.2 18.4a4 4 0 0 1-.4-8 5.5 5.5 0 0 1 10.6 1.2 3.6 3.6 0 0 1-.6 6.8H7.2Z"/>
+            <path d="M9.8 14.2h4.4M11 11.6h2.6"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Cloud Infrastructure</h3>
+          <p class="atz__desc">Scalable, secure, and reliable cloud solutions.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.14s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7.4" y="7.4" width="9.2" height="9.2" rx="2"/>
+            <path d="M10.4 10.6h3.2v3.2h-3.2z"/>
+            <path d="M10 7.4V4.6M14 7.4V4.6M10 19.4v-2.8M14 19.4v-2.8"/>
+            <path d="M7.4 10h-2.8M7.4 14h-2.8M19.4 10h-2.8M19.4 14h-2.8"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">AI Integration</h3>
+          <p class="atz__desc">Artificial intelligence for insights, automation, and optimization.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.18s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3.6" width="18" height="16.8" rx="2.2"/>
+            <path d="M7.4 16.4v-3.6M12 16.4V8.6M16.6 16.4v-5.6"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Data Analytics</h3>
+          <p class="atz__desc">Actionable insights through advanced data analytics.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.22s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2.6"/>
+            <circle cx="4.6" cy="5.4" r="2"/>
+            <circle cx="19.4" cy="5.4" r="2"/>
+            <circle cx="4.6" cy="18.6" r="2"/>
+            <circle cx="19.4" cy="18.6" r="2"/>
+            <path d="m6.1 6.9 3.8 3.4M17.9 6.9l-3.8 3.4M6.1 17.1l3.8-3.4M17.9 17.1l-3.8-3.4"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">IoT Systems</h3>
+          <p class="atz__desc">Connected devices and systems for real-time monitoring.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.26s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9.6 3.2v6.2L4.9 17.6a2.4 2.4 0 0 0 2 3.6h10.2a2.4 2.4 0 0 0 2-3.6L14.4 9.4V3.2"/>
+            <path d="M8.4 3.2h7.2"/>
+            <path d="M7.6 14.8h8.8"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Applied Research</h3>
+          <p class="atz__desc">Innovation-driven R&amp;D for emerging technologies and solutions.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('atz')) {
+    var all = document.querySelectorAll('.atz');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.atzReady) return;
+  section.dataset.atzReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('atz--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.88 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.12 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== about-partner-t0 ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — OUR PARTNER, T-0  (About page)
+     arkvoltenergy.com/about
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .atz prefix.
+
+     The T-0 wordmark is set in live text, not an image, so it stays crisp at
+     any size. Every capability icon is inline SVG.
+
+     LINK TO CHECK: the button points at /solutions, where the theme's own
+     content covers "Technology & Digital Solutions with T-0". If T-0 gets its
+     own page or an external site, update the href.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.atz{
+  --atz-ink:      #10222F;
+  --atz-body:     #5A6570;
+  --atz-green:    #22A24C;
+  --atz-green-dk: #1C8A41;
+  --atz-green-lt: #EDF7F0;
+  --atz-line:     #E7ECEF;
+  --atz-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--atz-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(28px, 2.8vw, 44px) 0;
+}
+.atz *, .atz *::before, .atz *::after{ box-sizing: border-box; }
+
+.atz__inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(26px, 3.4vw, 58px);
+  align-items: start;
+}
+
+/* ---------------- left ---------------- */
+.atz__eyebrow{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 clamp(16px, 1.8vw, 24px);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--atz-green-dk);
+}
+.atz__eyebrow::after{
+  content: "";
+  flex: none;
+  width: 40px;
+  height: 2px;
+  background: var(--atz-green);
+  border-radius: 2px;
+}
+
+/* T-0 wordmark, set in type rather than shipped as an image */
+.atz__mark{ margin: 0 0 clamp(16px, 1.8vw, 24px); }
+.atz__mark b{
+  display: block;
+  font-size: clamp(38px, 3.8vw, 52px);
+  font-weight: 800;
+  line-height: .95;
+  letter-spacing: -.04em;
+  color: var(--atz-ink);
+}
+.atz__mark span{
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(8.5px, .75vw, 10px);
+  font-weight: 600;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  color: var(--atz-body);
+}
+
+.atz__text{
+  margin: 0;
+  font-size: clamp(13.2px, 1vw, 14px);
+  line-height: 1.82;
+  color: var(--atz-body);
+}
+
+.atz__btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: clamp(20px, 2.2vw, 28px);
+  padding: 13px 22px;
+  border: 1px solid var(--atz-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--atz-ink);
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: border-color .25s ease, color .25s ease,
+              transform .25s ease, box-shadow .25s ease;
+}
+.atz__btn svg{ width: 12px; height: 12px; transition: transform .25s ease; }
+.atz__btn:hover,
+.atz__btn:focus-visible{
+  border-color: var(--atz-green);
+  color: var(--atz-green-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(16,34,47,.08);
+}
+.atz__btn:hover svg{ transform: translateX(4px); }
+.atz__btn:focus-visible{ outline: 2px solid var(--atz-green-dk); outline-offset: 3px; }
+
+/* ---------------- right ---------------- */
+.atz__caps{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(22px, 2.4vw, 34px) clamp(24px, 3vw, 48px);
+  padding-left: clamp(26px, 3.4vw, 58px);
+  border-left: 1px solid var(--atz-line);
+}
+.atz__cap{
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.atz__ico{
+  flex: none;
+  width: clamp(44px, 3.6vw, 52px);
+  height: clamp(44px, 3.6vw, 52px);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--atz-green-lt);
+  color: var(--atz-green-dk);
+  transition: transform .35s cubic-bezier(.22,.61,.36,1), background-color .3s ease;
+}
+.atz__ico svg{ width: 46%; height: 46%; }
+.atz__cap:hover .atz__ico{ transform: translateY(-3px) scale(1.06); background: #E1F2E7; }
+
+.atz__name{
+  margin: 0 0 6px;
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--atz-ink);
+}
+.atz__desc{
+  margin: 0;
+  font-size: 12.8px;
+  line-height: 1.65;
+  color: var(--atz-body);
+}
+
+/* ---------------- reveal ---------------- */
+.atz--anim .atz__reveal{ opacity: 0; transform: translateY(20px); }
+.atz.is-in .atz__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .65s ease var(--d, 0s),
+              transform .65s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1000px){
+  .atz__inner{ grid-template-columns: 1fr; gap: 26px; }
+  .atz__caps{
+    padding-left: 0;
+    padding-top: 26px;
+    border-left: 0;
+    border-top: 1px solid var(--atz-line);
+  }
+}
+@media (max-width: 620px){
+  .atz__caps{ grid-template-columns: 1fr; }
+  .atz__btn{ width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .atz--anim .atz__reveal{ opacity: 1; transform: none; }
+  .atz.is-in .atz__reveal{ transition: none; }
+  .atz__ico, .atz__cap:hover .atz__ico{ transition: none; transform: none; }
+  .atz__btn, .atz__btn svg{ transition: none; }
+}
+</style>
+
+<section class="atz" aria-labelledby="atz-eyebrow">
+  <div class="atz__inner">
+
+    <!-- ============ left ============ -->
+    <div class="atz__reveal">
+      <p class="atz__eyebrow" id="atz-eyebrow">Our Partner &ndash; T-0</p>
+
+      <p class="atz__mark">
+        <b>T-0</b>
+        <span>Technology&middot;Zero</span>
+      </p>
+
+      <p class="atz__text">
+        T-0 is our technology, software engineering, and applied research partner.
+        Their capabilities in enterprise software, AI integration, IoT systems,
+        cloud infrastructure, and data analytics strengthen ARKVOLT's engineering
+        and energy solutions, enabling smarter operations, intelligent monitoring,
+        and data-driven decision making.
+      </p>
+
+      <a class="atz__btn" href="solutions.html">
+        Learn More About T-0
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- ============ right ============ -->
+    <div class="atz__caps">
+
+      <article class="atz__cap atz__reveal" style="--d:.06s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.6" y="4" width="18.8" height="13" rx="2.2"/>
+            <path d="M2.6 8h18.8"/>
+            <path d="M5.4 6h.01M7.8 6h.01"/>
+            <path d="M8.6 20.4h6.8M12 17v3.4"/>
+            <path d="m9.6 11.4-1.8 2 1.8 2M14.4 11.4l1.8 2-1.8 2"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Enterprise Software</h3>
+          <p class="atz__desc">Custom software solutions for business and operations.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.10s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.2 18.4a4 4 0 0 1-.4-8 5.5 5.5 0 0 1 10.6 1.2 3.6 3.6 0 0 1-.6 6.8H7.2Z"/>
+            <path d="M9.8 14.2h4.4M11 11.6h2.6"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Cloud Infrastructure</h3>
+          <p class="atz__desc">Scalable, secure, and reliable cloud solutions.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.14s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7.4" y="7.4" width="9.2" height="9.2" rx="2"/>
+            <path d="M10.4 10.6h3.2v3.2h-3.2z"/>
+            <path d="M10 7.4V4.6M14 7.4V4.6M10 19.4v-2.8M14 19.4v-2.8"/>
+            <path d="M7.4 10h-2.8M7.4 14h-2.8M19.4 10h-2.8M19.4 14h-2.8"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">AI Integration</h3>
+          <p class="atz__desc">Artificial intelligence for insights, automation, and optimization.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.18s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3.6" width="18" height="16.8" rx="2.2"/>
+            <path d="M7.4 16.4v-3.6M12 16.4V8.6M16.6 16.4v-5.6"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Data Analytics</h3>
+          <p class="atz__desc">Actionable insights through advanced data analytics.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.22s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2.6"/>
+            <circle cx="4.6" cy="5.4" r="2"/>
+            <circle cx="19.4" cy="5.4" r="2"/>
+            <circle cx="4.6" cy="18.6" r="2"/>
+            <circle cx="19.4" cy="18.6" r="2"/>
+            <path d="m6.1 6.9 3.8 3.4M17.9 6.9l-3.8 3.4M6.1 17.1l3.8-3.4M17.9 17.1l-3.8-3.4"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">IoT Systems</h3>
+          <p class="atz__desc">Connected devices and systems for real-time monitoring.</p>
+        </div>
+      </article>
+
+      <article class="atz__cap atz__reveal" style="--d:.26s">
+        <span class="atz__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9.6 3.2v6.2L4.9 17.6a2.4 2.4 0 0 0 2 3.6h10.2a2.4 2.4 0 0 0 2-3.6L14.4 9.4V3.2"/>
+            <path d="M8.4 3.2h7.2"/>
+            <path d="M7.6 14.8h8.8"/>
+          </svg>
+        </span>
+        <div>
+          <h3 class="atz__name">Applied Research</h3>
+          <p class="atz__desc">Innovation-driven R&amp;D for emerging technologies and solutions.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('atz')) {
+    var all = document.querySelectorAll('.atz');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.atzReady) return;
+  section.dataset.atzReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('atz--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.88 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.12 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== solutions-cta ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — SUSTAINABLE. RELIABLE. FUTURE-READY.  (Solutions page)
+     arkvoltenergy.com/solutions
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .asc prefix.
+
+     Closing band for the Solutions page. The dot field on the right is drawn
+     with a CSS gradient, not an image.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.asc{
+  --asc-ink:      #10222F;
+  --asc-body:     #5A6570;
+  --asc-green:    #22A24C;
+  --asc-green-dk: #1C8A41;
+  --asc-green-lt: #EDF7F0;
+  --asc-line:     #E2E9E5;
+  --asc-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--asc-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(24px, 2.4vw, 36px) 0 clamp(30px, 3vw, 46px);
+}
+.asc *, .asc *::before, .asc *::after{ box-sizing: border-box; }
+
+.asc__inner{ max-width: 1290px; margin: 0 auto; padding: 0 20px; }
+
+.asc__band{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(20px, 2.6vw, 40px);
+  padding: clamp(26px, 2.8vw, 40px) clamp(24px, 3vw, 48px);
+  background: linear-gradient(105deg, #F4F9F6 0%, #FBFDFC 62%, #F6FAF8 100%);
+  border: 1px solid var(--asc-line);
+  border-radius: 14px;
+}
+
+/* dot field, bottom right */
+.asc__band::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -40px;
+  bottom: -60px;
+  width: 340px;
+  height: 240px;
+  background-image: radial-gradient(circle, var(--asc-green) 1.4px, transparent 1.4px);
+  background-size: 14px 14px;
+  opacity: .16;
+  -webkit-mask-image: radial-gradient(ellipse at 70% 70%, #000 30%, transparent 72%);
+          mask-image: radial-gradient(ellipse at 70% 70%, #000 30%, transparent 72%);
+  pointer-events: none;
+}
+
+.asc__badge{
+  flex: none;
+  width: clamp(64px, 5.6vw, 84px);
+  height: clamp(64px, 5.6vw, 84px);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--asc-green-lt);
+  color: var(--asc-green-dk);
+  transition: transform .35s cubic-bezier(.22,.61,.36,1), background-color .3s ease;
+}
+.asc__badge svg{ width: 46%; height: 46%; }
+.asc__band:hover .asc__badge{ transform: scale(1.06); background: #E1F2E7; }
+
+.asc__title{
+  margin: 0;
+  font-size: clamp(20px, 2.1vw, 30px);
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: -.02em;
+  color: var(--asc-ink);
+}
+.asc__title span{ color: var(--asc-green-dk); }
+
+.asc__text{
+  margin: 0;
+  padding-left: clamp(20px, 2.6vw, 40px);
+  border-left: 1px solid var(--asc-line);
+  font-size: clamp(13.2px, 1.05vw, 14.5px);
+  line-height: 1.8;
+  color: var(--asc-body);
+}
+
+/* ---------------- reveal ---------------- */
+.asc--anim .asc__band{ opacity: 0; transform: translateY(22px); }
+.asc.is-in .asc__band{
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 900px){
+  .asc__band{ grid-template-columns: auto minmax(0, 1fr); }
+  .asc__text{
+    grid-column: 1 / -1;
+    padding-left: 0;
+    padding-top: clamp(18px, 2.4vw, 26px);
+    border-left: 0;
+    border-top: 1px solid var(--asc-line);
+  }
+}
+@media (max-width: 520px){
+  .asc__band{ grid-template-columns: 1fr; justify-items: start; text-align: left; }
+  .asc__badge{ width: 60px; height: 60px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .asc--anim .asc__band{ opacity: 1; transform: none; }
+  .asc.is-in .asc__band{ transition: none; }
+  .asc__badge, .asc__band:hover .asc__badge{ transition: none; transform: none; }
+}
+</style>
+
+<section class="asc" aria-labelledby="asc-title">
+  <div class="asc__inner">
+    <div class="asc__band">
+
+      <span class="asc__badge" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="20" cy="20" r="15.4"/>
+          <path d="M28.6 12.4c0 8-4.6 12.6-9.4 12.6a4.9 4.9 0 0 1-5-5c0-4.8 5-7.6 14.4-7.6Z"/>
+          <path d="M13.2 27.8c2.6-4.2 5.8-7.2 9.6-9.2"/>
+        </svg>
+      </span>
+
+      <h2 class="asc__title" id="asc-title">
+        Sustainable. Reliable.<br><span>Future-Ready.</span>
+      </h2>
+
+      <p class="asc__text">
+        Our solutions are designed to deliver long-term value while supporting a
+        cleaner, greener, and more sustainable energy ecosystem.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('asc')) {
+    var all = document.querySelectorAll('.asc');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.ascReady) return;
+  section.dataset.ascReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('asc--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.12 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== footer ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — FOOTER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .aft prefix.
+
+     LOGO: the footer is dark green, so it uses assets/logo-white.png (the
+     reverse/knockout version). assets/logo.png is the original navy lockup for
+     light backgrounds. Upload the white one and swap the src below.
+
+     The last quick link points at assets/docs/arkvolt-brochure.pdf — upload it to
+     the Media Library and swap the href.
+
+     TWO THINGS TO FILL IN BEFORE GOING LIVE
+     1. Social links are href="#" — ARKVOLT's real profile URLs are not on file.
+     2. There is no phone number in the company content, so none is shown.
+        Add one to the contact list if you want it here.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.aft{
+  --aft-ink:      #FFFFFF;
+  --aft-body:     rgba(255,255,255,.90);
+  --aft-green:    #22A24C;
+  --aft-green-dk: #1C8A41;
+  --aft-mint:     #D8F9E4;
+  --aft-green-lt: rgba(255,255,255,.10);
+  --aft-line:     rgba(255,255,255,.16);
+  --aft-bar-bg:   #FFFFFF;
+  --aft-bar-ink:  #10222F;
+  --aft-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: linear-gradient(160deg, #0D3A21 0%, #145430 55%, #17773A 100%);
+  font-family: var(--aft-font);
+  -webkit-font-smoothing: antialiased;
+}
+.aft *, .aft *::before, .aft *::after{ box-sizing: border-box; }
+
+.aft__inner{
+  position: relative;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: clamp(32px, 3.2vw, 50px) 20px clamp(26px, 2.6vw, 38px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: clamp(24px, 2.6vw, 44px);
+}
+
+/* ---------------- brand ---------------- */
+.aft__logo{
+  display: inline-block;
+  max-width: 232px;
+  margin-bottom: 16px;
+}
+.aft__logo img{ width: 100%; height: auto; display: block; }
+
+.aft__tagline{
+  margin: 0 0 18px;
+  font-size: 13.4px;
+  line-height: 1.72;
+  color: var(--aft-body);
+  max-width: 34ch;
+}
+
+.aft__social{
+  display: flex;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.aft__social a{
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--aft-line);
+  border-radius: 50%;
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  transition: background-color .25s ease, border-color .25s ease,
+              color .25s ease, transform .25s ease;
+}
+.aft__social svg{ width: 16px; height: 16px; }
+.aft__social a:hover,
+.aft__social a:focus-visible{
+  background: #fff;
+  border-color: #fff;
+  color: #0D3A21;
+  transform: translateY(-3px);
+}
+.aft__social a:focus-visible{ outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ---------------- columns ---------------- */
+.aft__heading{
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--aft-mint);
+}
+/* the second link column continues the first, so its heading is for screen
+   readers only — visually the two columns read as one list */
+.aft__heading--sr{
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.aft__col--cont{ padding-top: 28px; }
+
+.aft__links{ margin: 0; padding: 0; list-style: none; }
+.aft__links li + li{ margin-top: 11px; }
+.aft__links a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font-size: 13.4px;
+  line-height: 1.5;
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease, gap .25s ease;
+}
+.aft__links a::before{
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background: var(--aft-mint);
+  border-radius: 2px;
+  transition: width .25s ease;
+}
+.aft__links a:hover,
+.aft__links a:focus-visible{ color: #fff; gap: 8px; }
+.aft__links a:hover::before,
+.aft__links a:focus-visible::before{ width: 12px; }
+
+/* ---------------- contact ---------------- */
+.aft__contact{ margin: 0; padding: 0; list-style: none; }
+.aft__contact li{
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 13.2px;
+  line-height: 1.65;
+  color: var(--aft-body);
+}
+.aft__contact li + li{ margin-top: 14px; }
+.aft__ico{
+  flex: none;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--aft-green-lt);
+  color: var(--aft-mint);
+}
+.aft__ico svg{ width: 15px; height: 15px; }
+.aft__contact a{
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__contact a:hover,
+.aft__contact a:focus-visible{ color: #fff; }
+
+/* ---------------- bottom bar ---------------- */
+/* thin copyright strip — white panel with dark text, under the green footer */
+.aft__bar{
+  position: relative;
+  background: var(--aft-bar-bg);
+  color: var(--aft-bar-ink);
+}
+.aft__bar-inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.aft__copy{ margin: 0; font-size: 12.5px; font-weight: 500; line-height: 1.5; color: var(--aft-bar-ink); }
+.aft__legal{
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12.5px;
+}
+.aft__legal a{
+  color: var(--aft-bar-ink);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__legal a:hover,
+.aft__legal a:focus-visible{ color: var(--aft-green-dk); text-decoration: underline; }
+.aft__legal span{ color: #C6CFD4; }
+
+/* back to top */
+.aft__top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--aft-green);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(34,162,76,.34);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s, background-color .25s ease;
+}
+.aft__top svg{ width: 15px; height: 15px; }
+.aft__top.is-on{ opacity: 1; visibility: visible; transform: none; }
+.aft__top:hover{ background: var(--aft-green-dk); }
+.aft__top:focus-visible{ outline: 2px solid #fff; outline-offset: 3px; }
+
+/* ---------------- reveal ---------------- */
+.aft--anim .aft__reveal{ opacity: 0; transform: translateY(20px); }
+.aft.is-in .aft__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .65s ease var(--d, 0s),
+              transform .65s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1000px){
+  .aft__inner{ grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .aft__col--brand{ grid-column: 1 / -1; }
+  .aft__col--cont{ padding-top: 28px; }
+}
+@media (max-width: 620px){
+  .aft__inner{ grid-template-columns: 1fr; gap: 26px; }
+  .aft__col--cont{ padding-top: 0; }
+  .aft__heading--sr{
+    position: static;
+    width: auto; height: auto;
+    margin: 0 0 16px;
+    overflow: visible;
+    clip: auto;
+    color: var(--aft-mint);
+  }
+  .aft__bar-inner{ flex-direction: column; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .aft--anim .aft__reveal{ opacity: 1; transform: none; }
+  .aft.is-in .aft__reveal{ transition: none; }
+  .aft__social a, .aft__links a, .aft__top{ transition: none; }
+  .aft__social a:hover{ transform: none; }
+}
+</style>
+
+<footer class="aft">
+
+
+  <div class="aft__inner">
+
+    <!-- ============ brand ============ -->
+    <div class="aft__col--brand aft__reveal">
+      <a class="aft__logo" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+        <img src="assets/logo-white.png"
+             alt="ARKVOLT Energy Private Limited — Advanced Energy Storage Solutions"
+             width="1296" height="292" loading="lazy" decoding="async">
+      </a>
+
+      <p class="aft__tagline">
+        Engineering reliable energy. Building intelligent infrastructure for a
+        sustainable tomorrow.
+      </p>
+
+      <ul class="aft__social">
+        <li>
+          <a href="#" aria-label="ARKVOLT on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4v11H3v-11Zm6.5 0h3.8v1.5h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75v5.7h-4v-5.05c0-1.2-.02-2.75-1.75-2.75-1.75 0-2.02 1.3-2.02 2.66v5.14h-4v-11Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.2l-4.9-6.4L5.1 21H2l7.2-8.3L2.4 3h6.4l4.4 5.8L17.5 3Zm-1.1 16.1h1.7L7.7 4.8H5.9l10.5 14.3Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15.2V8.8L15.5 12 10 15.2Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ quick links ============ -->
+    <div class="aft__reveal" style="--d:.08s">
+      <h3 class="aft__heading">Quick Links</h3>
+      <ul class="aft__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About ARKVOLT</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="our-partners.html">Our Partners</a></li>
+      </ul>
+    </div>
+
+    <div class="aft__col--cont aft__reveal" style="--d:.14s">
+      <h3 class="aft__heading aft__heading--sr">More Links</h3>
+      <ul class="aft__links">
+        <li><a href="innovation.html">Innovation</a></li>
+        <li><a href="incubation-centre.html">Incubation Centre</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="assets/docs/arkvolt-brochure.pdf" target="_blank" rel="noopener">Company Brochure</a></li>
+      </ul>
+    </div>
+
+    <!-- ============ contact ============ -->
+    <div class="aft__reveal" style="--d:.20s">
+      <h3 class="aft__heading">Contact Us</h3>
+      <ul class="aft__contact">
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.5s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+              <circle cx="12" cy="10.2" r="2.6"/>
+            </svg>
+          </span>
+          <span>
+            <strong style="display:block;font-weight:600;color:#fff">ARKVOLT ENERGY PRIVATE LIMITED</strong>
+            Room No. 13, 2nd Floor, Marwadi Building,<br>
+            25 Marve Road, Malad West, Mumbai,<br>
+            Maharashtra, India &ndash; 400064
+          </span>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.8" y="5" width="18.4" height="14" rx="2.4"/>
+              <path d="m3.4 6.6 8.6 6 8.6-6"/>
+            </svg>
+          </span>
+          <a href="mailto:info@arkvoltenergy.com">info@arkvoltenergy.com</a>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9.2"/>
+              <path d="M2.8 12h18.4M12 2.8c2.4 2.6 3.6 5.8 3.6 9.2s-1.2 6.6-3.6 9.2c-2.4-2.6-3.6-5.8-3.6-9.2S9.6 5.4 12 2.8Z"/>
+            </svg>
+          </span>
+          <a href="https://www.arkvoltenergy.com">www.arkvoltenergy.com</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ============ bottom bar ============ -->
+  <div class="aft__bar">
+    <div class="aft__bar-inner">
+      <p class="aft__copy">&copy; 2026 ARKVOLT ENERGY PRIVATE LIMITED. All Rights Reserved.</p>
+      <ul class="aft__legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><span aria-hidden="true">|</span></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <button class="aft__top" type="button" data-aft-top aria-label="Back to top">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</footer>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('aft')) {
+    var all = document.querySelectorAll('.aft');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.aftReady) return;
+  section.dataset.aftReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this footer blank
+  section.classList.add('aft--anim');
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- back to top ---------- */
+  var topBtn = section.querySelector('[data-aft-top]');
+  function toggleTop(){
+    topBtn.classList.toggle('is-on', window.pageYOffset > 500);
+  }
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+  });
+  window.addEventListener('scroll', toggleTop, { passive: true });
+  toggleTop();
+
+  /* ---------- reveal ---------- */
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.1 });
+    io.observe(section);
+  }
+
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+</body>
+</html>

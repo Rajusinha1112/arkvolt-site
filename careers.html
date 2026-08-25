@@ -1,0 +1,2867 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers | ARKVOLT Energy</title>
+  <meta name="description" content="Build your career with ARKVOLT. Explore openings across engineering, software, EPC and applied research, and apply online to join our team.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#10222F">
+  <link rel="canonical" href="https://www.arkvoltenergy.com/careers">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ARKVOLT Energy">
+  <meta property="og:title" content="Careers | ARKVOLT Energy">
+  <meta property="og:description" content="Build your career with ARKVOLT. Explore openings across engineering, software, EPC and applied research, and apply online to join our team.">
+  <meta property="og:url" content="https://www.arkvoltenergy.com/careers">
+  <meta property="og:image" content="https://www.arkvoltenergy.com/assets/careers-hero.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Careers | ARKVOLT Energy">
+  <meta name="twitter:description" content="Build your career with ARKVOLT. Explore openings across engineering, software, EPC and applied research, and apply online to join our team.">
+  <meta name="twitter:image" content="https://www.arkvoltenergy.com/assets/careers-hero.jpg">
+  <style>html,body{margin:0;padding:0;background:#fff;}img{max-width:100%;}</style>
+</head>
+<body>
+
+<!-- ===== header ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — SITE HEADER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget,
+     at the very top of the page. No page wrapper tags — WordPress supplies
+     those. HTML + CSS + JS are all inside this one file, scoped behind the
+     .ahd prefix.
+
+     LOGO: assets/logo-full.jpg is the complete ARKVOLT lockup — wordmark, bolt,
+     "ENERGY PVT. LTD." and the tagline — cropped tight to its content. The bar
+     is sized so the whole lockup reads. Upload it to the WP Media Library and
+     swap the src below for that URL. (assets/logo-full-dark.jpg is the same
+     lockup on black, for dark backgrounds.)
+
+     MARKING THE CURRENT PAGE
+     Add aria-current="page" to the link for the page you are on — the green
+     text and the underline follow that attribute, nothing else:
+
+         <a class="ahd__link" href="projects.html" aria-current="page">Projects</a>
+
+     For a page that sits inside the Resources dropdown, put aria-current="page"
+     on BOTH its .ahd__sub link and the Resources button, so the closed bar
+     still shows where the visitor is. WordPress's own current-menu-item /
+     current_page_item classes are honoured too.
+
+     LAYOUT: logo left, the links spread evenly across the bar (no dead gap in
+     the middle), Get In Touch pinned right. Below 1180px the links collapse
+     into a slide-down drawer behind the menu button.
+
+     If your theme already outputs its own header, use that instead of this
+     file — two headers on one page is worse than either alone.
+
+     Every icon is inline SVG; no icon fonts, no CDNs.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.ahd{
+  --ahd-ink:      #10222F;
+  --ahd-body:     #45525C;
+  --ahd-green:    #22A24C;
+  --ahd-green-dk: #1C8A41;
+  --ahd-green-hv: #1A7C3A;
+  --ahd-green-lt: #EDF7F0;
+  --ahd-line:     #E7ECEF;
+  --ahd-bar:      86px;
+  --ahd-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: #fff;
+  font-family: var(--ahd-font);
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 1px solid var(--ahd-line);
+  /* a faint lift even at rest, so the white bar never melts into a white hero */
+  box-shadow: 0 2px 12px rgba(16,34,47,.05);
+  transition: box-shadow .3s ease;
+}
+.ahd *, .ahd *::before, .ahd *::after{ box-sizing: border-box; }
+
+/* the shadow deepens once the page has scrolled under the bar */
+.ahd.is-stuck{ box-shadow: 0 8px 24px rgba(16,34,47,.1); }
+
+.ahd__inner{
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 3vw, 34px);
+  height: var(--ahd-bar);
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 34px);
+}
+
+/* ---------------- logo ---------------- */
+.ahd__brand{
+  flex: none;
+  display: block;
+  line-height: 0;
+  transition: opacity .25s ease;
+}
+.ahd__brand:hover{ opacity: .85; }
+.ahd__brand:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+.ahd__logo{
+  width: auto;
+  height: clamp(40px, 3.6vw, 52px);   /* tall enough that the full lockup reads */
+  display: block;
+}
+
+/* ---------------- nav ---------------- */
+.ahd__nav{
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* spread the links evenly, no middle gap */
+  gap: clamp(6px, 0.7vw, 12px);
+}
+.ahd__item{ position: relative; display: flex; }
+
+.ahd__link{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 3px;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--ahd-body);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  letter-spacing: .002em;
+  cursor: pointer;
+  transition: color .22s ease;
+}
+/* the underline grows out from the centre */
+.ahd__link::after{
+  content: "";
+  position: absolute;
+  left: 3px; right: 3px; bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-green);
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__link:hover,
+.ahd__link:focus-visible{ color: var(--ahd-green-dk); }
+.ahd__link:hover::after,
+.ahd__link:focus-visible::after{ transform: scaleX(1); }
+.ahd__link:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 5px; border-radius: 4px; }
+
+/* current page — driven by aria-current, or by WordPress's own menu classes */
+.ahd__link[aria-current="page"],
+.current-menu-item > .ahd__link,
+.current_page_item > .ahd__link{
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+.ahd__link[aria-current="page"]::after,
+.current-menu-item > .ahd__link::after,
+.current_page_item > .ahd__link::after{ transform: scaleX(1); }
+
+/* chevron on the item that opens a menu */
+.ahd__chev{
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: 1px;
+  transition: transform .3s cubic-bezier(.22,.61,.36,1);
+}
+.ahd__item.is-open > .ahd__link .ahd__chev{ transform: rotate(180deg); }
+
+/* ---------------- dropdown ---------------- */
+.ahd__menu{
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  width: 216px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(16,34,47,.13);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -8px);
+  transition: opacity .24s ease, transform .24s cubic-bezier(.22,.61,.36,1),
+              visibility .24s;
+}
+.ahd__item.is-open > .ahd__menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+/* a small bridge so the pointer can cross the gap without the menu closing */
+.ahd__item.is-open > .ahd__menu::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: -16px;
+  height: 16px;
+}
+.ahd__menuIn{ margin: 0; padding: 0; list-style: none; }
+.ahd__sub{
+  display: block;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 12.6px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ahd-body);
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, padding-left .2s ease;
+}
+.ahd__sub:hover,
+.ahd__sub:focus-visible{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  padding-left: 16px;
+}
+.ahd__sub:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: -2px; }
+/* the current page, when it lives inside the dropdown */
+.ahd__sub[aria-current="page"]{
+  background: var(--ahd-green-lt);
+  color: var(--ahd-green-dk);
+  font-weight: 600;
+}
+
+/* ---------------- call to action ---------------- */
+.ahd__cta{
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border: 1px solid var(--ahd-green);
+  border-radius: 999px;
+  background: var(--ahd-green);
+  color: #fff;
+  font-size: clamp(12px, 0.92vw, 13.5px);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(34,162,76,.24);
+  transition: background-color .25s ease, border-color .25s ease,
+              transform .25s ease, box-shadow .25s ease;
+}
+.ahd__cta svg{ width: 11px; height: 11px; transition: transform .25s ease; }
+.ahd__cta:hover{
+  background: var(--ahd-green-hv);
+  border-color: var(--ahd-green-hv);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(34,162,76,.3);
+}
+.ahd__cta:hover svg{ transform: translateX(3px); }
+.ahd__cta:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* ---------------- burger ---------------- */
+.ahd__burger{
+  display: none;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .25s ease, background-color .25s ease;
+}
+.ahd__burger:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); }
+.ahd__burger:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+.ahd__bars{
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin: 0 auto;
+  position: relative;
+}
+.ahd__bars i{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ahd-ink);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1), opacity .2s ease;
+}
+.ahd__bars i:nth-child(1){ top: 0; }
+.ahd__bars i:nth-child(2){ top: 6px; }
+.ahd__bars i:nth-child(3){ top: 12px; }
+.ahd.is-nav-open .ahd__bars i:nth-child(1){ transform: translateY(6px) rotate(45deg); }
+.ahd.is-nav-open .ahd__bars i:nth-child(2){ opacity: 0; }
+.ahd.is-nav-open .ahd__bars i:nth-child(3){ transform: translateY(-6px) rotate(-45deg); }
+
+/* drawer head — the logo strip + close button at the top of the mobile panel
+   (the whole thing is hidden on desktop, so the close button never shows there) */
+.ahd__drawerHead{ display: none; }
+.ahd__close{
+  flex: none;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--ahd-line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ahd-ink);
+  cursor: pointer;
+  transition: border-color .22s ease, background-color .22s ease, color .22s ease;
+}
+.ahd__close svg{ width: 17px; height: 17px; }
+.ahd__close:hover{ border-color: var(--ahd-green); background: var(--ahd-green-lt); color: var(--ahd-green-dk); }
+.ahd__close:focus-visible{ outline: 2px solid var(--ahd-green-dk); outline-offset: 3px; }
+
+/* dim the whole page behind the open side drawer */
+.ahd__scrim{
+  position: fixed;
+  inset: 0;
+  background: rgba(16,34,47,.42);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .34s ease, visibility .34s;
+  z-index: 1;
+}
+
+/* ---------------- mobile / tablet (drawer) ---------------- */
+@media (max-width: 1179px){
+  .ahd{ --ahd-bar: 74px; }
+  .ahd__burger{ display: block; }
+  /* the drawer carries its own close button, so the bar's button goes away
+     while the drawer is open — no stray control floating outside the panel */
+  .ahd.is-nav-open .ahd__burger{ display: none; }
+
+  .ahd.is-nav-open .ahd__scrim{ opacity: 1; visibility: visible; }
+
+  /* off-canvas side drawer that slides in from the left */
+  .ahd__nav{
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: min(86vw, 344px);
+    z-index: 2;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0 0 26px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    background: #fff;
+    box-shadow: 0 0 60px rgba(16,34,47,.24);
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform .36s cubic-bezier(.22,.61,.36,1), visibility .36s;
+  }
+  .ahd.is-nav-open .ahd__nav{
+    visibility: visible;
+    transform: none;
+  }
+
+  /* brand strip at the top of the drawer */
+  .ahd__drawerHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: var(--ahd-bar);
+    flex: none;
+    padding: 0 clamp(16px, 4.5vw, 22px);
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--ahd-line);
+    background: linear-gradient(180deg, #F7FBF9 0%, #fff 100%);
+  }
+  .ahd__drawerLogo{ height: 36px; width: auto; display: block; }
+
+  .ahd__inner .ahd__item,
+  .ahd__nav .ahd__item{
+    display: block;
+    margin: 0 clamp(14px, 4vw, 22px);
+    border-bottom: 1px solid var(--ahd-line);
+  }
+  .ahd__link{
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ahd-ink);
+  }
+  .ahd__link::after{ display: none; }
+  .ahd__link[aria-current="page"]{ color: var(--ahd-green-dk); }
+  .ahd__chev{ width: 12px; height: 12px; color: var(--ahd-green-dk); }
+
+  /* the dropdown becomes an accordion: 0fr -> 1fr animates to natural height */
+  .ahd__menu{
+    position: static;
+    width: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .32s cubic-bezier(.22,.61,.36,1);
+  }
+  .ahd__item.is-open > .ahd__menu{ grid-template-rows: 1fr; transform: none; }
+  .ahd__item.is-open > .ahd__menu::before{ content: none; }
+  .ahd__menuIn{ overflow: hidden; padding: 2px 0 8px; }
+  .ahd__sub{
+    padding: 11px 14px;
+    margin-bottom: 2px;
+    font-size: 13.5px;
+    border-radius: 8px;
+    background: #F6F9F7;
+  }
+  .ahd__sub:hover, .ahd__sub:focus-visible{ padding-left: 18px; }
+
+  .ahd__cta{
+    justify-content: center;
+    margin: 22px clamp(14px, 4vw, 22px) 0;
+    padding: 14px 22px;
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 420px){
+  .ahd__logo{ height: 34px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ahd, .ahd__link, .ahd__link::after, .ahd__chev, .ahd__menu, .ahd__nav,
+  .ahd__sub, .ahd__cta, .ahd__cta svg, .ahd__bars i, .ahd__scrim{ transition: none; }
+  .ahd__cta:hover{ transform: none; }
+}
+</style>
+
+<header class="ahd">
+  <div class="ahd__inner">
+
+    <a class="ahd__brand" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+      <img class="ahd__logo" src="assets/logo-full.jpg"
+           alt="ARKVOLT Energy Pvt. Ltd. — Advanced Energy Storage Solutions"
+           width="1279" height="279"
+           fetchpriority="high" decoding="async">
+    </a>
+
+    <button class="ahd__burger" type="button"
+            aria-label="Menu" aria-expanded="false" aria-controls="ahd-nav">
+      <span class="ahd__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <nav class="ahd__nav" id="ahd-nav" aria-label="Main">
+
+      <div class="ahd__drawerHead">
+        <img class="ahd__drawerLogo" src="assets/logo-full.jpg" alt="" aria-hidden="true"
+             width="1279" height="279" decoding="async">
+        <button class="ahd__close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="index.html">Home</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="about.html">About Us</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="solutions.html">Solutions</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="industries.html">Industries</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="projects.html">Projects</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="innovation.html">Innovation</a></div>
+      <div class="ahd__item"><a class="ahd__link" href="incubation-centre.html">Incubation Centre</a></div>
+
+      <div class="ahd__item">
+        <button class="ahd__link" type="button" aria-current="page" aria-expanded="false" aria-controls="ahd-resources">
+          Resources
+          <svg class="ahd__chev" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="ahd__menu" id="ahd-resources">
+          <ul class="ahd__menuIn">
+            <li><a class="ahd__sub" href="resources.html">Resource Centre</a></li>
+            <li><a class="ahd__sub" href="our-partners.html">Partners</a></li>
+            <li><a class="ahd__sub" href="careers.html" aria-current="page">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ahd__item"><a class="ahd__link" href="contact.html">Contact Us</a></div>
+
+      <a class="ahd__cta" href="contact.html">
+        Get In Touch
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </nav>
+  </div>
+  <span class="ahd__scrim" aria-hidden="true"></span>
+</header>
+
+<script>
+(function(){
+  var header = document.currentScript && document.currentScript.previousElementSibling;
+  if (!header || !header.classList.contains('ahd')) {
+    var all = document.querySelectorAll('.ahd');
+    header = all[all.length - 1];
+  }
+  if (!header || header.dataset.ahdReady) return;
+  header.dataset.ahdReady = '1';
+
+  var DESKTOP = '(min-width: 1180px)';
+  var burger  = header.querySelector('.ahd__burger');
+  var nav     = header.querySelector('.ahd__nav');
+  var scrim   = header.querySelector('.ahd__scrim');
+  var closeBtn = header.querySelector('.ahd__close');
+  var toggles = header.querySelectorAll('.ahd__item > button.ahd__link');
+
+  function isDesktop(){
+    return window.matchMedia && window.matchMedia(DESKTOP).matches;
+  }
+
+  /* ---------------- shadow once the page scrolls ---------------- */
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    header.classList.toggle('is-stuck', y > 4);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------------- dropdowns ---------------- */
+  function closeMenus(except){
+    toggles.forEach(function(btn){
+      var item = btn.parentNode;
+      if (item === except) return;
+      item.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+  function openMenu(item, btn, open){
+    item.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  toggles.forEach(function(btn){
+    var item = btn.parentNode;
+
+    // click works on every width, and is the only way in on touch
+    btn.addEventListener('click', function(){
+      var open = !item.classList.contains('is-open');
+      closeMenus(item);
+      openMenu(item, btn, open);
+    });
+
+    // hover is a desktop convenience on top of the click
+    item.addEventListener('mouseenter', function(){
+      if (isDesktop()) openMenu(item, btn, true);
+    });
+    item.addEventListener('mouseleave', function(){
+      if (isDesktop()) openMenu(item, btn, false);
+    });
+
+    // let the keyboard walk out of the menu and have it close behind
+    item.addEventListener('focusout', function(e){
+      if (!isDesktop()) return;
+      if (!item.contains(e.relatedTarget)) openMenu(item, btn, false);
+    });
+  });
+
+  /* ---------------- burger ---------------- */
+  function setNav(open){
+    header.classList.toggle('is-nav-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    // lock the page behind the open drawer so only the menu scrolls
+    document.documentElement.style.overflow = (open && !isDesktop()) ? 'hidden' : '';
+    if (!open) closeMenus(null);
+  }
+  burger.addEventListener('click', function(){
+    setNav(!header.classList.contains('is-nav-open'));
+  });
+  scrim.addEventListener('click', function(){ setNav(false); });
+  if (closeBtn) closeBtn.addEventListener('click', function(){ setNav(false); burger.focus(); });
+
+  // a tap on a real link closes the drawer; the Resources button must not
+  nav.addEventListener('click', function(e){
+    if (isDesktop()) return;
+    if (e.target.closest('a')) setNav(false);
+  });
+
+  /* ---------------- escape + outside click + resize ---------------- */
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape' && e.key !== 'Esc') return;
+    if (header.classList.contains('is-nav-open')){
+      setNav(false);
+      burger.focus();
+      return;
+    }
+    var open = header.querySelector('.ahd__item.is-open');
+    if (open){
+      var btn = open.querySelector('button.ahd__link');
+      openMenu(open, btn, false);
+      btn.focus();
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    if (header.contains(e.target)) return;
+    closeMenus(null);
+    if (header.classList.contains('is-nav-open')) setNav(false);
+  });
+
+  // crossing the desktop breakpoint must not leave a half-open state behind
+  var last = isDesktop();
+  var t = null;
+  window.addEventListener('resize', function(){
+    // setTimeout, not requestAnimationFrame — rAF is throttled in background tabs
+    clearTimeout(t);
+    t = setTimeout(function(){
+      var now = isDesktop();
+      if (now === last) return;
+      last = now;
+      closeMenus(null);
+      setNav(false);
+    }, 120);
+  });
+})();
+</script>
+
+
+<!-- ===== careers-hero ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — CAREERS PAGE HERO
+     arkvoltenergy.com/careers
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .chr prefix.
+
+     Same geometry and fade as every other page hero: white background, copy
+     left, photo right.
+
+     IMAGE: the supplied photo is in place as assets/careers-hero.jpg (1774x887, the same
+     2:1 the other page heroes use). Upload it to the WP Media Library and swap
+     the src below for that URL. If the file is ever missing the panel shows a
+     neutral tint, not a broken image.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.chr{
+  --chr-ink:      #10222F;
+  --chr-body:     #5A6570;
+  --chr-green:    #22A24C;
+  --chr-green-dk: #1C8A41;
+  --chr-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* which part of the photo stays in frame when it is cropped */
+  --chr-focus:    60% 50%;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #fff;
+  font-family: var(--chr-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(30px, 3vw, 46px) 0 clamp(26px, 2.6vw, 40px);
+}
+.chr *, .chr *::before, .chr *::after{ box-sizing: border-box; }
+
+/* ---------------- media ---------------- */
+.chr__media{
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 60%;
+  z-index: 0;
+  pointer-events: none;
+  /* neutral fill so a missing file reads as a panel, not a broken image */
+  background: linear-gradient(150deg, #EDF3F0 0%, #E2EAE6 100%);
+}
+.chr__photo{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: var(--chr-focus);
+}
+.chr__fade{
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(100deg,
+      #fff 0%,
+      #fff 9%,
+      rgba(255,255,255,.90) 21%,
+      rgba(255,255,255,.48) 33%,
+      rgba(255,255,255,0)   47%),
+    linear-gradient(190deg,
+      rgba(255,255,255,.45) 0%,
+      rgba(255,255,255,0)   24%);
+}
+
+/* ---------------- layout ---------------- */
+.chr__inner{
+  position: relative;
+  z-index: 1;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.chr__content{ max-width: 500px; }
+
+/* ---------------- copy ---------------- */
+.chr__eyebrow{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--chr-green-dk);
+}
+.chr__eyebrow::after{
+  content: "";
+  flex: none;
+  width: 40px;
+  height: 2px;
+  background: var(--chr-green);
+  border-radius: 2px;
+}
+.chr__title{
+  margin: 0 0 20px;
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -.026em;
+  color: var(--chr-ink);
+}
+.chr__title em{
+  font-style: normal;
+  color: var(--chr-green-dk);
+}
+.chr__text{
+  margin: 0 0 14px;
+  font-size: clamp(13.5px, 1.05vw, 14.5px);
+  line-height: 1.82;
+  color: var(--chr-body);
+}
+.chr__text:last-child{ margin-bottom: 0; }
+
+/* ---------------- entrance ---------------- */
+.chr--anim .chr__reveal{ opacity: 0; transform: translateY(20px); }
+.chr.is-in .chr__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1);
+}
+.chr--anim .chr__media{ opacity: 0; transform: scale(1.04); }
+.chr.is-in .chr__media{
+  opacity: 1; transform: none;
+  transition: opacity 1.1s ease .1s, transform 1.1s ease .1s;
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1199px){
+  .chr__media{ width: 55%; --chr-focus: 62% 50%; }
+  .chr__content{ max-width: 430px; }
+}
+@media (max-width: 991px){
+  .chr{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: clamp(34px, 5vw, 54px);
+    --chr-focus: 58% 50%;
+  }
+  .chr__inner{ order: 1; }
+  .chr__content{ max-width: 100%; }
+  .chr__media{
+    order: 2;
+    position: relative;
+    inset: auto;
+    width: calc(100% - 40px);
+    margin: 28px 20px 0;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .chr__fade{
+    background: linear-gradient(180deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,0) 22%);
+  }
+}
+@media (max-width: 575px){
+  .chr__media{ aspect-ratio: 4 / 3; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .chr--anim .chr__reveal,
+  .chr--anim .chr__media{ opacity: 1; transform: none; }
+  .chr.is-in .chr__reveal,
+  .chr.is-in .chr__media{ transition: none; }
+}
+</style>
+
+<section class="chr" aria-labelledby="chr-title">
+
+  <div class="chr__media" aria-hidden="true">
+    <img class="chr__photo"
+         src="assets/careers-hero.jpg"
+         alt="Colleagues walking towards the ARKVOLT office building"
+         width="1774" height="887"
+         fetchpriority="high" decoding="async">
+    <span class="chr__fade"></span>
+  </div>
+
+  <div class="chr__inner">
+    <div class="chr__content chr__reveal">
+
+      <p class="chr__eyebrow">Careers</p>
+
+      <h1 class="chr__title" id="chr-title">Build Your Career<br>with <em>ARKVOLT</em></h1>
+
+      <p class="chr__text">
+        At ARKVOLT, capable people drive our engineering and technology work. We are
+        looking for professionals committed to building dependable energy
+        infrastructure and practical digital technology.
+      </p>
+
+      <p class="chr__text">
+        Whether you are an experienced professional, a recent graduate, or an
+        early-career innovator, ARKVOLT and T-0 together offer opportunities to work
+        across engineering, software, and applied research.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('chr')) {
+    var all = document.querySelectorAll('.chr');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.chrReady) return;
+  section.dataset.chrReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('chr--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.15 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== careers-openings ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — CURRENT OPPORTUNITIES + APPLICATION FORM  (Careers page)
+     arkvoltenergy.com/careers
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .cop prefix.
+
+     Left: the 24 roles ARKVOLT hires for, three to a row, each with its own
+     inline SVG icon. Right: the application form.
+
+     >>> WIRE THE FORM UP BEFORE GOING LIVE <<<
+     The form posts nothing until you give it somewhere to post to. Put the URL
+     that should receive the application in the form's data-endpoint attribute:
+
+         <form class="cop__form" data-endpoint="https://arkvoltenergy.com/wp-json/…">
+
+     It is sent as multipart/form-data (so the resume file rides along) by fetch,
+     and the visitor stays on the page. With the attribute left empty the form
+     still validates every field but refuses to submit and says so, rather than
+     pretending an application went through.
+
+     If you would rather use Contact Form 7 / WPForms / Elementor Forms, delete
+     the <form> block below and drop their shortcode in its place — the styling
+     around it stays.
+
+     Every icon is inline SVG; no image files.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.cop{
+  --cop-ink:      #10222F;
+  --cop-body:     #5A6570;
+  --cop-green:    #22A24C;
+  --cop-green-dk: #1C8A41;
+  --cop-green-hv: #1A7C3A;
+  --cop-green-lt: #EDF7F0;
+  --cop-line:     #E7ECEF;
+  --cop-err:      #C4302B;
+  --cop-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--cop-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(24px, 2.4vw, 36px) 0 clamp(24px, 2.4vw, 36px);
+}
+.cop *, .cop *::before, .cop *::after{ box-sizing: border-box; }
+
+.cop__inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.52fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+/* ---------------- shared card ---------------- */
+.cop__card{
+  position: relative;
+  overflow: hidden;
+  padding: clamp(20px, 2vw, 28px);
+  border: 1px solid var(--cop-line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(16,34,47,.05);
+}
+.cop__card--form{
+  background: linear-gradient(160deg, #F6FBF8 0%, #FBFDFC 60%, #F5FAF7 100%);
+}
+.cop__heading{
+  margin: 0 0 clamp(16px, 1.8vw, 22px);
+  padding-bottom: 12px;
+  font-size: clamp(13.5px, 1.25vw, 15.5px);
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--cop-green-dk);
+  border-bottom: 2px solid var(--cop-green);
+  /* the rule sits under the words, not the whole card */
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* ---------------- roles ---------------- */
+.cop__roles{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 clamp(14px, 1.6vw, 24px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cop__role{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--cop-line);
+}
+/* the last row carries no rule, whichever column it lands in */
+.cop__role:nth-last-child(-n+3){ border-bottom: 0; }
+
+.cop__ico{
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--cop-green-lt);
+  color: var(--cop-green-dk);
+  transition: transform .3s cubic-bezier(.22,.61,.36,1), background-color .25s ease;
+}
+.cop__ico svg{ width: 18px; height: 18px; }
+.cop__role:hover .cop__ico{ transform: scale(1.08); background: #E1F2E7; }
+
+.cop__label{
+  font-size: 12.8px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--cop-ink);
+  transition: color .25s ease;
+}
+.cop__role:hover .cop__label{ color: var(--cop-green-dk); }
+
+/* note band under the roles */
+.cop__note{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: clamp(16px, 1.8vw, 24px);
+  padding: clamp(14px, 1.6vw, 20px);
+  border: 1px solid var(--cop-line);
+  border-radius: 12px;
+  background: linear-gradient(105deg, #F5FAF7 0%, #FBFDFC 100%);
+}
+.cop__noteIco{
+  flex: none;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cop-green-lt);
+  color: var(--cop-green-dk);
+}
+.cop__noteIco svg{ width: 22px; height: 22px; }
+.cop__noteText{
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--cop-body);
+}
+
+/* ---------------- form ---------------- */
+.cop__form{ display: block; }
+.cop__row{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
+}
+.cop__field{ margin-bottom: 13px; min-width: 0; }
+.cop__row .cop__field{ margin-bottom: 0; }
+.cop__row{ margin-bottom: 13px; }
+
+.cop__lbl{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11.8px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--cop-ink);
+}
+.cop__req{ color: var(--cop-err); }
+
+.cop__in,
+.cop__sel,
+.cop__ta{
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--cop-line);
+  border-radius: 8px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 12.8px;
+  color: var(--cop-ink);
+  transition: border-color .22s ease, box-shadow .22s ease;
+}
+.cop__in::placeholder,
+.cop__ta::placeholder{ color: #A8B1B8; }
+.cop__in:focus,
+.cop__sel:focus,
+.cop__ta:focus{
+  outline: 0;
+  border-color: var(--cop-green);
+  box-shadow: 0 0 0 3px rgba(34,162,76,.14);
+}
+.cop__ta{ min-height: 92px; resize: vertical; line-height: 1.6; }
+
+/* the select keeps its own chevron rather than the browser's */
+.cop__selWrap{ position: relative; }
+.cop__sel{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 36px;
+  color: var(--cop-ink);
+  cursor: pointer;
+}
+/* the closed select greys out while it still reads "Select a…", but the list
+   itself must stay dark — options inherit the select's colour otherwise */
+.cop__sel:invalid{ color: #A8B1B8; }
+.cop__sel option{ color: var(--cop-ink); background: #fff; }
+.cop__sel option[value=""]{ color: #A8B1B8; }
+.cop__selWrap::after{
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin-top: -6px;
+  border-right: 1.8px solid var(--cop-body);
+  border-bottom: 1.8px solid var(--cop-body);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+/* upload */
+.cop__drop{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 15px;
+  border: 1px solid var(--cop-line);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .22s ease, background-color .22s ease;
+}
+.cop__drop:hover,
+.cop__drop.is-over{ border-color: var(--cop-green); background: #F7FCF9; }
+.cop__drop:focus-within{
+  border-color: var(--cop-green);
+  box-shadow: 0 0 0 3px rgba(34,162,76,.14);
+}
+.cop__dropIco{
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--cop-green-lt);
+  color: var(--cop-green-dk);
+}
+.cop__dropIco svg{ width: 18px; height: 18px; }
+.cop__dropText{ min-width: 0; }
+.cop__dropMain{
+  margin: 0;
+  font-size: 12.6px;
+  line-height: 1.4;
+  color: var(--cop-body);
+  overflow-wrap: anywhere;
+}
+.cop__dropMain b{ color: var(--cop-green-dk); font-weight: 600; }
+.cop__dropSub{
+  margin: 3px 0 0;
+  font-size: 11px;
+  color: #8A959E;
+}
+/* the real input stays in the DOM for the keyboard, just out of sight */
+.cop__file{
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* consent */
+.cop__consent{
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 4px 0 14px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--cop-body);
+}
+.cop__check{
+  flex: none;
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+  accent-color: var(--cop-green);
+  cursor: pointer;
+}
+.cop__consent a{ color: var(--cop-green-dk); font-weight: 600; text-decoration: none; }
+.cop__consent a:hover{ text-decoration: underline; }
+
+/* submit */
+.cop__submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px 20px;
+  border: 1px solid var(--cop-green);
+  border-radius: 8px;
+  background: var(--cop-green);
+  color: #fff;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(34,162,76,.26);
+  transition: background-color .25s ease, border-color .25s ease,
+              transform .25s ease, box-shadow .25s ease;
+}
+.cop__submit svg{ width: 12px; height: 12px; transition: transform .25s ease; }
+.cop__submit:hover{
+  background: var(--cop-green-hv);
+  border-color: var(--cop-green-hv);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(34,162,76,.32);
+}
+.cop__submit:hover svg{ transform: translateX(4px); }
+.cop__submit:focus-visible{ outline: 2px solid var(--cop-green-dk); outline-offset: 3px; }
+.cop__submit[disabled]{ opacity: .65; cursor: default; transform: none; box-shadow: none; }
+
+.cop__after{
+  margin: 12px 0 0;
+  font-size: 11.8px;
+  line-height: 1.6;
+  color: var(--cop-body);
+}
+
+/* validation + result messages */
+.cop__err{
+  display: none;
+  margin: 5px 0 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--cop-err);
+}
+.cop__field.has-error .cop__err{ display: block; }
+.cop__err--consent{ margin: -9px 0 12px; }
+.cop__field.has-error .cop__in,
+.cop__field.has-error .cop__sel,
+.cop__field.has-error .cop__ta,
+.cop__field.has-error .cop__drop{ border-color: var(--cop-err); }
+
+.cop__result{
+  display: none;
+  margin: 0 0 14px;
+  padding: 11px 13px;
+  border-radius: 8px;
+  font-size: 12.2px;
+  line-height: 1.6;
+}
+.cop__result.is-ok{
+  display: block;
+  background: var(--cop-green-lt);
+  border: 1px solid rgba(34,162,76,.35);
+  color: var(--cop-green-dk);
+}
+.cop__result.is-bad{
+  display: block;
+  background: #FDF1F1;
+  border: 1px solid rgba(196,48,43,.3);
+  color: var(--cop-err);
+}
+
+/* ---------------- reveal ---------------- */
+.cop--anim .cop__card{ opacity: 0; transform: translateY(22px); }
+.cop.is-in .cop__card{
+  opacity: 1;
+  transform: none;
+  transition: opacity .65s ease var(--d, 0s),
+              transform .65s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1099px){
+  .cop__inner{ grid-template-columns: 1fr; }
+  .cop__roles{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 760px){
+  .cop__roles{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cop__role:nth-last-child(-n+3){ border-bottom: 1px solid var(--cop-line); }
+  .cop__role:nth-last-child(-n+2){ border-bottom: 0; }
+}
+@media (max-width: 520px){
+  .cop__roles{ grid-template-columns: 1fr; }
+  .cop__role:nth-last-child(-n+2){ border-bottom: 1px solid var(--cop-line); }
+  .cop__role:last-child{ border-bottom: 0; }
+  .cop__row{ grid-template-columns: 1fr; }
+  .cop__note{ flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .cop--anim .cop__card{ opacity: 1; transform: none; }
+  .cop.is-in .cop__card{ transition: none; }
+  .cop__ico, .cop__role:hover .cop__ico,
+  .cop__submit, .cop__submit svg{ transition: none; transform: none; }
+}
+</style>
+
+<section class="cop" aria-label="Current opportunities and application form">
+  <div class="cop__inner">
+
+    <!-- ============ current opportunities ============ -->
+    <article class="cop__card" style="--d:0s">
+      <h2 class="cop__heading">Current Opportunities</h2>
+
+      <ul class="cop__roles">
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13.2 2.5 5.8 13h5l-.8 8.5L17.4 11h-5l.8-8.5Z"/>
+            </svg>
+          </span>
+          <span class="cop__label">Electrical Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 11.2V21.5M9.4 21.5h5.2"/>
+              <path d="M12 11.2 11.4 3a.9.9 0 0 1 1.5-.7l2.8 2.6a2.4 2.4 0 0 1 .2 3.3l-3.9 3Z"/>
+              <path d="M12 11.2 4.6 8.6a.9.9 0 0 1 .1-1.7l3.7-1a2.4 2.4 0 0 1 2.9 1.6l.7 3.7Z"/>
+              <path d="M12 11.2l7 2.2a.9.9 0 0 1 .2 1.6l-3.3 2a2.4 2.4 0 0 1-3.3-.9l-.6-4.9Z"/>
+            </svg>
+          </span>
+          <span class="cop__label">Renewable Energy Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4.4" y="3.4" width="15.2" height="17.2" rx="2.2"/>
+              <path d="M9 3.4V2.2h6v1.2"/>
+              <path d="M13.2 8 10 12.6h3l-.4 4 3.2-4.6h-3l.4-4Z"/>
+            </svg>
+          </span>
+          <span class="cop__label">Project Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.2 17.4h17.6"/>
+              <path d="M5 17.4a7 7 0 0 1 14 0"/>
+              <path d="M9.6 11.1V5.9a1.4 1.4 0 0 1 1.4-1.4h2a1.4 1.4 0 0 1 1.4 1.4v5.2"/>
+              <path d="M2.6 20.4h18.8"/>
+            </svg>
+          </span>
+          <span class="cop__label">EPC Professionals</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.6 3.6a4.4 4.4 0 0 0 5.4 6l-8.7 8.7a2.6 2.6 0 1 1-3.6-3.6l6.9-11.1Z"/>
+              <path d="M4.6 4.6 8 8m-3.4 0L8 4.6"/>
+              <circle cx="8.4" cy="18.9" r=".9" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="cop__label">Service Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.4 8 4 12l4.4 4M15.6 8 20 12l-4.4 4M13.6 5.2l-3.2 13.6"/>
+            </svg>
+          </span>
+          <span class="cop__label">Software Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5.6" rx="7.4" ry="3.1"/>
+              <path d="M4.6 5.6v12.8c0 1.7 3.3 3.1 7.4 3.1s7.4-1.4 7.4-3.1V5.6"/>
+              <path d="M4.6 12c0 1.7 3.3 3.1 7.4 3.1s7.4-1.4 7.4-3.1"/>
+            </svg>
+          </span>
+          <span class="cop__label">Backend Developers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.2" y="4.4" width="17.6" height="15.2" rx="2.2"/>
+              <path d="M3.2 9.2h17.6"/>
+              <circle cx="6.4" cy="6.8" r=".8" fill="currentColor" stroke="none"/>
+              <circle cx="9" cy="6.8" r=".8" fill="currentColor" stroke="none"/>
+              <path d="M7 12.8h5M7 15.9h8"/>
+            </svg>
+          </span>
+          <span class="cop__label">Frontend Developers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3.4a3.1 3.1 0 0 0-3.1 3.1 2.9 2.9 0 0 0-1.6 5.3 3 3 0 0 0 1.5 5.4 3.1 3.1 0 0 0 6.2.4V6.5A3.1 3.1 0 0 0 12 3.4Z"/>
+              <path d="M15 8.4h2.6a2.4 2.4 0 0 1 2.4 2.4v.4M15 13.6h3.4"/>
+              <circle cx="20" cy="11.6" r="1.3"/>
+              <circle cx="19.4" cy="16.6" r="1.3"/>
+            </svg>
+          </span>
+          <span class="cop__label">AI Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="5.4" cy="6.6" r="2.2"/>
+              <circle cx="5.4" cy="17.4" r="2.2"/>
+              <circle cx="18.6" cy="12" r="2.2"/>
+              <path d="M7.6 6.6h3.6l5.2 4.4M7.6 17.4h3.6l5.2-4.4"/>
+            </svg>
+          </span>
+          <span class="cop__label">ML Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="7" y="7" width="10" height="10" rx="1.6"/>
+              <path d="M10.4 10.4h3.2v3.2h-3.2z"/>
+              <path d="M10 7V4.2M14 7V4.2M10 19.8V17M14 19.8V17M7 10H4.2M7 14H4.2M19.8 10H17M19.8 14H17"/>
+            </svg>
+          </span>
+          <span class="cop__label">Embedded Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.4" y="3.4" width="17.2" height="17.2" rx="2.2"/>
+              <path d="M7.4 12h3l1.6-2.6L14 15l1.4-3h1.8"/>
+              <circle cx="7.4" cy="7.4" r="1" fill="currentColor" stroke="none"/>
+              <circle cx="16.6" cy="16.6" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="cop__label">Electronics Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 18.4h10.2a3.9 3.9 0 0 0 .5-7.8 5.7 5.7 0 0 0-11-1.6A3.9 3.9 0 0 0 7 18.4Z"/>
+              <path d="M12 15.6V9.4m-2.2 2.4L12 9.4l2.2 2.4"/>
+            </svg>
+          </span>
+          <span class="cop__label">Cloud Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.6 12a3.4 3.4 0 1 1-3.4 3.4A6.6 6.6 0 0 1 8.6 12a6.6 6.6 0 0 1 6.8 0 3.4 3.4 0 1 0 3.4-3.4 6.6 6.6 0 0 0-3.4 1"/>
+            </svg>
+          </span>
+          <span class="cop__label">DevOps Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.2" y="14.4" width="17.6" height="6.2" rx="1.6"/>
+              <path d="M6.8 14.4V9.6a1.6 1.6 0 0 1 1.6-1.6h3.2"/>
+              <rect x="11.6" y="4.4" width="8.8" height="6" rx="1.6"/>
+              <path d="M7 17.6h2.4M13.4 17.6h5.4"/>
+            </svg>
+          </span>
+          <span class="cop__label">Industrial &amp; Automation Engineers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.8 3.6 20.4 9.2 8.8 20.8H3.2v-5.6L14.8 3.6Z"/>
+              <path d="M12.6 5.8 18.2 11.4"/>
+            </svg>
+          </span>
+          <span class="cop__label">Product Designers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.4" y="4" width="17.2" height="16" rx="2.2"/>
+              <path d="M3.4 8.6h17.2M9.6 8.6V20"/>
+              <path d="M12.8 12.2h4.8M12.8 15.6h3"/>
+            </svg>
+          </span>
+          <span class="cop__label">UI/UX Designers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="7.6" r="3.2"/>
+              <path d="M2.8 19.4a6.2 6.2 0 0 1 12.4 0"/>
+              <circle cx="18.2" cy="15.6" r="2.6"/>
+              <path d="M18.2 11.6v1.4M18.2 18.2v1.4M14.9 13.7l1.2.7M20.3 16.8l1.2.7M21.5 13.7l-1.2.7M16.1 16.8l-1.2.7"/>
+            </svg>
+          </span>
+          <span class="cop__label">Technology Consultants</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.4 20.6h17.2"/>
+              <rect x="5" y="12.6" width="3.4" height="8"/>
+              <rect x="10.3" y="8.4" width="3.4" height="12.2"/>
+              <rect x="15.6" y="4.6" width="3.4" height="16"/>
+            </svg>
+          </span>
+          <span class="cop__label">Business Analysts</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.4 3.2h4.4v4.4a2.2 2.2 0 0 1-.6 1.5l-2.8 3a2.2 2.2 0 0 0-.6 1.5v4.6h5v-4.6a2.2 2.2 0 0 0-.6-1.5l-2.8-3"/>
+              <path d="M7.6 20.8h9.6M8.6 3.2h5.8"/>
+              <path d="M6.6 12.4H4.2M6.6 16.2H4.2"/>
+            </svg>
+          </span>
+          <span class="cop__label">Research Associates</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="8.2" cy="7.4" r="2.8"/>
+              <circle cx="16.6" cy="8.6" r="2.2"/>
+              <path d="M2.6 19.2a5.6 5.6 0 0 1 11.2 0"/>
+              <path d="M14.2 13.6a4.5 4.5 0 0 1 7.2 3.6"/>
+            </svg>
+          </span>
+          <span class="cop__label">Project Managers</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 11.4 8.6 6l4.6 3.8a2.6 2.6 0 0 0 3.3-.1l1-1"/>
+              <path d="M12.4 11.6 16.6 15.8l-2.2 2.2-3-2.9"/>
+              <path d="M14.2 18.2 16 20"/>
+              <path d="M3 11.4V6a1.6 1.6 0 0 1 1.6-1.6h4.8M21 9V6a1.6 1.6 0 0 0-1.6-1.6h-4.8"/>
+            </svg>
+          </span>
+          <span class="cop__label">Sales &amp; Business Development</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 9.6h3.2L16 5.2v13.6L7.2 14.4H4a1.4 1.4 0 0 1-1.4-1.4v-2a1.4 1.4 0 0 1 1.4-1.4Z"/>
+              <path d="M19.2 9.4a3.4 3.4 0 0 1 0 5.2"/>
+              <path d="M6.8 14.4v3.4a1.6 1.6 0 0 0 1.6 1.6h1"/>
+            </svg>
+          </span>
+          <span class="cop__label">Marketing Professionals</span>
+        </li>
+
+        <li class="cop__role">
+          <span class="cop__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 4 2.8 8.4 12 12.8l9.2-4.4L12 4Z"/>
+              <path d="M6.4 10.6v4.8c0 1.5 2.5 2.8 5.6 2.8s5.6-1.3 5.6-2.8v-4.8"/>
+              <path d="M21.2 8.4v5.2"/>
+            </svg>
+          </span>
+          <span class="cop__label">Internship Programmes</span>
+        </li>
+
+      </ul>
+
+      <div class="cop__note">
+        <span class="cop__noteIco" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3.2 14.7 8.8l6.1.9-4.4 4.3 1 6.1L12 17.2l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3.2Z"/>
+          </svg>
+        </span>
+        <p class="cop__noteText">
+          Join ARKVOLT and T-0 to work on meaningful projects that create real impact
+          in energy, technology, and society.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ application form ============ -->
+    <article class="cop__card cop__card--form" style="--d:.1s">
+      <h2 class="cop__heading">Apply for a Position</h2>
+
+      <!-- data-endpoint is intentionally empty — see the note at the top of this
+           file. Fill it in and the form starts submitting. -->
+      <form class="cop__form" data-endpoint="/cpanel/submit-career.php" data-thankyou="thank-you.html?type=career" novalidate>
+        <div class="ahp" aria-hidden="true" tabindex="-1" style="position:absolute!important;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <p class="cop__result" role="status" aria-live="polite"></p>
+
+        <div class="cop__row">
+          <div class="cop__field">
+            <label class="cop__lbl" for="cop-name">Full Name <span class="cop__req">*</span></label>
+            <input class="cop__in" id="cop-name" name="full_name" type="text"
+                   placeholder="Enter your full name" autocomplete="name" required>
+            <p class="cop__err">Please enter your full name.</p>
+          </div>
+          <div class="cop__field">
+            <label class="cop__lbl" for="cop-email">Email ID <span class="cop__req">*</span></label>
+            <input class="cop__in" id="cop-email" name="email" type="email"
+                   placeholder="Enter your email" autocomplete="email" required>
+            <p class="cop__err">Please enter a valid email address.</p>
+          </div>
+        </div>
+
+        <div class="cop__field">
+          <label class="cop__lbl" for="cop-phone">Phone Number <span class="cop__req">*</span></label>
+          <input class="cop__in" id="cop-phone" name="phone" type="tel"
+                 placeholder="Enter your phone number" autocomplete="tel" required>
+          <p class="cop__err">Please enter a phone number we can reach you on.</p>
+        </div>
+
+        <div class="cop__row">
+          <div class="cop__field">
+            <label class="cop__lbl" for="cop-location">Current Location <span class="cop__req">*</span></label>
+            <input class="cop__in" id="cop-location" name="location" type="text"
+                   placeholder="Enter your location" autocomplete="address-level2" required>
+            <p class="cop__err">Please tell us where you are based.</p>
+          </div>
+          <div class="cop__field">
+            <label class="cop__lbl" for="cop-linkedin">LinkedIn Profile</label>
+            <input class="cop__in" id="cop-linkedin" name="linkedin" type="url"
+                   placeholder="https://linkedin.com/in/yourprofile">
+            <p class="cop__err">That does not look like a valid link.</p>
+          </div>
+        </div>
+
+        <div class="cop__field">
+          <label class="cop__lbl" for="cop-position">Position Applied For <span class="cop__req">*</span></label>
+          <span class="cop__selWrap">
+            <select class="cop__sel" id="cop-position" name="position" required>
+              <option value="" selected disabled>Select a position</option>
+              <option>Electrical Engineers</option>
+              <option>Renewable Energy Engineers</option>
+              <option>Project Engineers</option>
+              <option>EPC Professionals</option>
+              <option>Service Engineers</option>
+              <option>Software Engineers</option>
+              <option>Backend Developers</option>
+              <option>Frontend Developers</option>
+              <option>AI Engineers</option>
+              <option>ML Engineers</option>
+              <option>Embedded Engineers</option>
+              <option>Electronics Engineers</option>
+              <option>Cloud Engineers</option>
+              <option>DevOps Engineers</option>
+              <option>Industrial &amp; Automation Engineers</option>
+              <option>Product Designers</option>
+              <option>UI/UX Designers</option>
+              <option>Technology Consultants</option>
+              <option>Business Analysts</option>
+              <option>Research Associates</option>
+              <option>Project Managers</option>
+              <option>Sales &amp; Business Development</option>
+              <option>Marketing Professionals</option>
+              <option>Internship Programmes</option>
+            </select>
+          </span>
+          <p class="cop__err">Please choose the role you are applying for.</p>
+        </div>
+
+        <div class="cop__field">
+          <label class="cop__lbl" for="cop-exp">Experience (in years)</label>
+          <span class="cop__selWrap">
+            <select class="cop__sel" id="cop-exp" name="experience" required>
+              <option value="" selected disabled>Select experience</option>
+              <option>Fresher</option>
+              <option>0 &ndash; 1 years</option>
+              <option>1 &ndash; 3 years</option>
+              <option>3 &ndash; 5 years</option>
+              <option>5 &ndash; 10 years</option>
+              <option>10+ years</option>
+            </select>
+          </span>
+          <p class="cop__err">Please pick an experience range.</p>
+        </div>
+
+        <div class="cop__field">
+          <label class="cop__lbl" for="cop-resume">Upload Resume <span class="cop__req">*</span></label>
+          <label class="cop__drop" for="cop-resume">
+            <span class="cop__dropIco" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 18.4h10.2a3.9 3.9 0 0 0 .5-7.8 5.7 5.7 0 0 0-11-1.6A3.9 3.9 0 0 0 7 18.4Z"/>
+                <path d="M12 15.6V9.4m-2.2 2.4L12 9.4l2.2 2.4"/>
+              </svg>
+            </span>
+            <span class="cop__dropText">
+              <span class="cop__dropMain"><b>Choose file</b> or drag and drop</span>
+              <span class="cop__dropSub">PDF, DOC, DOCX (Max. 5MB)</span>
+            </span>
+            <input class="cop__file" id="cop-resume" name="resume" type="file"
+                   accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                   required>
+          </label>
+          <p class="cop__err">Please attach your resume.</p>
+        </div>
+
+        <div class="cop__field">
+          <label class="cop__lbl" for="cop-cover">Cover Letter (Optional)</label>
+          <textarea class="cop__ta" id="cop-cover" name="cover_letter"
+                    placeholder="Tell us why you are a good fit for ARKVOLT"></textarea>
+        </div>
+
+        <label class="cop__consent">
+          <input class="cop__check" name="consent" type="checkbox" required>
+          <span>I agree to the <a href="#">terms and conditions</a>
+            and <a href="#">privacy policy</a>.</span>
+        </label>
+        <p class="cop__err cop__err--consent">Please accept the terms to continue.</p>
+
+        <button class="cop__submit" type="submit">
+          Submit Application
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M5.5 2.5 11 8l-5.5 5.5" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <p class="cop__after">Our HR team will review your application and get in touch with you.</p>
+      </form>
+    </article>
+
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('cop')) {
+    var all = document.querySelectorAll('.cop');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.copReady) return;
+  section.dataset.copReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('cop--anim');
+
+  /* ---------------- reveal ---------------- */
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.88 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.08 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+
+  /* ---------------- form ---------------- */
+  var form = section.querySelector('.cop__form');
+  if (!form) return;
+
+  var MAX_BYTES  = 5 * 1024 * 1024;
+  var OK_EXT     = ['pdf', 'doc', 'docx'];
+  var fileInput  = form.querySelector('.cop__file');
+  var drop       = form.querySelector('.cop__drop');
+  var dropMain   = form.querySelector('.cop__dropMain');
+  var dropSub    = form.querySelector('.cop__dropSub');
+  var dropIdle   = dropMain.innerHTML;
+  var subIdle    = dropSub.textContent;
+  var result     = form.querySelector('.cop__result');
+  var submit     = form.querySelector('.cop__submit');
+  var consentBox = form.querySelector('.cop__check');
+  var consentErr = form.querySelector('.cop__err--consent');
+
+  function fieldOf(el){ return el.closest('.cop__field'); }
+  function clearError(el){
+    var f = fieldOf(el);
+    if (f) f.classList.remove('has-error');
+  }
+  function markError(el, message){
+    var f = fieldOf(el);
+    if (!f) return;
+    f.classList.add('has-error');
+    if (message){
+      var p = f.querySelector('.cop__err');
+      if (p) p.textContent = message;
+    }
+  }
+  function say(text, ok){
+    result.textContent = text;
+    result.className = 'cop__result ' + (ok ? 'is-ok' : 'is-bad');
+  }
+  function hideSay(){ result.className = 'cop__result'; result.textContent = ''; }
+
+  // clear a field's error as soon as the visitor starts fixing it
+  form.addEventListener('input', function(e){ clearError(e.target); }, true);
+  form.addEventListener('change', function(e){ clearError(e.target); }, true);
+  consentBox.addEventListener('change', function(){
+    if (consentBox.checked) consentErr.style.display = 'none';
+  });
+
+  /* file picking, by click or by drop */
+  function showFile(file){
+    if (!file){
+      dropMain.innerHTML = dropIdle;
+      dropSub.textContent = subIdle;
+      return;
+    }
+    dropMain.textContent = file.name;
+    dropSub.textContent = (file.size / 1024 / 1024).toFixed(2) + ' MB · click to replace';
+  }
+  function fileProblem(file){
+    if (!file) return 'Please attach your resume.';
+    var ext = (file.name.split('.').pop() || '').toLowerCase();
+    if (OK_EXT.indexOf(ext) === -1) return 'Resumes must be a PDF, DOC, or DOCX file.';
+    if (file.size > MAX_BYTES) return 'That file is over 5MB. Please attach a smaller one.';
+    return '';
+  }
+
+  fileInput.addEventListener('change', function(){
+    var file = fileInput.files[0];
+    var bad = file ? fileProblem(file) : '';
+    if (bad){
+      fileInput.value = '';
+      showFile(null);
+      markError(fileInput, bad);
+    } else {
+      showFile(file);
+    }
+  });
+
+  ['dragenter', 'dragover'].forEach(function(evt){
+    drop.addEventListener(evt, function(e){
+      e.preventDefault();
+      drop.classList.add('is-over');
+    });
+  });
+  ['dragleave', 'drop'].forEach(function(evt){
+    drop.addEventListener(evt, function(e){
+      e.preventDefault();
+      drop.classList.remove('is-over');
+    });
+  });
+  drop.addEventListener('drop', function(e){
+    var file = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+    if (!file) return;
+    var bad = fileProblem(file);
+    if (bad){ markError(fileInput, bad); return; }
+    // DataTransfer lets us hand the dropped file to the real input, so the form
+    // submits it exactly as if it had been picked through the file dialog
+    if (window.DataTransfer && fileInput.files !== undefined){
+      try {
+        var dt = new DataTransfer();
+        dt.items.add(file);
+        fileInput.files = dt.files;
+      } catch (err){ /* older browser: fall through to the picker */ }
+    }
+    if (fileInput.files && fileInput.files.length){
+      clearError(fileInput);
+      showFile(fileInput.files[0]);
+    }
+  });
+
+  /* validation */
+  var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  var PHONE = /^[+()\d][\d\s\-()]{6,19}$/;
+
+  function validate(){
+    var first = null;
+
+    form.querySelectorAll('.cop__field').forEach(function(f){ f.classList.remove('has-error'); });
+    consentErr.style.display = 'none';
+
+    function fail(el, msg){
+      markError(el, msg);
+      if (!first) first = el;
+    }
+
+    var name = form.elements.full_name;
+    if (!name.value.trim()) fail(name, 'Please enter your full name.');
+
+    var email = form.elements.email;
+    if (!EMAIL.test(email.value.trim())) fail(email, 'Please enter a valid email address.');
+
+    var phone = form.elements.phone;
+    if (!PHONE.test(phone.value.trim())) fail(phone, 'Please enter a phone number we can reach you on.');
+
+    var loc = form.elements.location;
+    if (!loc.value.trim()) fail(loc, 'Please tell us where you are based.');
+
+    var li = form.elements.linkedin;
+    if (li.value.trim() && !/^https?:\/\/.+\..+/.test(li.value.trim())){
+      fail(li, 'Please paste the full link, starting with https://');
+    }
+
+    var pos = form.elements.position;
+    if (!pos.value) fail(pos, 'Please choose the role you are applying for.');
+
+    var exp = form.elements.experience;
+    if (!exp.value) fail(exp, 'Please pick an experience range.');
+
+    var bad = fileProblem(fileInput.files && fileInput.files[0]);
+    if (bad) fail(fileInput, bad);
+
+    if (!consentBox.checked){
+      consentErr.style.display = 'block';
+      if (!first) first = consentBox;
+    }
+
+    return first;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    hideSay();
+
+    var first = validate();
+    if (first){
+      first.focus({ preventScroll: true });
+      first.scrollIntoView({ block: 'center' });
+      return;
+    }
+
+    var endpoint = (form.getAttribute('data-endpoint') || '').trim();
+    if (!endpoint){
+      // nothing has been wired up yet — say so plainly rather than showing a
+      // success message for an application that went nowhere
+      say('This form is not connected yet. Please email your application to info@arkvoltenergy.com.', false);
+      if (window.console && console.warn){
+        console.warn('[ARKVOLT careers form] No data-endpoint set on .cop__form — nothing was submitted.');
+      }
+      return;
+    }
+
+    var label = submit.innerHTML;
+    submit.disabled = true;
+    submit.textContent = 'Sending…';
+
+    fetch(endpoint, { method: 'POST', body: new FormData(form) })
+      .then(function(r){
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        // if a thank-you page is set, land there (conversion page); else stay
+        var go = form.getAttribute('data-thankyou');
+        if (go){ window.location.href = go; return; }
+        form.reset();
+        showFile(null);
+        say('Thank you. Your application has reached our HR team.', true);
+      })
+      .catch(function(){
+        say('Sorry, that did not go through. Please try again, or email info@arkvoltenergy.com.', false);
+      })
+      .then(function(){
+        submit.disabled = false;
+        submit.innerHTML = label;
+      });
+  });
+})();
+</script>
+
+
+<!-- ===== careers-why ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — WHY WORK WITH US?  (Careers page)
+     arkvoltenergy.com/careers
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .cww prefix.
+
+     Six reasons across a single tinted band, divided by hairlines rather than
+     boxed into cards, so it reads differently from the grids on the pages
+     either side of it.
+
+     Every icon is inline SVG; no image files.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.cww{
+  --cww-ink:      #10222F;
+  --cww-body:     #5A6570;
+  --cww-green:    #22A24C;
+  --cww-green-dk: #1C8A41;
+  --cww-line:     #DCE5DF;
+  --cww-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: #fff;
+  font-family: var(--cww-font);
+  -webkit-font-smoothing: antialiased;
+  padding: clamp(20px, 2vw, 30px) 0 clamp(30px, 3vw, 46px);
+}
+.cww *, .cww *::before, .cww *::after{ box-sizing: border-box; }
+
+.cww__inner{ max-width: 1290px; margin: 0 auto; padding: 0 20px; }
+
+.cww__band{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(24px, 2.6vw, 38px) clamp(16px, 1.8vw, 26px) clamp(22px, 2.4vw, 34px);
+  background: linear-gradient(160deg, #F4F8F5 0%, #FAFCFB 55%, #F3F8F5 100%);
+  border: 1px solid var(--cww-line);
+  border-radius: 14px;
+}
+/* dot field, bottom right — the same one the closing bands use */
+.cww__band::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -30px;
+  bottom: -70px;
+  width: 320px;
+  height: 250px;
+  background-image: radial-gradient(circle, var(--cww-green) 1.4px, transparent 1.4px);
+  background-size: 14px 14px;
+  opacity: .14;
+  -webkit-mask-image: radial-gradient(ellipse at 70% 70%, #000 30%, transparent 72%);
+          mask-image: radial-gradient(ellipse at 70% 70%, #000 30%, transparent 72%);
+  pointer-events: none;
+}
+
+/* ---------------- heading ---------------- */
+.cww__head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 0 clamp(20px, 2.2vw, 30px);
+  font-size: clamp(13px, 1.25vw, 15.5px);
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--cww-green-dk);
+}
+.cww__head::before,
+.cww__head::after{
+  content: "";
+  width: clamp(30px, 5vw, 74px);
+  height: 2px;
+  background: var(--cww-green);
+  border-radius: 2px;
+}
+
+/* ---------------- reasons ---------------- */
+.cww__grid{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.cww__item{
+  position: relative;
+  padding: 4px clamp(10px, 1.2vw, 18px);
+  text-align: center;
+}
+/* hairline between columns, never on the outer edges */
+.cww__item + .cww__item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6%;
+  bottom: 6%;
+  width: 1px;
+  background: var(--cww-line);
+}
+
+.cww__ico{
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  color: var(--cww-green-dk);
+  transition: transform .35s cubic-bezier(.22,.61,.36,1);
+}
+.cww__ico svg{ width: 100%; height: 100%; }
+.cww__item:hover .cww__ico{ transform: translateY(-4px) scale(1.06); }
+
+.cww__title{
+  position: relative;
+  display: inline-block;
+  margin: 0 0 8px;
+  padding-bottom: 6px;
+  font-size: clamp(12.5px, 1.05vw, 13.8px);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -.005em;
+  color: var(--cww-green-dk);
+}
+/* underline that draws in from the middle on hover */
+.cww__title::after{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--cww-green);
+  transform: scaleX(0);
+  transition: transform .35s cubic-bezier(.22,.61,.36,1);
+}
+.cww__item:hover .cww__title::after{ transform: scaleX(1); }
+
+.cww__text{
+  margin: 0;
+  font-size: 12.2px;
+  line-height: 1.68;
+  color: var(--cww-body);
+}
+
+/* ---------------- reveal ---------------- */
+.cww--anim .cww__band{ opacity: 0; transform: translateY(22px); }
+.cww.is-in .cww__band{
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1);
+}
+.cww--anim .cww__item{ opacity: 0; transform: translateY(16px); }
+.cww.is-in .cww__item{
+  opacity: 1; transform: none;
+  transition: opacity .55s ease var(--d, 0s),
+              transform .55s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1099px){
+  .cww__grid{ grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: clamp(20px, 3vw, 30px); }
+  /* rebuild the dividers for three across: none on the first of each row */
+  .cww__item + .cww__item::before{ content: none; }
+  .cww__item:not(:nth-child(3n+1))::before{
+    content: "";
+    position: absolute;
+    left: 0; top: 6%; bottom: 6%;
+    width: 1px;
+    background: var(--cww-line);
+  }
+}
+@media (max-width: 680px){
+  .cww__grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cww__item:not(:nth-child(3n+1))::before{ content: none; }
+  .cww__item:not(:nth-child(2n+1))::before{
+    content: "";
+    position: absolute;
+    left: 0; top: 6%; bottom: 6%;
+    width: 1px;
+    background: var(--cww-line);
+  }
+}
+@media (max-width: 420px){
+  .cww__grid{ grid-template-columns: 1fr; row-gap: 22px; }
+  .cww__item:not(:nth-child(2n+1))::before{ content: none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .cww--anim .cww__band,
+  .cww--anim .cww__item{ opacity: 1; transform: none; }
+  .cww.is-in .cww__band,
+  .cww.is-in .cww__item{ transition: none; }
+  .cww__ico, .cww__item:hover .cww__ico{ transition: none; transform: none; }
+  .cww__title::after, .cww__item:hover .cww__title::after{ transition: none; transform: scaleX(1); }
+}
+</style>
+
+<section class="cww" aria-labelledby="cww-title">
+  <div class="cww__inner">
+    <div class="cww__band">
+
+      <h2 class="cww__head" id="cww-title">Why Work With Us?</h2>
+
+      <div class="cww__grid">
+
+        <div class="cww__item" style="--d:0s">
+          <span class="cww__ico" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16.6" cy="14.4" r="4.4"/>
+              <circle cx="28.4" cy="16.2" r="3.4"/>
+              <path d="M7.8 30.8a8.8 8.8 0 0 1 17.6 0"/>
+              <path d="M25.6 22.6a6.8 6.8 0 0 1 10.6 5.6"/>
+              <path d="M14.6 36.4h14.8"/>
+            </svg>
+          </span>
+          <h3 class="cww__title">Meaningful Impact</h3>
+          <p class="cww__text">Work on projects that contribute to a sustainable future.</p>
+        </div>
+
+        <div class="cww__item" style="--d:.06s">
+          <span class="cww__ico" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.4 33.6h29.2"/>
+              <path d="M11.4 33.6v-7.2M18.6 33.6V21M25.8 33.6v-9.6M33 33.6V16.4"/>
+              <path d="M10.6 19.4 18 13l6.4 4.6L34.4 8.6"/>
+              <path d="M29.4 8.4h5.4v5.4"/>
+            </svg>
+          </span>
+          <h3 class="cww__title">Growth &amp; Learning</h3>
+          <p class="cww__text">Continuous learning opportunities and clear career growth paths.</p>
+        </div>
+
+        <div class="cww__item" style="--d:.12s">
+          <span class="cww__ico" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 8.6a9.6 9.6 0 0 1 5.8 17.3v3.5H16.2v-3.5A9.6 9.6 0 0 1 22 8.6Z"/>
+              <path d="M17.8 33.4h8.4M19.4 37h5.2"/>
+              <path d="M22 4.2V2M33.4 8.9l1.6-1.6M10.6 8.9 9 7.3M37.6 20h2.2M4.2 20H6.4"/>
+            </svg>
+          </span>
+          <h3 class="cww__title">Innovation Driven</h3>
+          <p class="cww__text">Be part of an innovation-focused environment that encourages ideas.</p>
+        </div>
+
+        <div class="cww__item" style="--d:.18s">
+          <span class="cww__ico" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="22" cy="12.4" r="4"/>
+              <circle cx="10.8" cy="27.6" r="4"/>
+              <circle cx="33.2" cy="27.6" r="4"/>
+              <path d="M19.2 15.6 13.4 24M24.8 15.6 30.6 24M14.8 27.6h14.4"/>
+              <path d="M4.8 37.4a6.6 6.6 0 0 1 12 0M27.2 37.4a6.6 6.6 0 0 1 12 0"/>
+            </svg>
+          </span>
+          <h3 class="cww__title">Collaborative Culture</h3>
+          <p class="cww__text">Inclusive, respectful, and collaborative work environment.</p>
+        </div>
+
+        <div class="cww__item" style="--d:.24s">
+          <span class="cww__ico" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 6.4c9 3.2 12.6 3.2 12.6 3.2v10.6c0 9-6.4 14-12.6 17.4-6.2-3.4-12.6-8.4-12.6-17.4V9.6S13 9.6 22 6.4Z"/>
+              <path d="M22 15.2v6.6l4.4 2.6"/>
+              <circle cx="22" cy="21.8" r="7.6"/>
+            </svg>
+          </span>
+          <h3 class="cww__title">Work-Life Balance</h3>
+          <p class="cww__text">We value well-being and support a balanced lifestyle.</p>
+        </div>
+
+        <div class="cww__item" style="--d:.30s">
+          <span class="cww__ico" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="22" cy="17" r="9.4"/>
+              <path d="M22 12.4l1.5 3.1 3.4.5-2.5 2.4.6 3.4-3-1.6-3 1.6.6-3.4-2.5-2.4 3.4-.5L22 12.4Z"/>
+              <path d="M15.4 25.4 12.6 39l9.4-4.8 9.4 4.8-2.8-13.6"/>
+            </svg>
+          </span>
+          <h3 class="cww__title">Recognition</h3>
+          <p class="cww__text">Your contributions are recognized and celebrated.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('cww')) {
+    var all = document.querySelectorAll('.cww');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.cwwReady) return;
+  section.dataset.cwwReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this section blank
+  section.classList.add('cww--anim');
+
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.12 });
+    io.observe(section);
+  }
+
+  // scroll/resize fallback — covers embeds where the observer never reports,
+  // and the case where the section is already on screen at load
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+
+<!-- ===== footer ===== -->
+<!-- ==========================================================================
+     ARKVOLT ENERGY — FOOTER
+     arkvoltenergy.com
+
+     Paste into a WordPress "Custom HTML" block or an Elementor "HTML" widget.
+     No page wrapper tags — WordPress supplies those. HTML + CSS + JS are all
+     inside this one file, scoped behind the .aft prefix.
+
+     LOGO: the footer is dark green, so it uses assets/logo-white.png (the
+     reverse/knockout version). assets/logo.png is the original navy lockup for
+     light backgrounds. Upload the white one and swap the src below.
+
+     The last quick link points at assets/docs/arkvolt-brochure.pdf — upload it to
+     the Media Library and swap the href.
+
+     TWO THINGS TO FILL IN BEFORE GOING LIVE
+     1. Social links are href="#" — ARKVOLT's real profile URLs are not on file.
+     2. There is no phone number in the company content, so none is shown.
+        Add one to the contact list if you want it here.
+     ========================================================================== -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.aft{
+  --aft-ink:      #FFFFFF;
+  --aft-body:     rgba(255,255,255,.90);
+  --aft-green:    #22A24C;
+  --aft-green-dk: #1C8A41;
+  --aft-mint:     #D8F9E4;
+  --aft-green-lt: rgba(255,255,255,.10);
+  --aft-line:     rgba(255,255,255,.16);
+  --aft-bar-bg:   #FFFFFF;
+  --aft-bar-ink:  #10222F;
+  --aft-font:     'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  position: relative;
+  background: linear-gradient(160deg, #0D3A21 0%, #145430 55%, #17773A 100%);
+  font-family: var(--aft-font);
+  -webkit-font-smoothing: antialiased;
+}
+.aft *, .aft *::before, .aft *::after{ box-sizing: border-box; }
+
+.aft__inner{
+  position: relative;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: clamp(32px, 3.2vw, 50px) 20px clamp(26px, 2.6vw, 38px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: clamp(24px, 2.6vw, 44px);
+}
+
+/* ---------------- brand ---------------- */
+.aft__logo{
+  display: inline-block;
+  max-width: 232px;
+  margin-bottom: 16px;
+}
+.aft__logo img{ width: 100%; height: auto; display: block; }
+
+.aft__tagline{
+  margin: 0 0 18px;
+  font-size: 13.4px;
+  line-height: 1.72;
+  color: var(--aft-body);
+  max-width: 34ch;
+}
+
+.aft__social{
+  display: flex;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.aft__social a{
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--aft-line);
+  border-radius: 50%;
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  transition: background-color .25s ease, border-color .25s ease,
+              color .25s ease, transform .25s ease;
+}
+.aft__social svg{ width: 16px; height: 16px; }
+.aft__social a:hover,
+.aft__social a:focus-visible{
+  background: #fff;
+  border-color: #fff;
+  color: #0D3A21;
+  transform: translateY(-3px);
+}
+.aft__social a:focus-visible{ outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ---------------- columns ---------------- */
+.aft__heading{
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--aft-mint);
+}
+/* the second link column continues the first, so its heading is for screen
+   readers only — visually the two columns read as one list */
+.aft__heading--sr{
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.aft__col--cont{ padding-top: 28px; }
+
+.aft__links{ margin: 0; padding: 0; list-style: none; }
+.aft__links li + li{ margin-top: 11px; }
+.aft__links a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font-size: 13.4px;
+  line-height: 1.5;
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease, gap .25s ease;
+}
+.aft__links a::before{
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background: var(--aft-mint);
+  border-radius: 2px;
+  transition: width .25s ease;
+}
+.aft__links a:hover,
+.aft__links a:focus-visible{ color: #fff; gap: 8px; }
+.aft__links a:hover::before,
+.aft__links a:focus-visible::before{ width: 12px; }
+
+/* ---------------- contact ---------------- */
+.aft__contact{ margin: 0; padding: 0; list-style: none; }
+.aft__contact li{
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 13.2px;
+  line-height: 1.65;
+  color: var(--aft-body);
+}
+.aft__contact li + li{ margin-top: 14px; }
+.aft__ico{
+  flex: none;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--aft-green-lt);
+  color: var(--aft-mint);
+}
+.aft__ico svg{ width: 15px; height: 15px; }
+.aft__contact a{
+  color: var(--aft-body);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__contact a:hover,
+.aft__contact a:focus-visible{ color: #fff; }
+
+/* ---------------- bottom bar ---------------- */
+/* thin copyright strip — white panel with dark text, under the green footer */
+.aft__bar{
+  position: relative;
+  background: var(--aft-bar-bg);
+  color: var(--aft-bar-ink);
+}
+.aft__bar-inner{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.aft__copy{ margin: 0; font-size: 12.5px; font-weight: 500; line-height: 1.5; color: var(--aft-bar-ink); }
+.aft__legal{
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12.5px;
+}
+.aft__legal a{
+  color: var(--aft-bar-ink);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.aft__legal a:hover,
+.aft__legal a:focus-visible{ color: var(--aft-green-dk); text-decoration: underline; }
+.aft__legal span{ color: #C6CFD4; }
+
+/* back to top */
+.aft__top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--aft-green);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(34,162,76,.34);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s, background-color .25s ease;
+}
+.aft__top svg{ width: 15px; height: 15px; }
+.aft__top.is-on{ opacity: 1; visibility: visible; transform: none; }
+.aft__top:hover{ background: var(--aft-green-dk); }
+.aft__top:focus-visible{ outline: 2px solid #fff; outline-offset: 3px; }
+
+/* ---------------- reveal ---------------- */
+.aft--anim .aft__reveal{ opacity: 0; transform: translateY(20px); }
+.aft.is-in .aft__reveal{
+  opacity: 1; transform: none;
+  transition: opacity .65s ease var(--d, 0s),
+              transform .65s cubic-bezier(.22,.61,.36,1) var(--d, 0s);
+}
+
+/* ---------------- responsive ---------------- */
+@media (max-width: 1000px){
+  .aft__inner{ grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .aft__col--brand{ grid-column: 1 / -1; }
+  .aft__col--cont{ padding-top: 28px; }
+}
+@media (max-width: 620px){
+  .aft__inner{ grid-template-columns: 1fr; gap: 26px; }
+  .aft__col--cont{ padding-top: 0; }
+  .aft__heading--sr{
+    position: static;
+    width: auto; height: auto;
+    margin: 0 0 16px;
+    overflow: visible;
+    clip: auto;
+    color: var(--aft-mint);
+  }
+  .aft__bar-inner{ flex-direction: column; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .aft--anim .aft__reveal{ opacity: 1; transform: none; }
+  .aft.is-in .aft__reveal{ transition: none; }
+  .aft__social a, .aft__links a, .aft__top{ transition: none; }
+  .aft__social a:hover{ transform: none; }
+}
+</style>
+
+<footer class="aft">
+
+
+  <div class="aft__inner">
+
+    <!-- ============ brand ============ -->
+    <div class="aft__col--brand aft__reveal">
+      <a class="aft__logo" href="index.html" aria-label="ARKVOLT Energy Private Limited — home">
+        <img src="assets/logo-white.png"
+             alt="ARKVOLT Energy Private Limited — Advanced Energy Storage Solutions"
+             width="1296" height="292" loading="lazy" decoding="async">
+      </a>
+
+      <p class="aft__tagline">
+        Engineering reliable energy. Building intelligent infrastructure for a
+        sustainable tomorrow.
+      </p>
+
+      <ul class="aft__social">
+        <li>
+          <a href="#" aria-label="ARKVOLT on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4v11H3v-11Zm6.5 0h3.8v1.5h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75v5.7h-4v-5.05c0-1.2-.02-2.75-1.75-2.75-1.75 0-2.02 1.3-2.02 2.66v5.14h-4v-11Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.2l-4.9-6.4L5.1 21H2l7.2-8.3L2.4 3h6.4l4.4 5.8L17.5 3Zm-1.1 16.1h1.7L7.7 4.8H5.9l10.5 14.3Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15.2V8.8L15.5 12 10 15.2Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="ARKVOLT on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ============ quick links ============ -->
+    <div class="aft__reveal" style="--d:.08s">
+      <h3 class="aft__heading">Quick Links</h3>
+      <ul class="aft__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About ARKVOLT</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="our-partners.html">Our Partners</a></li>
+      </ul>
+    </div>
+
+    <div class="aft__col--cont aft__reveal" style="--d:.14s">
+      <h3 class="aft__heading aft__heading--sr">More Links</h3>
+      <ul class="aft__links">
+        <li><a href="innovation.html">Innovation</a></li>
+        <li><a href="incubation-centre.html">Incubation Centre</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="assets/docs/arkvolt-brochure.pdf" target="_blank" rel="noopener">Company Brochure</a></li>
+      </ul>
+    </div>
+
+    <!-- ============ contact ============ -->
+    <div class="aft__reveal" style="--d:.20s">
+      <h3 class="aft__heading">Contact Us</h3>
+      <ul class="aft__contact">
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.5s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+              <circle cx="12" cy="10.2" r="2.6"/>
+            </svg>
+          </span>
+          <span>
+            <strong style="display:block;font-weight:600;color:#fff">ARKVOLT ENERGY PRIVATE LIMITED</strong>
+            Room No. 13, 2nd Floor, Marwadi Building,<br>
+            25 Marve Road, Malad West, Mumbai,<br>
+            Maharashtra, India &ndash; 400064
+          </span>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.8" y="5" width="18.4" height="14" rx="2.4"/>
+              <path d="m3.4 6.6 8.6 6 8.6-6"/>
+            </svg>
+          </span>
+          <a href="mailto:info@arkvoltenergy.com">info@arkvoltenergy.com</a>
+        </li>
+        <li>
+          <span class="aft__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9.2"/>
+              <path d="M2.8 12h18.4M12 2.8c2.4 2.6 3.6 5.8 3.6 9.2s-1.2 6.6-3.6 9.2c-2.4-2.6-3.6-5.8-3.6-9.2S9.6 5.4 12 2.8Z"/>
+            </svg>
+          </span>
+          <a href="https://www.arkvoltenergy.com">www.arkvoltenergy.com</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ============ bottom bar ============ -->
+  <div class="aft__bar">
+    <div class="aft__bar-inner">
+      <p class="aft__copy">&copy; 2026 ARKVOLT ENERGY PRIVATE LIMITED. All Rights Reserved.</p>
+      <ul class="aft__legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><span aria-hidden="true">|</span></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <button class="aft__top" type="button" data-aft-top aria-label="Back to top">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</footer>
+
+<script>
+(function(){
+  var section = document.currentScript && document.currentScript.previousElementSibling;
+  if (!section || !section.classList.contains('aft')) {
+    var all = document.querySelectorAll('.aft');
+    section = all[all.length - 1];
+  }
+  if (!section || section.dataset.aftReady) return;
+  section.dataset.aftReady = '1';
+
+  // opt in to the hidden-then-reveal state only now that JS is running, so a
+  // script failure elsewhere on the page can never leave this footer blank
+  section.classList.add('aft--anim');
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- back to top ---------- */
+  var topBtn = section.querySelector('[data-aft-top]');
+  function toggleTop(){
+    topBtn.classList.toggle('is-on', window.pageYOffset > 500);
+  }
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+  });
+  window.addEventListener('scroll', toggleTop, { passive: true });
+  toggleTop();
+
+  /* ---------- reveal ---------- */
+  function play(){ section.classList.add('is-in'); }
+
+  var fired = false;
+  function fire(){
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', check);
+    window.removeEventListener('resize', check);
+    if (io) io.disconnect();
+    play();
+  }
+  function check(){
+    var r = section.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh * 0.9 && r.bottom > 0) fire();
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) fire(); });
+    }, { threshold: 0.1 });
+    io.observe(section);
+  }
+
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+</body>
+</html>
